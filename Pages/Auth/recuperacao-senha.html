@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduAloca | Como recuperar a senha?</title>
+    
+    <link rel='stylesheet' href='../../CSS/Global/style.css'>
+    <link rel='icon' type='image/png' href='../../Assets/IMG/Blue_and_White_Modern_Artificial_Intelligence_Logo.png'>
+    <link rel="stylesheet" href="../../CSS/Modules/autenticacao.css">
+    <link rel="stylesheet" href="../../CSS/Modules/search-dropdown.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <header class="app-header">
+        <a href="../Home/home.html" class="header-left">
+            <img src="../../Assets/IMG/Blue_and_White_Modern_Artificial_Intelligence_Logo.png"
+                    alt="EduAloca Logo"><span class="logo-text">EduAloca</span>
+            
+        </a>
+    </header>
+    <div class="article-wrapper">
+        <aside class="sidebar-section">
+            <h3>Artigos nesta Seção</h3>
+            <ul class="sidebar-list">
+                <li class="sidebar-item">
+                    <a href="credenciais-sistema.html" class="sidebar-link">Como fazer Login?</a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="recuperacao-senha.html" class="sidebar-link active">Como Redefinir senha?</a>
+                </li>
+            </ul>
+            <a href="autenticacao.html" class="sidebar-see-more">Ver mais</a>
+        </aside>
+        <main class="main-content">
+            <div class="content-top">
+                <nav class="breadcrumb">
+                    <a href="../Home/home.html">EduAloca</a>
+                    <span class="breadcrumb-sep">></span>
+                    <a href="autenticacao.html">Autenticação</a>
+                    <span class="breadcrumb-sep">></span>
+                    <span>Recuperação de Acesso</span>
+                </nav>
+                <div class="search-mini">
+                    <i data-lucide="search"></i>
+                    <input type="text" placeholder="Pesquisar">
+                </div>
+            </div>
+            <article class="article-header">
+                <h1 class="article-title">
+                    Como recuperar a senha?
+                </h1>
+            </article>
+            <div class="article-body">
+                <div class="info-banner">
+                    <i data-lucide="info"></i>
+                    <span>Esqueceu seus dados de acesso? Não se preocupe, o processo de recuperação é rápido e seguro.</span>
+                </div>
+
+                <section class="topics-banner">
+                    <h2 class="topics-banner__title">O que este artigo aborda:</h2>
+                    <ul class="topics-banner__list">
+                        <li class="topics-banner__item">
+                            <a href="#solicitacao" class="topics-banner__link">Iniciando a solicitação de senha</a>
+                        </li>
+                        <li class="topics-banner__item">
+                            <a href="#fluxo-email" class="topics-banner__link">Recebimento do e-mail de suporte</a>
+                        </li>
+                        <li class="topics-banner__item">
+                            <a href="#suporte" class="topics-banner__link">O que fazer se o e-mail não chegar</a>
+                        </li>
+                    </ul>
+                </section>
+
+                <hr style="margin: 60px 0; border: 0; border-top: 1px solid #d1d4d7;">
+
+                <section id="solicitacao" class="article-section">
+                    <h2 class="article-section__header">Iniciando a Recuperação</h2>
+                    <p class="article-section__description">
+                        Na página principal de login do EduAloca, logo abaixo dos campos de e-mail e senha, você encontrará o link "Esqueci minha senha". Ao clicar nele, você será direcionado para uma tela que solicitará o seu e-mail institucional cadastrado na base de dados.
+                    </p>
+                    <p class="article-section__description">
+                        Após informar o e-mail e clicar em "Enviar Instruções", o sistema verificará se o endereço existe em nossa base. Por motivos de segurança, o portal exibirá uma mensagem genérica de sucesso, mesmo que o e-mail não tenha sido encontrado, para evitar a varredura ilegal de perfis ativos.
+                    </p>
+                </section>
+
+                <section id="fluxo-email" class="article-section">
+                    <h2 class="article-section__header">Verificação Institucional</h2>
+                    <p class="article-section__description">
+                        Dentro de alguns minutos, você receberá um e-mail com o assunto "Recuperação de Acesso - EduAloca". Este e-mail contém um botão seguro que o levará diretamente para a página de criação de nova senha. Certifique-se de verificar sua pasta de "Spam" ou "Lixo Eletrônico" caso a mensagem não apareça na sua caixa de entrada principal.
+                    </p>
+                </section>
+
+                <section id="suporte" class="article-section">
+                    <h2 class="article-section__header">Suporte Técnico Local</h2>
+                    <p class="article-section__description">
+                        Caso você não tenha mais acesso ao seu e-mail institucional ou não consiga completar o processo automático, entre em contato com a equipe de TI da sua unidade. Apenas administradores locais podem realizar o reset manual de credenciais e a verificação presencial de identidade para restaurar o seu acesso à plataforma.
+                    </p>
+                </section>
+            </div>
+        </main>
+    </div>
+    <script src="../../src/Shared/Utils/search.utils.js"></script>
+    <script src="../../src/app/main.controller.js"></script>
+</body>
+
+</html>

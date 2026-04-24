@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduAloca | Como atualizar os dados?</title>
+    
+    <link rel='stylesheet' href='../../CSS/Global/style.css'>
+    <link rel='icon' type='image/png' href='../../Assets/IMG/Blue_and_White_Modern_Artificial_Intelligence_Logo.png'>
+    <link rel="stylesheet" href="../../CSS/Modules/gerenciamento.css">
+    <link rel="stylesheet" href="../../CSS/Modules/search-dropdown.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <header class="app-header">
+        <a href="../Home/home.html" class="header-left">
+            <img src="../../Assets/IMG/Blue_and_White_Modern_Artificial_Intelligence_Logo.png" alt="EduAloca Logo"><span class="logo-text">EduAloca</span>
+        </a>
+    </header>
+    <div class="article-wrapper">
+        <aside class="sidebar-section">
+            <h3>Artigos nesta Seçío</h3>
+            <ul class="sidebar-list">
+                <li class="sidebar-item">
+                    <a href="cadastro.html" class="sidebar-link">Como cadastrar os dados?</a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="atualizacao.html" class="sidebar-link active">Como atualizar os dados?</a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="exclusao.html" class="sidebar-link">Como excluir os dados?</a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="consulta-filtro.html" class="sidebar-link">Como filtrar os dados?</a>
+                </li>
+            </ul>
+            <a href="gerenciamento.html" class="sidebar-see-more">Ver mais</a>
+        </aside>
+        <main class="main-content">
+            <div class="content-top">
+                <nav class="breadcrumb">
+                    <a href="../Home/home.html">EduAloca</a>
+                    <span class="breadcrumb-sep">></span>
+                    <a href="gerenciamento.html">Gerenciamento</a>
+                    <span class="breadcrumb-sep">></span>
+                    <span>Como atualizar os dados?</span>
+                </nav>
+                <div class="search-mini">
+                    <i data-lucide="search"></i>
+                    <input type="text" placeholder="Pesquisar">
+                </div>
+            </div>
+            <article class="article-header">
+                <h1 class="article-title">
+                    Como atualizar os dados?
+                </h1>
+            </article>
+            <div class="article-body">
+                <div class="info-banner">
+                    <i data-lucide="info"></i>
+                    <span>Aprenda como manter a base de dados do EduAloca sempre atualizada sem gerar conflitos na grade horária.</span>
+                </div>
+
+                <section class="topics-banner">
+                    <h2 class="topics-banner__title">O que este artigo aborda:</h2>
+                    <ul class="topics-banner__list">
+                        <li class="topics-banner__item">
+                            <a href="#localizacao" class="topics-banner__link">Como localizar o registro desejado</a>
+                        </li>
+                        <li class="topics-banner__item">
+                            <a href="#edicao" class="topics-banner__link">Habilitando o modo de ediçío</a>
+                        </li>
+                        <li class="topics-banner__item">
+                            <a href="#salvamento" class="topics-banner__link">Validaçío de conflitos e salvamento</a>
+                        </li>
+                    </ul>
+                </section>
+
+                <hr style="margin: 60px 0; border: 0; border-top: 1px solid #d1d4d7;">
+
+                <section id="localizacao" class="article-section">
+                    <h2 class="article-section__header">Localizando o Registro</h2>
+                    <p class="article-section__description">
+                        O primeiro passo para atualizar qualquer informaçío no EduAloca í© localizar o item específico na listagem principal do módulo de Gerenciamento. Utilize os filtros disponíveis no topo da tabela para refinar a visualizaçío e encontrar rapidamente a turma, ambiente ou unidade curricular que necessita de ajustes.
+                    </p>
+                </section>
+
+                <section id="edicao" class="article-section">
+                    <h2 class="article-section__header">Habilitando a Ediçío</h2>
+                    <p class="article-section__description">
+                        Ao localizar o item desejado, clique no ícone de lápis (Editar) situado na coluna de ações, í  direita do registro. Isso abrirá um painel ou modal contendo o formulário prí©-preenchido com os dados atuais.
+                    </p>
+                </section>
+
+                <section id="salvamento" class="article-section">
+                    <h2 class="article-section__header">Validaçío e Salvamento</h2>
+                    <p class="article-section__description">
+                        Realize as alterações necessárias nos campos desbloqueados. Estando tudo correto, clique em "Confirmar" para confirmar a gravaçío na base.
+                    </p>
+                </section>
+            </div>
+        </main>
+    </div>
+    <script src="../../src/Shared/Utils/search.utils.js"></script>
+    <script src="../../src/app/main.controller.js"></script>
+</body>
+</html>
+
