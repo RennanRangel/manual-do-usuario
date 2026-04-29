@@ -1,29 +1,32 @@
 ﻿<!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EduAloca | Como enviar dúvidas?</title>
-    
+    <title>EduAloca | Como enviar minhas dúvidas?</title>
+
     <link rel='stylesheet' href='../../CSS/Global/style.css'>
     <link rel='icon' type='image/png' href='../../Assets/IMG/Blue_and_White_Modern_Artificial_Intelligence_Logo.png'>
     <link rel="stylesheet" href="../../CSS/Modules/faq.css">
     <link rel="stylesheet" href="../../CSS/Modules/search-dropdown.css">
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
+
 <body>
     <header class="app-header">
         <a href="../Home/home.html" class="header-left">
-            <img src="../../Assets/IMG/Blue_and_White_Modern_Artificial_Intelligence_Logo.png" alt="EduAloca Logo"><span class="logo-text">EduAloca</span>
-            
+            <img src="../../Assets/IMG/Blue_and_White_Modern_Artificial_Intelligence_Logo.png" alt="EduAloca Logo">
+            <span class="logo-text">EduAloca</span>
         </a>
     </header>
-    <div class="article-wrapper">
+
+    <main class="article-wrapper">
         <aside class="sidebar-section">
-            <h3>Artigos nesta Seçío</h3>
+            <h3>Artigos nesta Seção</h3>
             <ul class="sidebar-list">
                 <li class="sidebar-item">
-                    <a href="faq-visualizar.html" class="sidebar-link">Como vizualizar e filtrar dúvidas frequentes?</a>
+                    <a href="faq-visualizar.html" class="sidebar-link">Como visualizar e filtrar duvidas frequentes?</a>
                 </li>
                 <li class="sidebar-item">
                     <a href="faq-enviar-duvidas.html" class="sidebar-link active">Como enviar dúvidas?</a>
@@ -34,6 +37,7 @@
             </ul>
             <a href="faq.html" class="sidebar-see-more">Ver mais</a>
         </aside>
+
         <main class="main-content">
             <div class="content-top">
                 <nav class="breadcrumb">
@@ -41,24 +45,55 @@
                     <span class="breadcrumb-sep">></span>
                     <a href="faq.html">FAQ</a>
                     <span class="breadcrumb-sep">></span>
-                    <span>Como enviar dúvidas?</span>
+                    <span>Como enviar minhas dúvidas</span>
                 </nav>
                 <div class="search-mini">
                     <i data-lucide="search"></i>
                     <input type="text" placeholder="Pesquisar">
                 </div>
             </div>
+
             <article class="article-header">
-                <h1 class="article-title">Como enviar dúvidas?</h1>
+                <h1 class="article-title">COMO ENVIAR MINHAS DÚVIDAS</h1>
             </article>
+
             <div class="article-body">
                 <div class="info-banner">
                     <i data-lucide="info"></i>
-                    <span>Este manual ainda será redigido pela equipe doc.</span>
+                    <span>Nossa equipe de suporte está pronta para ajudar você a resolver qualquer problema técnico ou dúvida operacional.</span>
                 </div>
+
+                <section class="topics-banner">
+                    <h2 class="topics-banner__title">O que este artigo aborda:</h2>
+                    <ul class="topics-banner__list">
+                        <li class="topics-banner__item">
+                            <a href="#canais" class="topics-banner__link">Canais de atendimento oficiais</a>
+                        </li>
+                        <li class="topics-banner__item">
+                            <a href="#informacoes" class="topics-banner__link">Informações úteis para o suporte</a>
+                        </li>
+                    </ul>
+                </section>
+
+                <hr style="margin: 60px 0; border: 0; border-top: 1px solid #d1d4d7;">
+
+                <section id="canais" class="article-section">
+                    <h2 class="article-section__header">Canais de Atendimento</h2>
+                    <p class="article-section__description">
+                        Você pode entrar em contato conosco através do chat integrado no sistema, localizado no canto inferior direito, ou enviando um e-mail para nossa central de atendimento. O prazo de resposta para solicitações complexas é de até 24 horas úteis.
+                    </p>
+                </section>
+
+                <section id="informacoes" class="article-section">
+                    <h2 class="article-section__header">Agilidade no Suporte</h2>
+                    <p class="article-section__description">
+                        Para que possamos ajudar você mais rapidamente, sempre inclua o código da turma ou o nome do professor envolvido na dúvida, e, se possível, anexe um print da tela onde o problema ocorreu. Isso permite que nosso time técnico localize o erro de forma instantânea.
+                    </p>
+                </section>
             </div>
         </main>
-    </div>
+    </main>
+
     <script src="../../src/Shared/Utils/search.utils.js"></script>
     <script src="../../src/app/main.controller.js"></script>
 </body>

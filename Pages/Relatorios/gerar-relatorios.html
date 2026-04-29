@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EduAloca | Procedimento de Extração</title>
+    <title>EduAloca | Gerar Relatórios</title>
     
     <link rel='stylesheet' href='../../CSS/Global/style.css'>
     <link rel='icon' type='image/png' href='../../Assets/IMG/Blue_and_White_Modern_Artificial_Intelligence_Logo.png'>
@@ -21,7 +21,7 @@
             
         </a>
     </header>
-    <div class="article-wrapper">
+    <main class="article-wrapper">
         <aside class="sidebar-section">
             <h3>Artigos nesta Seção</h3>
             <ul class="sidebar-list">
@@ -46,17 +46,38 @@
             </div>
             <article class="article-header">
                 <h1 class="article-title">
-                    Como gerar relatórios?
+                    COMO GERAR RELATÓRIOS?
                 </h1>
             </article>
             <div class="article-body">
                 <div class="info-banner">
                     <i data-lucide="info"></i>
-                    <span>O módulo de geração permite consolidar os dados de alocação em documentos estruturados para análise pedagógica.</span>
+                    <span>Desenvolvido com foco em performance e integridade, o motor de relatórios do EduAloca utiliza consultas otimizadas diretamente no banco de dados PostgreSQL.</span>
                 </div>
+
+                <section class="article-section">
+                    <h2 class="article-section__header">Capacidades Analíticas</h2>
+                    <p class="article-section__description">
+                        O sistema disponibiliza quatro perspectivas analíticas principais, acessíveis através de cards intuitivos no topo da página: <strong>Relatório Docentes</strong>, <strong>Relatório Disciplinas</strong>, <strong>Relatório Cursos</strong> e <strong>Relatório Turmas</strong>. Cada uma delas oferece uma visão segmentada da alocação, permitindo que a coordenação identifique rapidamente o status de utilização dos recursos acadêmicos.
+                    </p>
+                </section>
+
+                <section class="article-section">
+                    <h2 class="article-section__header">Fluxo de Trabalho e Permissões</h2>
+                    <p class="article-section__description">
+                        A geração de relatórios é uma funcionalidade exclusiva para <strong>Coordenadores e Administradores</strong>. O fluxo inicia no módulo de Relatórios, onde você seleciona um dos modelos analíticos. Antes da exportação, o sistema gera um <strong>Preview</strong> dinâmico contendo colunas detalhadas como Professor, Disciplinas vinculadas, Carga Alocada e a Taxa de Utilização visual (representada por barras de progresso).
+                    </p>
+                </section>
+
+                <section class="article-section">
+                    <h2 class="article-section__header">Execução e Indicadores</h2>
+                    <p class="article-section__description">
+                        Ao carregar o preview, o sistema exibe automaticamente três indicadores fundamentais no rodapé do painel: o <strong>Total Alocado</strong> (em horas), o <strong>Total Disponível</strong> e a <strong>Taxa de Atualização</strong> percentual. Esses dados são processados em alta performance, garantindo que a conferência seja ágil e segura antes da finalização do documento institucional.
+                    </p>
+                </section>
             </div>
         </main>
-    </div>
+    </main>
     <script src="../../src/Shared/Utils/search.utils.js"></script>
     <script src="../../src/app/main.controller.js"></script>
 </body>
