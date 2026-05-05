@@ -4,119 +4,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EduAloca | Fluxo de Cadastro</title>
-
-    <link rel='stylesheet' href='../../CSS/Global/style.css'>
-    <link rel='icon' type='image/png' href='../../Assets/IMG/Blue_and_White_Modern_Artificial_Intelligence_Logo.png'>
+    <title>EduAloca | Cadastro de Dados</title>
+    <link rel="stylesheet" href="../../CSS/Global/style.css">
     <link rel="stylesheet" href="../../CSS/Modules/gerenciamento.css">
-    <link rel="stylesheet" href="../../CSS/Modules/search-dropdown.css">
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="../../CSS/Modules/header.css">
+    <link rel="stylesheet" href="../../CSS/Modules/sidebar.css">
 </head>
 
-<body>
-    <header class="app-header">
-        <a href="../Home/home.html" class="header-left">
-            <img src="../../Assets/IMG/Blue_and_White_Modern_Artificial_Intelligence_Logo.png" alt="EduAloca Logo"><span
-                class="logo-text">EduAloca</span>
-
-        </a>
+<body class="edu-theme">
+        <header class="edu-header">
+        <div class="edu-header-container">
+            <a href="../Home/home.html" class="edu-header-brand">
+                <img src="../../Assets/IMG/Blue_and_White_Modern_Artificial_Intelligence_Logo.png" alt="EduAloca Logo" class="edu-header-logo">
+                <span class="edu-header-title">EduAloca</span>
+            </a>
+            </div>
+        </div>
     </header>
-    <div class="article-wrapper">
-        <aside class="sidebar-section">
-            <h3>Artigos nesta Seçío</h3>
-            <ul class="sidebar-list">
-                <li class="sidebar-item">
-                    <a href="cadastro.html" class="sidebar-link active">Como cadastrar os dados?</a>
-                </li>
-                <li class="sidebar-item">
-                    <a href="atualizacao.html" class="sidebar-link">Como atualizar os dados?</a>
-                </li>
-                <li class="sidebar-item">
-                    <a href="exclusao.html" class="sidebar-link">Como excluir os dados?</a>
-                </li>
-                <li class="sidebar-item">
-                    <a href="consulta-filtro.html" class="sidebar-link">Como filtrar os dados?</a>
-                </li>
-            </ul>
-            <a href="gerenciamento.html" class="sidebar-see-more">Ver mais</a>
+
+    <div class="edu-layout">
+        <aside class="edu-sidebar-left">
+            
+            <nav class="edu-nav">
+                <div class="edu-nav-title">PRIMEIROS PASSOS</div>
+                <ul class="edu-nav-list">
+                    <li class="edu-nav-item"><a href="../Home/home.html" class="edu-nav-link ">Introdução</a></li>
+                </ul>
+
+                <div class="edu-nav-title">MÓDULOS</div>
+                <ul class="edu-nav-list">
+                    <li class="edu-nav-item ">
+                        <a href="../Auth/autenticacao.html" class="edu-nav-link " onclick="alternarNavegacao(event, this)">Autenticação <img src="../../Assets/IMG/seta-direita.png" alt="seta"></a>
+                        <ul class="edu-nav-sublist">
+                            <li class="edu-nav-subitem"><a href="../Auth/credenciais-sistema.html" class="edu-nav-sublink ">Como fazer Login</a></li>
+                            <li class="edu-nav-subitem"><a href="../Auth/recuperacao-senha.html" class="edu-nav-sublink ">Como redefinir a senha</a></li>
+                        </ul>
+                    </li>
+                    <li class="edu-nav-item open">
+                        <a href="../Gerenciamento/gerenciamento.html" class="edu-nav-link " onclick="alternarNavegacao(event, this)">Gerenciamento <img src="../../Assets/IMG/seta-direita.png" alt="seta"></a>
+                        <ul class="edu-nav-sublist">
+                            <li class="edu-nav-subitem"><a href="../Gerenciamento/cadastro.html" class="edu-nav-sublink active">Cadastro de Dados</a></li>
+                            <li class="edu-nav-subitem"><a href="../Gerenciamento/atualizacao.html" class="edu-nav-sublink ">Atualização</a></li>
+                            <li class="edu-nav-subitem"><a href="../Gerenciamento/exclusao.html" class="edu-nav-sublink ">Exclusão</a></li>
+                            <li class="edu-nav-subitem"><a href="../Gerenciamento/consulta-filtro.html" class="edu-nav-sublink ">Consultas e Filtros</a></li>
+                        </ul>
+                    </li>
+                    <li class="edu-nav-item ">
+                        <a href="../Alocacao/alocacao.html" class="edu-nav-link " onclick="alternarNavegacao(event, this)">Alocação <img src="../../Assets/IMG/seta-direita.png" alt="seta"></a>
+                        <ul class="edu-nav-sublist">
+                            <li class="edu-nav-subitem"><a href="../Alocacao/geracao-alocacao.html" class="edu-nav-sublink ">Geração de Alocação</a></li>
+                            <li class="edu-nav-subitem"><a href="../Alocacao/alocacao-docentes.html" class="edu-nav-sublink ">Alocação de Docentes</a></li>
+                            <li class="edu-nav-subitem"><a href="../Alocacao/alocacao-salas.html" class="edu-nav-sublink ">Alocação de Salas</a></li>
+                            <li class="edu-nav-subitem"><a href="../Alocacao/ajustar-alocacao.html" class="edu-nav-sublink ">Ajustes Manuais</a></li>
+                            <li class="edu-nav-subitem"><a href="../Alocacao/gerenciar-dias-nao-letivos.html" class="edu-nav-sublink ">Dias não Letivos</a></li>
+                            <li class="edu-nav-subitem"><a href="../Alocacao/visualizar-alocacao.html" class="edu-nav-sublink ">Visualizar Grade</a></li>
+                        </ul>
+                    </li>
+                    <li class="edu-nav-item ">
+                        <a href="../Relatorios/relatorios.html" class="edu-nav-link " onclick="alternarNavegacao(event, this)">Relatórios <img src="../../Assets/IMG/seta-direita.png" alt="seta"></a>
+                        <ul class="edu-nav-sublist">
+                            <li class="edu-nav-subitem"><a href="../Relatorios/gerar-relatorios.html" class="edu-nav-sublink ">Geração de Relatórios</a></li>
+                            <li class="edu-nav-subitem"><a href="../Relatorios/exportar-relatorios.html" class="edu-nav-sublink ">Exportação</a></li>
+                        </ul>
+                    </li>
+                    <li class="edu-nav-item ">
+                        <a href="../FAQ/faq.html" class="edu-nav-link " onclick="alternarNavegacao(event, this)">FAQ <img src="../../Assets/IMG/seta-direita.png" alt="seta"></a>
+                        
+                        <ul class="edu-nav-sublist">
+                            <li class="edu-nav-subitem"><a href="../FAQ/faq-visualizar.html" class="edu-nav-sublink ">Dúvidas Frequentes</a></li>
+                            <li class="edu-nav-subitem"><a href="../FAQ/faq-videos.html" class="edu-nav-sublink ">Vídeos Tutoriais</a></li>
+                            <li class="edu-nav-subitem"><a href="../FAQ/faq-enviar-duvidas.html" class="edu-nav-sublink ">Enviar Dúvidas</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
         </aside>
-        <main class="main-content">
-            <div class="content-top">
-                <nav class="breadcrumb">
-                    <a href="../Home/home.html">EduAloca</a>
-                    <span class="breadcrumb-sep">></span>
-                    <a href="gerenciamento.html">Gerenciamento</a>
-                    <span class="breadcrumb-sep">></span>
-                    <span>Como cadastrar os dados?</span>
-                </nav>
-                <div class="search-mini">
-                    <i data-lucide="search"></i>
-                    <input type="text" placeholder="Pesquisar">
-                </div>
+
+        <main class="edu-main-content">
+
+            <h1 class="edu-title">Como cadastrar os dados?</h1>
+            <p class="edu-last-updated">Última atualização 29 de abril de 2026</p>
+            <hr>
+
+            <div class="edu-intro">
+                O fluxo de cadastro é o processo fundamental para alimentar o sistema. É através dele que o EduAloca entende quais são as turmas, salas e professores disponíveis para organizar as alocações da melhor forma.
             </div>
-            <article class="article-header">
-                <h1 class="article-title">
-                    Como cadastrar os dados?
-                </h1>
-            </article>
-            <div class="article-body">
-                <div class="info-banner">
-                    <i data-lucide="info"></i>
-                    <span>O fluxo de cadastro í© o processo fundamental para alimentar inteligência de alocaçío do
-                        sistema.</span>
-                </div>
 
-                <section class="topics-banner">
-                    <h2 class="topics-banner__title">O que este artigo aborda:</h2>
-                    <ul class="topics-banner__list">
-                        <li class="topics-banner__item">
-                            <a href="#preenchimento" class="topics-banner__link">Preenchimento de formulários
-                                estruturados</a>
-                        </li>
-                        <li class="topics-banner__item">
-                            <a href="#validacao" class="topics-banner__link">Regras de validaçío em tempo real</a>
-                        </li>
-                        <li class="topics-banner__item">
-                            <a href="#confirmacao" class="topics-banner__link">Confirmando e salvando na base</a>
-                        </li>
-                    </ul>
-                </section>
+            <h2 class="edu-section-title">Preenchimento do Formulário</h2>
+            <p class="edu-paragraph">
+                Para iniciar um novo registro, clique no botão <strong>"Novo Cadastro"</strong> na tela de gerenciamento. O sistema abrirá um formulário que solicita apenas as informações necessárias para aquele tipo de dado (como nome da turma, curso ou capacidade da sala).
+            </p>
+            <p class="edu-paragraph">
+                Campos marcados com asterisco são obrigatórios. Certifique-se de preenchê-los com atenção para garantir que o sistema consiga realizar os cálculos de alocação corretamente posteriormente.
+            </p>
 
-                <hr style="margin: 60px 0; border: 0; border-top: 1px solid #d1d4d7;">
+            <img src="../../Assets/IMG/Docente.png" alt="Exemplo de Formulário de Cadastro" class="edu-screenshot">
 
-                <section id="preenchimento" class="article-section">
-                    <h2 class="article-section__header">Preenchimento Estruturado</h2>
-                    <p class="article-section__description">
-                        Para iniciar um novo registro, seja de uma Unidade Curricular, Turma ou Ambiente, acesse o botío
-                        "Novo Cadastro" no topo da página de gerenciamento. O EduAloca utiliza formulários inteligentes
-                        que se adaptam ao tipo de dado inserido, garantindo que nenhum campo obrigatório seja esquecido
-                        durante a inserçío.
-                    </p>
-                    <p class="article-section__description">
-                        Ao cadastrar uma turma, por exemplo, o sistema solicitará o curso vinculado, o semestre atual e
-                        o período (matutino, vespertino ou noturno). Estas chaves primárias sío essenciais para que o
-                        algoritmo de alocaçío funcione corretamente nas etapas posteriores.
-                    </p>
-                </section>
+            <h2 class="edu-section-title">Validação Automática</h2>
+            <p class="edu-paragraph">
+                O EduAloca auxilia você a evitar erros comuns. Por exemplo, se você tentar cadastrar uma sala com capacidade para 20 alunos em uma turma que possui 30, o sistema alertará sobre a inconsistência. Isso garante que a organização das aulas seja sempre viável e confortável para todos.
+            </p>
 
-                <section id="validacao" class="article-section">
-                    <h2 class="article-section__header">Validaçío em Tempo Real</h2>
-                    <p class="article-section__description">
-                        Diferente de sistemas legados, o EduAloca possui uma camada de validaçío ativa. Se você tentar cadastrar um ambiente (sala) com uma capacidade inferior ao número de alunos previstos para aquela turma, o sistema impedirá o salvamento de um conflito logístico futuro.
-                    </p>
-                </section>
+            <h2 class="edu-section-title">Salvando as Informações</h2>
+            <p class="edu-paragraph">
+                Após conferir os dados, clique em <strong>"Confirmar"</strong>. As informações serão salvas imediatamente e já ficarão disponíveis para consulta nos painéis de controle e relatórios. Caso precise alterar algo depois, você poderá usar a função de edição a qualquer momento.
+            </p>
 
-                <section id="confirmacao" class="article-section">
-                    <h2 class="article-section__header">Confirmaçío de Dados</h2>
-                    <p class="article-section__description">
-                        Após preencher todos os campos e passar pelas validações automáticas, clique em "Confirmar". Este comando nío apenas armazena o dado localmente, mas tambí©m dispara uma rotina de atualizaçío na matriz geral, permitindo que a coordenaçío visualize o novo elemento instantaneamente no dashboard de ocupaçío.
-                    </p>
-                </section>
-            </div>
-        </main>
+
+
+
+                    </main>
+
+        <aside class="edu-sidebar-right">
+            <ul class="edu-toc-list"></ul>
+            
+            </aside>
     </div>
-    <script src="../../src/Shared/Utils/search.utils.js"></script>
-    <script src="../../src/app/main.controller.js"></script>
+    <script src="../../src/app/sidebar.controller.js"></script>
 </body>
 
 </html>

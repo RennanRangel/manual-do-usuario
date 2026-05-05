@@ -4,105 +4,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EduAloca | Como gerar alocação de salas?</title>
-    
-    <link rel='stylesheet' href='../../CSS/Global/style.css'>
-    <link rel='icon' type='image/png' href='../../Assets/IMG/Blue_and_White_Modern_Artificial_Intelligence_Logo.png'>
+    <title>EduAloca | Alocação de Salas</title>
+    <link rel="stylesheet" href="../../CSS/Global/style.css">
     <link rel="stylesheet" href="../../CSS/Modules/alocacao.css">
-    <link rel="stylesheet" href="../../CSS/Modules/search-dropdown.css">
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="../../CSS/Modules/header.css">
+    <link rel="stylesheet" href="../../CSS/Modules/sidebar.css">
 </head>
 
-<body>
-    <header class="app-header">
-        <a href="../Home/home.html" class="header-left">
-            <img src="../../Assets/IMG/Blue_and_White_Modern_Artificial_Intelligence_Logo.png"
-                    alt="EduAloca Logo"><span class="logo-text">EduAloca</span>
-            
-        </a>
+<body class="edu-theme">
+        <header class="edu-header">
+        <div class="edu-header-container">
+            <a href="../Home/home.html" class="edu-header-brand">
+                <img src="../../Assets/IMG/Blue_and_White_Modern_Artificial_Intelligence_Logo.png" alt="EduAloca Logo" class="edu-header-logo">
+                <span class="edu-header-title">EduAloca</span>
+            </a>
+            </div>
+        </div>
     </header>
-    <div class="article-wrapper">
-        <aside class="sidebar-section">
-            <h3>Artigos nesta Seção</h3>
-            <ul class="sidebar-list">
-                <li class="sidebar-item">
-                    <a href="gerenciar-dias-nao-letivos.html" class="sidebar-link">Como gerenciar dias não letivos?</a>
-                </li>
-                <li class="sidebar-item">
-                    <a href="geracao-alocacao.html" class="sidebar-link">Como gerar alocação no calendário?</a>
-                </li>
-                <li class="sidebar-item">
-                    <a href="alocacao-docentes.html" class="sidebar-link">Como gerar alocação de docentes?</a>
-                </li>
-                <li class="sidebar-item">
-                    <a href="alocacao-salas.html" class="sidebar-link active">Como gerar alocação de salas?</a>
-                </li>
-                <li class="sidebar-item">
-                    <a href="ajustar-alocacao.html" class="sidebar-link">Como ajustar alocação?</a>
-                </li>
-                <li class="sidebar-item">
-                    <a href="visualizar-alocacao.html" class="sidebar-link">Como visualizar alocação?</a>
-                </li>
-            </ul>
-            <a href="alocacao.html" class="sidebar-see-more">Ver mais</a>
+
+    <div class="edu-layout">
+        <aside class="edu-sidebar-left">
+            
+            <nav class="edu-nav">
+                <div class="edu-nav-title">PRIMEIROS PASSOS</div>
+                <ul class="edu-nav-list">
+                    <li class="edu-nav-item"><a href="../Home/home.html" class="edu-nav-link ">Introdução</a></li>
+                </ul>
+
+                <div class="edu-nav-title">MÓDULOS</div>
+                <ul class="edu-nav-list">
+                    <li class="edu-nav-item ">
+                        <a href="../Auth/autenticacao.html" class="edu-nav-link " onclick="alternarNavegacao(event, this)">Autenticação <img src="../../Assets/IMG/seta-direita.png" alt="seta"></a>
+                        <ul class="edu-nav-sublist">
+                            <li class="edu-nav-subitem"><a href="../Auth/credenciais-sistema.html" class="edu-nav-sublink ">Como fazer Login</a></li>
+                            <li class="edu-nav-subitem"><a href="../Auth/recuperacao-senha.html" class="edu-nav-sublink ">Como redefinir a senha</a></li>
+                        </ul>
+                    </li>
+                    <li class="edu-nav-item ">
+                        <a href="../Gerenciamento/gerenciamento.html" class="edu-nav-link " onclick="alternarNavegacao(event, this)">Gerenciamento <img src="../../Assets/IMG/seta-direita.png" alt="seta"></a>
+                        <ul class="edu-nav-sublist">
+                            <li class="edu-nav-subitem"><a href="../Gerenciamento/cadastro.html" class="edu-nav-sublink ">Cadastro de Dados</a></li>
+                            <li class="edu-nav-subitem"><a href="../Gerenciamento/atualizacao.html" class="edu-nav-sublink ">Atualização</a></li>
+                            <li class="edu-nav-subitem"><a href="../Gerenciamento/exclusao.html" class="edu-nav-sublink ">Exclusão</a></li>
+                            <li class="edu-nav-subitem"><a href="../Gerenciamento/consulta-filtro.html" class="edu-nav-sublink ">Consultas e Filtros</a></li>
+                        </ul>
+                    </li>
+                    <li class="edu-nav-item open">
+                        <a href="../Alocacao/alocacao.html" class="edu-nav-link " onclick="alternarNavegacao(event, this)">Alocação <img src="../../Assets/IMG/seta-direita.png" alt="seta"></a>
+                        <ul class="edu-nav-sublist">
+                            <li class="edu-nav-subitem"><a href="../Alocacao/geracao-alocacao.html" class="edu-nav-sublink ">Geração de Alocação</a></li>
+                            <li class="edu-nav-subitem"><a href="../Alocacao/alocacao-docentes.html" class="edu-nav-sublink ">Alocação de Docentes</a></li>
+                            <li class="edu-nav-subitem"><a href="../Alocacao/alocacao-salas.html" class="edu-nav-sublink active">Alocação de Salas</a></li>
+                            <li class="edu-nav-subitem"><a href="../Alocacao/ajustar-alocacao.html" class="edu-nav-sublink ">Ajustes Manuais</a></li>
+                            <li class="edu-nav-subitem"><a href="../Alocacao/gerenciar-dias-nao-letivos.html" class="edu-nav-sublink ">Dias não Letivos</a></li>
+                            <li class="edu-nav-subitem"><a href="../Alocacao/visualizar-alocacao.html" class="edu-nav-sublink ">Visualizar Grade</a></li>
+                        </ul>
+                    </li>
+                    <li class="edu-nav-item ">
+                        <a href="../Relatorios/relatorios.html" class="edu-nav-link " onclick="alternarNavegacao(event, this)">Relatórios <img src="../../Assets/IMG/seta-direita.png" alt="seta"></a>
+                        <ul class="edu-nav-sublist">
+                            <li class="edu-nav-subitem"><a href="../Relatorios/gerar-relatorios.html" class="edu-nav-sublink ">Geração de Relatórios</a></li>
+                            <li class="edu-nav-subitem"><a href="../Relatorios/exportar-relatorios.html" class="edu-nav-sublink ">Exportação</a></li>
+                        </ul>
+                    </li>
+                    <li class="edu-nav-item ">
+                        <a href="../FAQ/faq.html" class="edu-nav-link " onclick="alternarNavegacao(event, this)">FAQ <img src="../../Assets/IMG/seta-direita.png" alt="seta"></a>
+                        
+                        <ul class="edu-nav-sublist">
+                            <li class="edu-nav-subitem"><a href="../FAQ/faq-visualizar.html" class="edu-nav-sublink ">Dúvidas Frequentes</a></li>
+                            <li class="edu-nav-subitem"><a href="../FAQ/faq-videos.html" class="edu-nav-sublink ">Vídeos Tutoriais</a></li>
+                            <li class="edu-nav-subitem"><a href="../FAQ/faq-enviar-duvidas.html" class="edu-nav-sublink ">Enviar Dúvidas</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
         </aside>
-        <main class="main-content">
-            <div class="content-top">
-                <nav class="breadcrumb">
-                    <a href="../Home/home.html">EduAloca</a>
-                    <span class="breadcrumb-sep">></span>
-                    <a href="alocacao.html">Alocação</a>
-                    <span class="breadcrumb-sep">></span>
-                    <span>Como gerar alocação de salas?</span>
-                </nav>
-                <div class="search-mini">
-                    <i data-lucide="search"></i>
-                    <input type="text" placeholder="Pesquisar">
-                </div>
+
+        <main class="edu-main-content">
+            <h1 class="edu-title">Alocação de Salas</h1>
+            <p class="edu-last-updated">Última atualização 29 de abril de 2026</p>
+            <hr>
+
+            <div class="edu-intro">
+                O EduAloca organiza a ocupação das salas para garantir que cada turma tenha o ambiente ideal para suas aulas, com espaço suficiente e os recursos pedagógicos necessários.
             </div>
-            <article class="article-header">
-                <h1 class="article-title">
-                    Como gerar alocação de salas?
-                </h1>
-            </article>
-            <div class="article-body">
-                <div class="info-banner">
-                    <i data-lucide="info"></i>
-                    <span>Otimize a ocupação dos espaços físicos de acordo com os recursos pedagógicos necessários.</span>
-                </div>
 
-                <section class="topics-banner">
-                    <h2 class="topics-banner__title">O que este artigo aborda:</h2>
-                    <ul class="topics-banner__list">
-                        <li class="topics-banner__item">
-                            <a href="#priorizacao" class="topics-banner__link">Critérios de priorização de salas</a>
-                        </li>
-                        <li class="topics-banner__item">
-                            <a href="#recursos" class="topics-banner__link">Mapeamento de recursos e laboratórios</a>
-                        </li>
-                    </ul>
-                </section>
+            <h2 class="edu-section-title">Priorização por Capacidade</h2>
+            <p class="edu-paragraph">
+                O sistema prioriza que turmas com maior número de alunos ocupem salas maiores. Isso evita a falta de assentos para os estudantes e garante que salas de grande porte não sejam subutilizadas por grupos pequenos, otimizando o aproveitamento do espaço físico da unidade.
+            </p>
 
-                <hr style="margin: 60px 0; border: 0; border-top: 1px solid #d1d4d7;">
+            <h2 class="edu-section-title">Recursos e Laboratórios</h2>
+            <p class="edu-paragraph">
+                Quando uma aula exige o uso de computadores ou oficinas específicas, o EduAloca filtra automaticamente apenas os ambientes que possuem esses recursos. Isso garante que aulas técnicas ocorram sempre em laboratórios equipados, eliminando a necessidade de reservas manuais burocráticas.
+            </p>
 
-                <section id="priorizacao" class="article-section">
-                    <h2 class="article-section__header">Priorização de Salas</h2>
-                    <p class="article-section__description">
-                        O motor de alocação de salas trabalha para garantir que turmas com maior número de alunos ocupem ambientes adequados. O sistema prioriza salas com maior capacidade para turmas volumosas, evitando que alunos fiquem sem assento ou que salas grandes fiquem subutilizadas com turmas pequenas.
-                    </p>
-                </section>
+            <h2 class="edu-section-title">Conforto e Logística</h2>
+            <p class="edu-paragraph">
+                Além do espaço, o sistema busca agrupar as aulas de uma mesma turma em ambientes próximos. Isso reduz o tempo de deslocamento entre os períodos e torna a rotina escolar mais prática e dinâmica para alunos e professores.
+            </p>
+  </main>
 
-                <section id="recursos" class="article-section">
-                    <h2 class="article-section__header">Recursos e Laboratórios</h2>
-                    <p class="article-section__description">
-                        Se uma Unidade Curricular exige o uso de laboratórios de informática ou oficinas específicas, o sistema filtra apenas os ambientes que possuem as "badges" de recursos necessárias. Isso garante que a aula de "Redes de Computadores", por exemplo, ocorra sempre em um ambiente com os equipamentos corretos.
-                    </p>
-                </section>
-            </div>
-        </main>
+        <aside class="edu-sidebar-right">
+            <ul class="edu-toc-list"></ul>
+            
+            </aside>
     </div>
-    <script src="../../src/Shared/Utils/search.utils.js"></script>
-    <script src="../../src/app/main.controller.js"></script>
+    <script src="../../src/app/sidebar.controller.js"></script>
 </body>
 
 </html>

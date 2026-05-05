@@ -4,106 +4,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EduAloca | Como recuperar a senha?</title>
-    
-    <link rel='stylesheet' href='../../CSS/Global/style.css'>
-    <link rel='icon' type='image/png' href='../../Assets/IMG/Blue_and_White_Modern_Artificial_Intelligence_Logo.png'>
+    <title>EduAloca | Como redefinir a senha</title>
+        <link rel="stylesheet" href="../../CSS/Global/style.css">
+
+    <link rel="stylesheet" href="../../CSS/Modules/header.css">
+    <link rel="stylesheet" href="../../CSS/Modules/sidebar.css">
     <link rel="stylesheet" href="../../CSS/Modules/autenticacao.css">
-    <link rel="stylesheet" href="../../CSS/Modules/search-dropdown.css">
-    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 
-<body>
-    <header class="app-header">
-        <a href="../Home/home.html" class="header-left">
-            <img src="../../Assets/IMG/Blue_and_White_Modern_Artificial_Intelligence_Logo.png"
-                    alt="EduAloca Logo"><span class="logo-text">EduAloca</span>
-            
-        </a>
+<body class="edu-theme">
+        <header class="edu-header">
+        <div class="edu-header-container">
+            <a href="../Home/home.html" class="edu-header-brand">
+                <img src="../../Assets/IMG/Blue_and_White_Modern_Artificial_Intelligence_Logo.png" alt="EduAloca Logo" class="edu-header-logo">
+                <span class="edu-header-title">EduAloca</span>
+            </a>
+            </div>
+        </div>
     </header>
-    <div class="article-wrapper">
-        <aside class="sidebar-section">
-            <h3>Artigos nesta Seção</h3>
-            <ul class="sidebar-list">
-                <li class="sidebar-item">
-                    <a href="credenciais-sistema.html" class="sidebar-link">Como fazer Login?</a>
-                </li>
-                <li class="sidebar-item">
-                    <a href="recuperacao-senha.html" class="sidebar-link active">Como Redefinir senha?</a>
-                </li>
-            </ul>
-            <a href="autenticacao.html" class="sidebar-see-more">Ver mais</a>
+
+    <div class="edu-layout">
+        <aside class="edu-sidebar-left">
+            
+            <nav class="edu-nav">
+                <div class="edu-nav-title">PRIMEIROS PASSOS</div>
+                <ul class="edu-nav-list">
+                    <li class="edu-nav-item"><a href="../Home/home.html" class="edu-nav-link ">Introdução</a></li>
+                </ul>
+
+                <div class="edu-nav-title">MÓDULOS</div>
+                <ul class="edu-nav-list">
+                    <li class="edu-nav-item open">
+                        <a href="../Auth/autenticacao.html" class="edu-nav-link " onclick="alternarNavegacao(event, this)">Autenticação <img src="../../Assets/IMG/seta-direita.png" alt="seta"></a>
+                        <ul class="edu-nav-sublist">
+                            <li class="edu-nav-subitem"><a href="../Auth/credenciais-sistema.html" class="edu-nav-sublink ">Como fazer Login</a></li>
+                            <li class="edu-nav-subitem"><a href="../Auth/recuperacao-senha.html" class="edu-nav-sublink active">Como redefinir a senha</a></li>
+                        </ul>
+                    </li>
+                    <li class="edu-nav-item ">
+                        <a href="../Gerenciamento/gerenciamento.html" class="edu-nav-link " onclick="alternarNavegacao(event, this)">Gerenciamento <img src="../../Assets/IMG/seta-direita.png" alt="seta"></a>
+                        <ul class="edu-nav-sublist">
+                            <li class="edu-nav-subitem"><a href="../Gerenciamento/cadastro.html" class="edu-nav-sublink ">Cadastro de Dados</a></li>
+                            <li class="edu-nav-subitem"><a href="../Gerenciamento/atualizacao.html" class="edu-nav-sublink ">Atualização</a></li>
+                            <li class="edu-nav-subitem"><a href="../Gerenciamento/exclusao.html" class="edu-nav-sublink ">Exclusão</a></li>
+                            <li class="edu-nav-subitem"><a href="../Gerenciamento/consulta-filtro.html" class="edu-nav-sublink ">Consultas e Filtros</a></li>
+                        </ul>
+                    </li>
+                    <li class="edu-nav-item ">
+                        <a href="../Alocacao/alocacao.html" class="edu-nav-link " onclick="alternarNavegacao(event, this)">Alocação <img src="../../Assets/IMG/seta-direita.png" alt="seta"></a>
+                        <ul class="edu-nav-sublist">
+                            <li class="edu-nav-subitem"><a href="../Alocacao/geracao-alocacao.html" class="edu-nav-sublink ">Geração de Alocação</a></li>
+                            <li class="edu-nav-subitem"><a href="../Alocacao/alocacao-docentes.html" class="edu-nav-sublink ">Alocação de Docentes</a></li>
+                            <li class="edu-nav-subitem"><a href="../Alocacao/alocacao-salas.html" class="edu-nav-sublink ">Alocação de Salas</a></li>
+                            <li class="edu-nav-subitem"><a href="../Alocacao/ajustar-alocacao.html" class="edu-nav-sublink ">Ajustes Manuais</a></li>
+                            <li class="edu-nav-subitem"><a href="../Alocacao/gerenciar-dias-nao-letivos.html" class="edu-nav-sublink ">Dias não Letivos</a></li>
+                            <li class="edu-nav-subitem"><a href="../Alocacao/visualizar-alocacao.html" class="edu-nav-sublink ">Visualizar Grade</a></li>
+                        </ul>
+                    </li>
+                    <li class="edu-nav-item ">
+                        <a href="../Relatorios/relatorios.html" class="edu-nav-link " onclick="alternarNavegacao(event, this)">Relatórios <img src="../../Assets/IMG/seta-direita.png" alt="seta"></a>
+                        <ul class="edu-nav-sublist">
+                            <li class="edu-nav-subitem"><a href="../Relatorios/gerar-relatorios.html" class="edu-nav-sublink ">Geração de Relatórios</a></li>
+                            <li class="edu-nav-subitem"><a href="../Relatorios/exportar-relatorios.html" class="edu-nav-sublink ">Exportação</a></li>
+                        </ul>
+                    </li>
+                    <li class="edu-nav-item ">
+                        <a href="../FAQ/faq.html" class="edu-nav-link " onclick="alternarNavegacao(event, this)">FAQ <img src="../../Assets/IMG/seta-direita.png" alt="seta"></a>
+                        
+                        <ul class="edu-nav-sublist">
+                            <li class="edu-nav-subitem"><a href="../FAQ/faq-visualizar.html" class="edu-nav-sublink ">Dúvidas Frequentes</a></li>
+                            <li class="edu-nav-subitem"><a href="../FAQ/faq-videos.html" class="edu-nav-sublink ">Vídeos Tutoriais</a></li>
+                            <li class="edu-nav-subitem"><a href="../FAQ/faq-enviar-duvidas.html" class="edu-nav-sublink ">Enviar Dúvidas</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
         </aside>
-        <main class="main-content">
-            <div class="content-top">
-                <nav class="breadcrumb">
-                    <a href="../Home/home.html">EduAloca</a>
-                    <span class="breadcrumb-sep">></span>
-                    <a href="autenticacao.html">Autenticação</a>
-                    <span class="breadcrumb-sep">></span>
-                    <span>Recuperação de Acesso</span>
-                </nav>
-                <div class="search-mini">
-                    <i data-lucide="search"></i>
-                    <input type="text" placeholder="Pesquisar">
-                </div>
+
+        <main class="edu-main-content">
+            <h1 class="edu-title">Como redefinir a senha</h1>
+            <p class="edu-last-updated">Última atualização 29 de abril de 2026</p>
+            <hr>
+
+            <div class="edu-intro">
+                Esqueceu seus dados de acesso? Não se preocupe! O processo de redefinição de senha do EduAloca é rápido, seguro e totalmente simplificado.
             </div>
-            <article class="article-header">
-                <h1 class="article-title">
-                    Como recuperar a senha?
-                </h1>
-            </article>
-            <div class="article-body">
-                <div class="info-banner">
-                    <i data-lucide="info"></i>
-                    <span>Esqueceu seus dados de acesso? Não se preocupe, o processo de recuperação é rápido e seguro.</span>
-                </div>
 
-                <section class="topics-banner">
-                    <h2 class="topics-banner__title">O que este artigo aborda:</h2>
-                    <ul class="topics-banner__list">
-                        <li class="topics-banner__item">
-                            <a href="#solicitacao" class="topics-banner__link">Iniciando a solicitação de senha</a>
-                        </li>
-                        <li class="topics-banner__item">
-                            <a href="#fluxo-email" class="topics-banner__link">Recebimento do e-mail de suporte</a>
-                        </li>
-                        <li class="topics-banner__item">
-                            <a href="#suporte" class="topics-banner__link">O que fazer se o e-mail não chegar</a>
-                        </li>
-                    </ul>
-                </section>
+            <h2 class="edu-section-title">Iniciando a Recuperação</h2>
+            
+            <p class="edu-paragraph">
+                Na tela de login, logo abaixo do botão <strong>"Entrar"</strong>, você encontrará o link <strong>"Esqueci minha senha"</strong>. Clique nele para iniciar o procedimento de recuperação.
+            </p>
+            <p class="edu-paragraph">
+                Em seguida, informe o seu e-mail institucional completo. O sistema validará seus dados e enviará um link exclusivo de redefinição para a sua caixa de entrada.
+            </p>
 
-                <hr style="margin: 60px 0; border: 0; border-top: 1px solid #d1d4d7;">
+            <h2 class="edu-section-title">Criando uma Nova Senha</h2>
+            <p class="edu-paragraph">
+                Ao acessar o link recebido, você será direcionado para uma página segura. Escolha uma nova senha forte que você consiga memorizar facilmente.
+            </p>
+            <p class="edu-paragraph">
+                Após confirmar a nova senha, você já poderá realizar o login normalmente utilizando suas novas credenciais de acesso.
+            </p>
 
-                <section id="solicitacao" class="article-section">
-                    <h2 class="article-section__header">Iniciando a Recuperação</h2>
-                    <p class="article-section__description">
-                        Na página principal de login do EduAloca, logo abaixo dos campos de e-mail e senha, você encontrará o link "Esqueci minha senha". Ao clicar nele, você será direcionado para uma tela que solicitará o seu e-mail institucional cadastrado na base de dados.
-                    </p>
-                    <p class="article-section__description">
-                        Após informar o e-mail e clicar em "Enviar Instruções", o sistema verificará se o endereço existe em nossa base. Por motivos de segurança, o portal exibirá uma mensagem genérica de sucesso, mesmo que o e-mail não tenha sido encontrado, para evitar a varredura ilegal de perfis ativos.
-                    </p>
-                </section>
+          
 
-                <section id="fluxo-email" class="article-section">
-                    <h2 class="article-section__header">Verificação Institucional</h2>
-                    <p class="article-section__description">
-                        Dentro de alguns minutos, você receberá um e-mail com o assunto "Recuperação de Acesso - EduAloca". Este e-mail contém um botão seguro que o levará diretamente para a página de criação de nova senha. Certifique-se de verificar sua pasta de "Spam" ou "Lixo Eletrônico" caso a mensagem não apareça na sua caixa de entrada principal.
-                    </p>
-                </section>
+                
+                    </main>
 
-                <section id="suporte" class="article-section">
-                    <h2 class="article-section__header">Suporte Técnico Local</h2>
-                    <p class="article-section__description">
-                        Caso você não tenha mais acesso ao seu e-mail institucional ou não consiga completar o processo automático, entre em contato com a equipe de TI da sua unidade. Apenas administradores locais podem realizar o reset manual de credenciais e a verificação presencial de identidade para restaurar o seu acesso à plataforma.
-                    </p>
-                </section>
-            </div>
-        </main>
+        <aside class="edu-sidebar-right">
+            <ul class="edu-toc-list"></ul>
+            
+            </aside>
     </div>
-    <script src="../../src/Shared/Utils/search.utils.js"></script>
-    <script src="../../src/app/main.controller.js"></script>
+    <script src="../../src/app/sidebar.controller.js"></script>
 </body>
 
 </html>

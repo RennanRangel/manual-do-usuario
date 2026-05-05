@@ -4,115 +4,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EduAloca | Como gerar alocação de docentes?</title>
-    
-    <link rel='stylesheet' href='../../CSS/Global/style.css'>
-    <link rel='icon' type='image/png' href='../../Assets/IMG/Blue_and_White_Modern_Artificial_Intelligence_Logo.png'>
+    <title>EduAloca | Alocação de Docentes</title>
+    <link rel="stylesheet" href="../../CSS/Global/style.css">
     <link rel="stylesheet" href="../../CSS/Modules/alocacao.css">
-    <link rel="stylesheet" href="../../CSS/Modules/search-dropdown.css">
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="../../CSS/Modules/header.css">
+    <link rel="stylesheet" href="../../CSS/Modules/sidebar.css">
 </head>
 
-<body>
-    <header class="app-header">
-        <a href="../Home/home.html" class="header-left">
-            <img src="../../Assets/IMG/Blue_and_White_Modern_Artificial_Intelligence_Logo.png"
-                    alt="EduAloca Logo"><span class="logo-text">EduAloca</span>
-            
-        </a>
+<body class="edu-theme">
+        <header class="edu-header">
+        <div class="edu-header-container">
+            <a href="../Home/home.html" class="edu-header-brand">
+                <img src="../../Assets/IMG/Blue_and_White_Modern_Artificial_Intelligence_Logo.png" alt="EduAloca Logo" class="edu-header-logo">
+                <span class="edu-header-title">EduAloca</span>
+            </a>
+            </div>
+        </div>
     </header>
-    <div class="article-wrapper">
-        <aside class="sidebar-section">
-            <h3>Artigos nesta Seção</h3>
-            <ul class="sidebar-list">
-                <li class="sidebar-item">
-                    <a href="gerenciar-dias-nao-letivos.html" class="sidebar-link">Como gerenciar dias não letivos?</a>
-                </li>
-                <li class="sidebar-item">
-                    <a href="geracao-alocacao.html" class="sidebar-link">Como gerar alocação no calendário?</a>
-                </li>
-                <li class="sidebar-item">
-                    <a href="alocacao-docentes.html" class="sidebar-link active">Como gerar alocação de docentes?</a>
-                </li>
-                <li class="sidebar-item">
-                    <a href="alocacao-salas.html" class="sidebar-link">Como gerar alocação de salas?</a>
-                </li>
-                <li class="sidebar-item">
-                    <a href="ajustar-alocacao.html" class="sidebar-link">Como ajustar alocação?</a>
-                </li>
-                <li class="sidebar-item">
-                    <a href="visualizar-alocacao.html" class="sidebar-link">Como visualizar alocação?</a>
-                </li>
-            </ul>
-            <a href="alocacao.html" class="sidebar-see-more">Ver mais</a>
+
+    <div class="edu-layout">
+        <aside class="edu-sidebar-left">
+            <nav class="edu-nav">
+                <div class="edu-nav-title">PRIMEIROS PASSOS</div>
+                <ul class="edu-nav-list">
+                    <li class="edu-nav-item"><a href="../Home/home.html" class="edu-nav-link ">Introdução</a></li>
+                </ul>
+
+                <div class="edu-nav-title">MÓDULOS</div>
+                <ul class="edu-nav-list">
+                    <li class="edu-nav-item ">
+                        <a href="../Auth/autenticacao.html" class="edu-nav-link " onclick="alternarNavegacao(event, this)">Autenticação <img src="../../Assets/IMG/seta-direita.png" alt="seta"></a>
+                        <ul class="edu-nav-sublist">
+                            <li class="edu-nav-subitem"><a href="../Auth/credenciais-sistema.html" class="edu-nav-sublink ">Como fazer Login</a></li>
+                            <li class="edu-nav-subitem"><a href="../Auth/recuperacao-senha.html" class="edu-nav-sublink ">Como redefinir a senha</a></li>
+                        </ul>
+                    </li>
+                    <li class="edu-nav-item ">
+                        <a href="../Gerenciamento/gerenciamento.html" class="edu-nav-link " onclick="alternarNavegacao(event, this)">Gerenciamento <img src="../../Assets/IMG/seta-direita.png" alt="seta"></a>
+                        <ul class="edu-nav-sublist">
+                            <li class="edu-nav-subitem"><a href="../Gerenciamento/cadastro.html" class="edu-nav-sublink ">Cadastro de Dados</a></li>
+                            <li class="edu-nav-subitem"><a href="../Gerenciamento/atualizacao.html" class="edu-nav-sublink ">Atualização</a></li>
+                            <li class="edu-nav-subitem"><a href="../Gerenciamento/exclusao.html" class="edu-nav-sublink ">Exclusão</a></li>
+                            <li class="edu-nav-subitem"><a href="../Gerenciamento/consulta-filtro.html" class="edu-nav-sublink ">Consultas e Filtros</a></li>
+                        </ul>
+                    </li>
+                    <li class="edu-nav-item open">
+                        <a href="../Alocacao/alocacao.html" class="edu-nav-link " onclick="alternarNavegacao(event, this)">Alocação <img src="../../Assets/IMG/seta-direita.png" alt="seta"></a>
+                        <ul class="edu-nav-sublist">
+                            <li class="edu-nav-subitem"><a href="../Alocacao/geracao-alocacao.html" class="edu-nav-sublink ">Geração de Alocação</a></li>
+                            <li class="edu-nav-subitem"><a href="../Alocacao/alocacao-docentes.html" class="edu-nav-sublink active">Alocação de Docentes</a></li>
+                            <li class="edu-nav-subitem"><a href="../Alocacao/alocacao-salas.html" class="edu-nav-sublink ">Alocação de Salas</a></li>
+                            <li class="edu-nav-subitem"><a href="../Alocacao/ajustar-alocacao.html" class="edu-nav-sublink ">Ajustes Manuais</a></li>
+                            <li class="edu-nav-subitem"><a href="../Alocacao/gerenciar-dias-nao-letivos.html" class="edu-nav-sublink ">Dias não Letivos</a></li>
+                            <li class="edu-nav-subitem"><a href="../Alocacao/visualizar-alocacao.html" class="edu-nav-sublink ">Visualizar Grade</a></li>
+                        </ul>
+                    </li>
+                    <li class="edu-nav-item ">
+                        <a href="../Relatorios/relatorios.html" class="edu-nav-link " onclick="alternarNavegacao(event, this)">Relatórios <img src="../../Assets/IMG/seta-direita.png" alt="seta"></a>
+                        <ul class="edu-nav-sublist">
+                            <li class="edu-nav-subitem"><a href="../Relatorios/gerar-relatorios.html" class="edu-nav-sublink ">Geração de Relatórios</a></li>
+                            <li class="edu-nav-subitem"><a href="../Relatorios/exportar-relatorios.html" class="edu-nav-sublink ">Exportação</a></li>
+                        </ul>
+                    </li>
+                    <li class="edu-nav-item ">
+                        <a href="../FAQ/faq.html" class="edu-nav-link " onclick="alternarNavegacao(event, this)">FAQ <img src="../../Assets/IMG/seta-direita.png" alt="seta"></a>
+                        <ul class="edu-nav-sublist">
+                            <li class="edu-nav-subitem"><a href="../FAQ/faq-videos.html" class="edu-nav-sublink ">Vídeos Tutoriais</a></li>
+                            <li class="edu-nav-subitem"><a href="../FAQ/faq-visualizar.html" class="edu-nav-sublink ">Visualizar FAQ</a></li>
+                            <li class="edu-nav-subitem"><a href="../FAQ/faq-enviar-duvidas.html" class="edu-nav-sublink ">Enviar Dúvidas</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
         </aside>
-        <main class="main-content">
-            <div class="content-top">
-                <nav class="breadcrumb">
-                    <a href="../Home/home.html">EduAloca</a>
-                    <span class="breadcrumb-sep">></span>
-                    <a href="alocacao.html">Alocação</a>
-                    <span class="breadcrumb-sep">></span>
-                    <span>Como gerar alocação de docentes?</span>
-                </nav>
-                <div class="search-mini">
-                    <i data-lucide="search"></i>
-                    <input type="text" placeholder="Pesquisar">
+
+        <main class="edu-main-content">
+            <h1 class="edu-title">Alocação de Docentes</h1>
+            <p class="edu-last-updated">Última atualização 29 de abril de 2026</p>
+            <hr>
+
+            <div class="edu-intro">
+                O EduAloca gerencia a atribuição de professores de forma inteligente, garantindo que cada disciplina seja ministrada pelo profissional mais adequado e disponível.
+            </div>
+
+            <h2 class="edu-section-title">Critérios de Atribuição</h2>
+            <p class="edu-paragraph">
+                O sistema prioriza a especialidade do docente. Ao cruzar os dados do perfil do professor com as necessidades da turma, o EduAloca garante que as aulas sejam atribuídas aos profissionais que possuem domínio sobre o tema específico.
+            </p>
+
+            <h2 class="edu-section-title">Respeito à Disponibilidade</h2>
+            <p class="edu-paragraph">
+                Antes de gerar a grade, o sistema verifica as limitações cadastradas para cada professor, como dias de folga, preferências de turno e limites de carga horária diária. Isso evita conflitos de horários inviáveis ou que o docente exceda sua jornada de trabalho.
+            </p>
+
+            <h2 class="edu-section-title">Otimização de Janelas</h2>
+            <p class="edu-paragraph">
+                O sistema busca minimizar os horários vagos (janelas) entre as aulas de um mesmo professor. Ao agrupar os blocos de aula de forma contínua, o EduAloca zela pela produtividade e pelo bem-estar da equipe docente.
+            </p>
+
+            
+
+                
+                    </main>
+
+        <aside class="edu-sidebar-right">
+            <ul class="edu-toc-list"></ul>
+            
+            <div id="sidebar-feedback">
+                <div class="edu-feedback-body">
+                    <textarea class="edu-feedback-textarea" placeholder="Seu feedback..."></textarea>
+                    
+                </div>
+                <div class="edu-feedback-bar">
+                    <div class="sidebar-feedback-emojis">
+                        <i data-lucide="frown" class="edu-emoji-btn"></i>
+                        <i data-lucide="meh" class="edu-emoji-btn"></i>
+                        <i data-lucide="smile" class="edu-emoji-btn"></i>
+                        <i data-lucide="laugh" class="edu-emoji-btn"></i>
+                    </div>
+                    <button class="edu-feedback-send">Enviar</button>
+                </div>
+                <div class="feedback-success-msg">
+                    <div class="edu-feedback-check"><i data-lucide="check"></i></div>
+                    <h3>Feedback enviado!</h3>
                 </div>
             </div>
-            <article class="article-header">
-                <h1 class="article-title">
-                    Como gerar alocação de docentes?
-                </h1>
-            </article>
-            <div class="article-body">
-                <div class="info-banner">
-                    <i data-lucide="info"></i>
-                    <span>Entenda como o algoritmo distribui as turmas entre os professores respeitando restrições de carga horária e de disponibilidade.</span>
-                </div>
-
-                <section class="topics-banner">
-                    <h2 class="topics-banner__title">O que este artigo aborda:</h2>
-                    <ul class="topics-banner__list">
-                        <li class="topics-banner__item">
-                            <a href="#criterios" class="topics-banner__link">Critérios de atribuição</a>
-                        </li>
-                        <li class="topics-banner__item">
-                            <a href="#restricoes" class="topics-banner__link">Gestão de restrições de horário</a>
-                        </li>
-                        <li class="topics-banner__item">
-                            <a href="#otimizacao" class="topics-banner__link">Otimização e agrupamento de aulas</a>
-                        </li>
-                    </ul>
-                </section>
-
-                <hr style="margin: 60px 0; border: 0; border-top: 1px solid #d1d4d7;">
-
-                <section id="criterios" class="article-section">
-                    <h2 class="article-section__header">Critérios de Atribuição</h2>
-                    <p class="article-section__description">
-                        A alocação de docentes no EduAloca prioriza a aderência entre a especialidade do professor e a unidade curricular exigida pela turma. O sistema cruza os dados do perfil do docente com a matriz do curso para garantir que as disciplinas sejam ministradas pelos profissionais mais qualificados e disponíveis no momento.
-                    </p>
-                </section>
-
-                <section id="restricoes" class="article-section">
-                    <h2 class="article-section__header">Restrições de Horário</h2>
-                    <p class="article-section__description">
-                        Antes da geração automática da grade, o sistema lê as limitações e preferências cadastradas para cada docente. Isso inclui dias de folga, limites de carga horária diária e o tipo de vínculo empregatício. Esses parâmetros rígidos impedem que um professor seja escalado em horários inviáveis, evitando conflitos com outras instituições ou superlotação de carga.
-                    </p>
-                </section>
-
-                <section id="otimizacao" class="article-section">
-                    <h2 class="article-section__header">Otimização de Janelas</h2>
-                    <p class="article-section__description">
-                        O algoritmo não apenas distribui as aulas, mas busca minimizar os horários vagos (janelas) entre os turnos de um mesmo professor. Isso resulta em uma grade docente consolidada, que zela pelo bem-estar da equipe pedagógica ao agrupar os blocos de aula de forma contínua e inteligente.
-                    </p>
-                </section>
-            </div>
-        </main>
+        </aside>
     </div>
-    <script src="../../src/Shared/Utils/search.utils.js"></script>
-    <script src="../../src/app/main.controller.js"></script>
+    <script src="../../src/app/sidebar.controller.js"></script>
 </body>
 
 </html>

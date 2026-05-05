@@ -4,125 +4,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EduAloca | Gerenciar Dias Não Letivos</title>
-
-    <link rel='stylesheet' href='../../CSS/Global/style.css'>
-    <link rel='icon' type='image/png' href='../../Assets/IMG/Blue_and_White_Modern_Artificial_Intelligence_Logo.png'>
+    <title>EduAloca | Dias não Letivos</title>
+    <link rel="stylesheet" href="../../CSS/Global/style.css">
     <link rel="stylesheet" href="../../CSS/Modules/alocacao.css">
-    <link rel="stylesheet" href="../../CSS/Modules/search-dropdown.css">
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="../../CSS/Modules/header.css">
+    <link rel="stylesheet" href="../../CSS/Modules/sidebar.css">
 </head>
 
-<body>
-    <header class="app-header">
-        <a href="../Home/home.html" class="header-left">
-            <img src="../../Assets/IMG/Blue_and_White_Modern_Artificial_Intelligence_Logo.png" alt="EduAloca Logo">
-            <span class="logo-text">EduAloca</span>
-        </a>
+<body class="edu-theme">
+        <header class="edu-header">
+        <div class="edu-header-container">
+            <a href="../Home/home.html" class="edu-header-brand">
+                <img src="../../Assets/IMG/Blue_and_White_Modern_Artificial_Intelligence_Logo.png" alt="EduAloca Logo" class="edu-header-logo">
+                <span class="edu-header-title">EduAloca</span>
+            </a>
+            </div>
+        </div>
     </header>
 
-    <div class="article-wrapper">
-        <aside class="sidebar-section">
-            <h3>Artigos nesta Seção</h3>
-            <ul class="sidebar-list">
-                <li class="sidebar-item">
-                    <a href="gerenciar-dias-nao-letivos.html" class="sidebar-link active">Como gerenciar dias não letivos?</a>
-                </li>
-                <li class="sidebar-item">
-                    <a href="geracao-alocacao.html" class="sidebar-link">Como gerar alocação no calendário?</a>
-                </li>
-                <li class="sidebar-item">
-                    <a href="alocacao-docentes.html" class="sidebar-link">Como gerar alocação de docentes?</a>
-                </li>
-                <li class="sidebar-item">
-                    <a href="alocacao-salas.html" class="sidebar-link">Como gerar alocação de salas?</a>
-                </li>
-                <li class="sidebar-item">
-                    <a href="ajustar-alocacao.html" class="sidebar-link">Como ajustar alocação?</a>
-                </li>
-                <li class="sidebar-item">
-                    <a href="visualizar-alocacao.html" class="sidebar-link">Como visualizar alocação?</a>
-                </li>
-            </ul>
-            <a href="alocacao.html" class="sidebar-see-more">Ver mais</a>
+    <div class="edu-layout">
+        <aside class="edu-sidebar-left">
+            
+            <nav class="edu-nav">
+                <div class="edu-nav-title">PRIMEIROS PASSOS</div>
+                <ul class="edu-nav-list">
+                    <li class="edu-nav-item"><a href="../Home/home.html" class="edu-nav-link ">Introdução</a></li>
+                </ul>
+
+                <div class="edu-nav-title">MÓDULOS</div>
+                <ul class="edu-nav-list">
+                    <li class="edu-nav-item ">
+                        <a href="../Auth/autenticacao.html" class="edu-nav-link " onclick="alternarNavegacao(event, this)">Autenticação <img src="../../Assets/IMG/seta-direita.png" alt="seta"></a>
+                        <ul class="edu-nav-sublist">
+                            <li class="edu-nav-subitem"><a href="../Auth/credenciais-sistema.html" class="edu-nav-sublink ">Como fazer Login</a></li>
+                            <li class="edu-nav-subitem"><a href="../Auth/recuperacao-senha.html" class="edu-nav-sublink ">Como redefinir a senha</a></li>
+                        </ul>
+                    </li>
+                    <li class="edu-nav-item ">
+                        <a href="../Gerenciamento/gerenciamento.html" class="edu-nav-link " onclick="alternarNavegacao(event, this)">Gerenciamento <img src="../../Assets/IMG/seta-direita.png" alt="seta"></a>
+                        <ul class="edu-nav-sublist">
+                            <li class="edu-nav-subitem"><a href="../Gerenciamento/cadastro.html" class="edu-nav-sublink ">Cadastro de Dados</a></li>
+                            <li class="edu-nav-subitem"><a href="../Gerenciamento/atualizacao.html" class="edu-nav-sublink ">Atualização</a></li>
+                            <li class="edu-nav-subitem"><a href="../Gerenciamento/exclusao.html" class="edu-nav-sublink ">Exclusão</a></li>
+                            <li class="edu-nav-subitem"><a href="../Gerenciamento/consulta-filtro.html" class="edu-nav-sublink ">Consultas e Filtros</a></li>
+                        </ul>
+                    </li>
+                    <li class="edu-nav-item open">
+                        <a href="../Alocacao/alocacao.html" class="edu-nav-link " onclick="alternarNavegacao(event, this)">Alocação <img src="../../Assets/IMG/seta-direita.png" alt="seta"></a>
+                        <ul class="edu-nav-sublist">
+                            <li class="edu-nav-subitem"><a href="../Alocacao/geracao-alocacao.html" class="edu-nav-sublink ">Geração de Alocação</a></li>
+                            <li class="edu-nav-subitem"><a href="../Alocacao/alocacao-docentes.html" class="edu-nav-sublink ">Alocação de Docentes</a></li>
+                            <li class="edu-nav-subitem"><a href="../Alocacao/alocacao-salas.html" class="edu-nav-sublink ">Alocação de Salas</a></li>
+                            <li class="edu-nav-subitem"><a href="../Alocacao/ajustar-alocacao.html" class="edu-nav-sublink ">Ajustes Manuais</a></li>
+                            <li class="edu-nav-subitem"><a href="../Alocacao/gerenciar-dias-nao-letivos.html" class="edu-nav-sublink active">Dias não Letivos</a></li>
+                            <li class="edu-nav-subitem"><a href="../Alocacao/visualizar-alocacao.html" class="edu-nav-sublink ">Visualizar Grade</a></li>
+                        </ul>
+                    </li>
+                    <li class="edu-nav-item ">
+                        <a href="../Relatorios/relatorios.html" class="edu-nav-link " onclick="alternarNavegacao(event, this)">Relatórios <img src="../../Assets/IMG/seta-direita.png" alt="seta"></a>
+                        <ul class="edu-nav-sublist">
+                            <li class="edu-nav-subitem"><a href="../Relatorios/gerar-relatorios.html" class="edu-nav-sublink ">Geração de Relatórios</a></li>
+                            <li class="edu-nav-subitem"><a href="../Relatorios/exportar-relatorios.html" class="edu-nav-sublink ">Exportação</a></li>
+                        </ul>
+                    </li>
+                    <li class="edu-nav-item ">
+                        <a href="../FAQ/faq.html" class="edu-nav-link " onclick="alternarNavegacao(event, this)">FAQ <img src="../../Assets/IMG/seta-direita.png" alt="seta"></a>
+                        
+                        <ul class="edu-nav-sublist">
+                            <li class="edu-nav-subitem"><a href="../FAQ/faq-visualizar.html" class="edu-nav-sublink ">Dúvidas Frequentes</a></li>
+                            <li class="edu-nav-subitem"><a href="../FAQ/faq-videos.html" class="edu-nav-sublink ">Vídeos Tutoriais</a></li>
+                            <li class="edu-nav-subitem"><a href="../FAQ/faq-enviar-duvidas.html" class="edu-nav-sublink ">Enviar Dúvidas</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
         </aside>
 
-        <main class="main-content">
-            <div class="content-top">
-                <nav class="breadcrumb">
-                    <a href="../Home/home.html">EduAloca</a>
-                    <span class="breadcrumb-sep">></span>
-                    <a href="alocacao.html">Alocação</a>
-                    <span class="breadcrumb-sep">></span>
-                    <span>Como gerenciar dias não letivos?</span>
-                </nav>
-                <div class="search-mini">
-                    <i data-lucide="search"></i>
-                    <input type="text" placeholder="Pesquisar">
-                </div>
+        <main class="edu-main-content">
+            <h1 class="edu-title">Dias não Letivos</h1>
+            <p class="edu-last-updated">Última atualização 29 de abril de 2026</p>
+            <hr>
+
+            <div class="edu-intro">
+                Configure feriados, recessos e eventos institucionais para garantir que o sistema não aloque aulas em datas em que a unidade estará fechada ou ocupada com outras atividades administrativas.
             </div>
 
-            <article class="article-header">
-                <h1 class="article-title">GERENCIAR DIAS NÃO LETIVOS</h1>
-            </article>
+            <h2 class="edu-section-title">Como bloquear datas</h2>
+            <p class="edu-paragraph">
+                No módulo de Alocação, acesse a opção de <strong>Calendário</strong>. Lá você poderá selecionar dias específicos ou períodos inteiros para marcar como "Indisponíveis". Uma vez confirmado, o sistema trava essas datas para qualquer tipo de alocação de aula.
+            </p>
 
-            <div class="article-body">
-                <div class="info-banner">
-                    <i data-lucide="info"></i>
-                    <span>O bloqueio de calendário impede que o sistema aloque turmas em datas de feriados, recessos ou eventos institucionais.</span>
-                </div>
+            <h2 class="edu-section-title">Categorias de bloqueio</h2>
+            <p class="edu-paragraph">
+                 É importante classificar o motivo do bloqueio para manter a organização pedagógica:
+            </p>
+            <ul class="edu-paragraph" style="list-style: disc; padding-left: 24px;">
+                <li><strong>Feriados:</strong> Bloqueios totais que afetam todos os cursos e salas.</li>
+                <li><strong>Recessos:</strong> Períodos planejados sem aulas, como férias coletivas.</li>
+                <li><strong>Eventos:</strong> Reuniões ou treinamentos que podem afetar apenas alguns professores ou ambientes.</li>
+            </ul>
 
-                <section class="topics-banner">
-                    <h2 class="topics-banner__title">O que este artigo aborda:</h2>
-                    <ul class="topics-banner__list">
-                        <li class="topics-banner__item">
-                            <a href="#fluxo" class="topics-banner__link">Fluxo de bloqueio de datas</a>
-                        </li>
-                        <li class="topics-banner__item">
-                            <a href="#tipos" class="topics-banner__link">Tipos de interrupção (Feriados vs. Recessos)</a>
-                        </li>
-                        <li class="topics-banner__item">
-                            <a href="#impacto" class="topics-banner__link">Impacto automático na grade horária</a>
-                        </li>
-                    </ul>
-                </section>
+            <h2 class="edu-section-title">Impacto na Grade</h2>
+            <p class="edu-paragraph">
+                O EduAloca é inteligente: se um feriado cai em um dia de aula, o sistema <strong>estende automaticamente</strong> o término daquela disciplina para o próximo dia útil disponível. Isso garante que a carga horária total do curso seja sempre cumprida, sem que você precise fazer cálculos manuais.
+            </p>
 
-                <hr style="margin: 60px 0; border: 0; border-top: 1px solid #d1d4d7;">
+            
 
-                <section id="fluxo" class="article-section">
-                    <h2 class="article-section__header">Fluxo de Bloqueio</h2>
-                    <p class="article-section__description">
-                        Para gerenciar os dias não letivos, acesse o módulo de **Alocação** e selecione a opção **"Calendário de Exceções"**. Nesta interface, você poderá selecionar datas individuais ou intervalos prolongados para serem marcados como "Indisponíveis". 
-                    </p>
-                    <p class="article-section__description">
-                        Ao confirmar um bloqueio, o EduAloca recalcula instantaneamente as janelas de disponibilidade de todos os docentes e ambientes físicos associados àquela unidade, garantindo que nenhum conflito seja gerado.
-                    </p>
-                </section>
+                
+                    </main>
 
-                <section id="tipos" class="article-section">
-                    <h2 class="article-section__header">Categorias de Interrupção</h2>
-                    <p class="article-section__description">
-                        É importante categorizar corretamente cada dia não letivo para fins de relatórios e auditoria pedagógica:
-                    </p>
-                    <ul style="list-style: disc; padding-left: 20px; color: #313338; line-height: 1.6; margin-bottom: 24px;">
-                        <li><strong>Feriados Nacionais/Regionais:</strong> Bloqueios totais que afetam toda a instituição.</li>
-                        <li><strong>Recessos Escolares:</strong> Períodos planejados onde não há aulas, mas pode haver atividades administrativas.</li>
-                        <li><strong>Eventos Administrativos:</strong> Reuniões de conselho ou treinamentos que afetam apenas docentes específicos.</li>
-                    </ul>
-                </section>
-
-                <section id="impacto" class="article-section">
-                    <h2 class="article-section__header">Impacto na Alocação</h2>
-                    <p class="article-section__description">
-                        O algoritmo de alocação inteligente utiliza os dias não letivos como "filtros rígidos". Se uma disciplina possui carga horária de 40 horas e um feriado cai em uma de suas aulas, o sistema **estenderá automaticamente** o término da unidade curricular para o próximo dia letivo disponível, preservando a carga horária total contratada.
-                    </p>
-                </section>
-            </div>
-        </main>
+        <aside class="edu-sidebar-right">
+            <ul class="edu-toc-list"></ul>
+            
+            </aside>
     </div>
-
-    <script src="../../src/Shared/Utils/search.utils.js"></script>
-    <script src="../../src/app/main.controller.js"></script>
+    <script src="../../src/app/sidebar.controller.js"></script>
 </body>
 
 </html>
