@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EduAloca - Salas</title>
+    <link rel="stylesheet" href="../../CSS/global/fonts.css" />
+    <link rel="stylesheet" href="../../CSS/global/typography.css" />
+    <link rel="stylesheet" href="../../CSS/navbar.css" />
+    <link rel="stylesheet" href="../../CSS/sidebar.css" />
+    <link rel="stylesheet" href="../../CSS/modules/manual.css" />
+  </head>
+  <body>
+    <header class="docs-topbar">
+      <button
+        class="menu-button"
+        type="button"
+        aria-label="Abrir menu"
+        aria-expanded="true"
+      >
+        <img src="../../Assets/IMG/menu.png" alt="" width="28" height="28" />
+      </button>
+
+      <a class="EduAloca" href="#" aria-label="EduAloca">
+        <img
+          src="../../Assets/IMG/Blue_and_White_Modern_Artificial_Intelligence_Logo.png"
+          alt="Logo"
+        />
+      </a>
+    </header>
+
+    <div class="page-shell">
+      <aside class="sidebar" aria-label="Menu da documentação">
+        <nav>
+          <ul class="sidebar-list">
+            <li>
+              <a class="section-link" href="../home/home.html">Introdução</a>
+            </li>
+
+            <li class="sidebar-group">
+              <button
+                class="sidebar-toggle"
+                type="button"
+                aria-expanded="false"
+              >
+                Autenticação
+              </button>
+              <ul class="sidebar-submenu">
+                <li>
+                  <a href="../autenticacao/login.html">Como Fazer Login</a>
+                </li>
+                <li>
+                  <a href="../autenticacao/recuperar-senha.html"
+                    >Como Recuperar a Senha</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="sidebar-group">
+              <button
+                class="sidebar-toggle"
+                type="button"
+                aria-expanded="false"
+              >
+                Gerenciamento de Informações
+              </button>
+              <ul class="sidebar-submenu">
+                <li><a href="../Gerenciamento/docente.html">Docentes</a></li>
+                <li>
+                  <a href="../Gerenciamento/disciplinas.html">Disciplinas</a>
+                </li>
+                <li><a href="../Gerenciamento/turmas.html">Turmas</a></li>
+                <li><a href="../Gerenciamento/cursos.html">Cursos</a></li>
+                <li><a href="../Gerenciamento/salas.html">Salas</a></li>
+                <li><a href="../Gerenciamento/blocos.html">Blocos</a></li>
+                <li><a href="../Gerenciamento/areas.html">Áreas</a></li>
+                <li>
+                  <a href="../Gerenciamento/funcionarios.html">Funcionários</a>
+                </li>
+              </ul>
+            </li>
+            <li class="sidebar-group">
+              <button
+                class="sidebar-toggle"
+                type="button"
+                aria-expanded="false"
+              >
+                Alocação
+              </button>
+              <ul class="sidebar-submenu">
+                <li>
+                  <a href="../alocacao/alocacao-gerar.html"
+                    >Geração de Alocação</a
+                  >
+                </li>
+                <li>
+                  <a href="../alocacao/alocacao-docentes.html"
+                    >Alocação de Docentes</a
+                  >
+                </li>
+                <li>
+                  <a href="../alocacao/alocacao-salas.html"
+                    >Alocação de Salas</a
+                  >
+                </li>
+                <li>
+                  <a href="../alocacao/alocacao-ajustar.html"
+                    >Ajustes Manuais</a
+                  >
+                </li>
+                <li>
+                  <a href="../alocacao/dias-nao-letivos.html"
+                    >Dias não Letivos</a
+                  >
+                </li>
+                <li>
+                  <a href="../alocacao/alocacao-visualizar.html"
+                    >Visualizar Grade</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="sidebar-group">
+              <button
+                class="sidebar-toggle"
+                type="button"
+                aria-expanded="false"
+              >
+                Relatórios
+              </button>
+              <ul class="sidebar-submenu">
+                <li>
+                  <a href="../relatorios/gerar.html">Geração de Relatórios</a>
+                </li>
+                <li>
+                  <a href="../relatorios/exportar.html">Exportação de Dados</a>
+                </li>
+              </ul>
+            </li>
+            <li class="sidebar-group">
+              <button
+                class="sidebar-toggle"
+                type="button"
+                aria-expanded="false"
+              >
+                FAQ
+              </button>
+              <ul class="sidebar-submenu">
+                <li>
+                  <a href="../duvidas/perguntas-frequentes.html"
+                    >Dúvidas Frequentes</a
+                  >
+                </li>
+                <li><a href="../duvidas/videos.html">Vídeos Tutoriais</a></li>
+                <li>
+                  <a href="../duvidas/enviar-duvida.html">Enviar Dúvidas</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <div class="article-title">
+          <h1 id="gerenciamento-salas">Gerenciamento de Salas</h1>
+        </div>
+
+        <p>
+          O módulo de Gerenciamento de Salas do EduAloca centraliza o cadastro e
+          o controle físico de salas de aula comuns e laboratórios
+          especializados da unidade. O correto preenchimento deste cadastro
+          serve para que o motor de busca e alocação direcione as turmas aos
+          locais com a estrutura física adequada.
+        </p>
+
+        <h2 id="cadastrar-salas">Cadastrar Salas</h2>
+
+        <p>
+          O cadastro de salas de aula e laboratórios utiliza um formulário
+          detalhado para garantir a correta distribuição espacial da
+          instituição. Abaixo estão as categorias e os campos:
+        </p>
+
+        <ul>
+          <li>
+            Identificação e Localização: Define o
+            <strong>Código</strong> oficial do ambiente, o
+            <strong>Tipo</strong> de espaço (sala comum, laboratório, oficina),
+            e sua localização exata no campus (<strong>Bloco</strong>,
+            <strong>Andar</strong> e <strong>Local</strong>).
+          </li>
+          <li>
+            Infraestrutura: Configura a <strong>Capacidade</strong> máxima de
+            alunos, lista os <strong>Equipamentos</strong> disponíveis
+            (tecnológicos e pedagógicos) e indica se há
+            <strong>Acessibilidade</strong> arquitetônica.
+          </li>
+          <li>
+            Controle de Uso: Aponta o <strong>Status</strong> (ativo/inativo) e
+            disponibiliza o campo de <strong>Observação</strong> para
+            informações adicionais que auxiliem no planejamento.
+          </li>
+        </ul>
+
+        <div class="video-container">
+          <video controls>
+            <source
+              src="../../Assets/media/salas/Salas_Cadastrar.mp4"
+              type="video/mp4"
+            />
+            Seu navegador não suporta a reprodução de vídeos.
+          </video>
+          <p class="video-description">Vídeo Tutorial: Cadastrar Sala</p>
+        </div>
+
+        <h2 id="atualizar-salas">Editar Salas</h2>
+
+        <p>
+          A manutenção dos cadastros físicos é vital para garantir que o sistema
+          de alocação trabalhe de forma eficiente com as reais condições e
+          limitações da infraestrutura do campus.
+        </p>
+
+        <p>
+          Para editar as informações de um ambiente, localize a sala desejada na
+          listagem e clique no botão <strong>Editar</strong>. O sistema exibirá
+          imediatamente o formulário preenchido, permitindo que você altere
+          livremente detalhes como equipamentos disponíveis, status ou a
+          capacidade máxima do ambiente.
+        </p>
+
+        <p>
+          Após revisar e finalizar os ajustes, clique em
+          <strong>Salvar</strong>. As atualizações serão instantaneamente
+          consideradas pelo motor de inteligência do sistema nas próximas
+          gerações automáticas de horários.
+        </p>
+
+        <div class="video-container">
+          <video controls>
+            <source
+              src="../../Assets/media/salas/Salas_Atualizar.mp4"
+              type="video/mp4"
+            />
+            Seu navegador não suporta a reprodução de vídeos.
+          </video>
+          <p class="video-description">Vídeo Tutorial: Editar Sala</p>
+        </div>
+
+        <h2 id="excluir-salas">Excluir Salas</h2>
+
+        <p>
+          Caso uma sala de aula ou laboratório seja definitivamente desativado,
+          sofra interdições severas ou passe por reformas de longo prazo, ele
+          poderá ser removido do cadastro para evitar que o sistema realize
+          alocações indevidas.
+        </p>
+
+        <p>
+          Para efetuar a remoção de forma controlada, localize a respectiva sala
+          na tabela, clique no ícone de <strong>lápis</strong> para acessar a
+          edição e acione o botão de <strong>Excluir</strong>. Para assegurar a
+          integridade da base de dados, o sistema solicitará uma confirmação de
+          segurança, prevenindo exclusões acidentais de locais ainda em uso.
+        </p>
+
+        <div class="video-container">
+          <video controls>
+            <source
+              src="../../Assets/media/salas/Salas_Excluir.mp4"
+              type="video/mp4"
+            />
+            Seu navegador não suporta a reprodução de vídeos.
+          </video>
+          <p class="video-description">Vídeo Tutorial: Excluir Sala</p>
+        </div>
+
+        <h2 id="filtrar-salas">Filtrar Salas</h2>
+
+        <p>
+          Para navegar de forma ágil e otimizada por grandes volumes de
+          ambientes físicos, o painel do sistema dispõe de recursos de filtragem
+          e busca inteligente integrados.
+        </p>
+
+        <p>
+          Você pode buscar e isolar grupos específicos de salas cruzando
+          critérios dinâmicos, como o <strong>Código</strong> de identificação,
+          o <strong>Tipo</strong> de espaço (comum, laboratório), o
+          <strong>Bloco</strong> ou o <strong>Andar</strong>. Os resultados
+          serão processados e listados imediatamente na tela para facilitar sua
+          análise visual.
+        </p>
+      </main>
+
+      <aside class="indice-pagina" aria-label="Nesta pagina">
+        <nav>
+          <a class="active" href="#gerenciamento-salas">Visão Geral</a>
+          <a href="#cadastrar-salas">Cadastrar Salas</a>
+          <a href="#atualizar-salas">Editar Salas</a>
+          <a href="#excluir-salas">Excluir Salas</a>
+          <a href="#filtrar-salas">Filtrar Salas</a>
+        </nav>
+      </aside>
+    </div>
+
+    <script src="../../src/app/sidebar.controller.js"></script>
+  </body>
+</html>

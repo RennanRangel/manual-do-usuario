@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EduAloca</title>
+    <link rel="stylesheet" href="../../CSS/global/fonts.css" />
+    <link rel="stylesheet" href="../../CSS/global/typography.css" />
+    <link rel="stylesheet" href="../../CSS/navbar.css" />
+    <link rel="stylesheet" href="../../CSS/sidebar.css" />
+    <link rel="stylesheet" href="../../CSS/modules/manual.css" />
+  </head>
+  <body>
+    <header class="docs-topbar">
+      <button
+        class="menu-button"
+        type="button"
+        aria-label="Abrir menu"
+        aria-expanded="true"
+      >
+        <img src="../../Assets/IMG/menu.png" alt="" width="28" height="28" />
+      </button>
+
+      <a class="EduAloca" href="#" aria-label="EduAloca">
+        <img
+          src="../../Assets/IMG/Blue_and_White_Modern_Artificial_Intelligence_Logo.png"
+          alt="Logo"
+        />
+      </a>
+    </header>
+
+    <div class="page-shell">
+      <aside class="sidebar" aria-label="Menu da documentação">
+        <nav>
+          <ul class="sidebar-list">
+            <li>
+              <a class="section-link active" href="home.html">Introdução</a>
+            </li>
+
+            <li class="sidebar-group">
+              <button
+                class="sidebar-toggle"
+                type="button"
+                aria-expanded="false"
+              >
+                Autenticação
+              </button>
+              <ul class="sidebar-submenu">
+                <li>
+                  <a href="../autenticacao/login.html">Como Fazer Login</a>
+                </li>
+                <li>
+                  <a href="../autenticacao/recuperar-senha.html"
+                    >Como Recuperar a Senha</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="sidebar-group">
+              <button
+                class="sidebar-toggle"
+                type="button"
+                aria-expanded="false"
+              >
+                Gerenciamento de Informações
+              </button>
+              <ul class="sidebar-submenu">
+                <li><a href="../Gerenciamento/docente.html">Docentes</a></li>
+                <li>
+                  <a href="../Gerenciamento/disciplinas.html">Disciplinas</a>
+                </li>
+                <li><a href="../Gerenciamento/turmas.html">Turmas</a></li>
+                <li><a href="../Gerenciamento/cursos.html">Cursos</a></li>
+                <li><a href="../Gerenciamento/salas.html">Salas</a></li>
+                <li><a href="../Gerenciamento/blocos.html">Blocos</a></li>
+                <li><a href="../Gerenciamento/areas.html">Áreas</a></li>
+                <li>
+                  <a href="../Gerenciamento/funcionarios.html">Funcionários</a>
+                </li>
+              </ul>
+            </li>
+            <li class="sidebar-group">
+              <button
+                class="sidebar-toggle"
+                type="button"
+                aria-expanded="false"
+              >
+                Alocação
+              </button>
+              <ul class="sidebar-submenu">
+                <li>
+                  <a href="../alocacao/alocacao-gerar.html"
+                    >Geração de Alocação</a
+                  >
+                </li>
+                <li>
+                  <a href="../alocacao/alocacao-docentes.html"
+                    >Alocação de Docentes</a
+                  >
+                </li>
+                <li>
+                  <a href="../alocacao/alocacao-salas.html"
+                    >Alocação de Salas</a
+                  >
+                </li>
+                <li>
+                  <a href="../alocacao/alocacao-ajustar.html"
+                    >Ajustes Manuais</a
+                  >
+                </li>
+                <li>
+                  <a href="../alocacao/dias-nao-letivos.html"
+                    >Dias não Letivos</a
+                  >
+                </li>
+                <li>
+                  <a href="../alocacao/alocacao-visualizar.html"
+                    >Visualizar Grade</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="sidebar-group">
+              <button
+                class="sidebar-toggle"
+                type="button"
+                aria-expanded="false"
+              >
+                Relatórios
+              </button>
+              <ul class="sidebar-submenu">
+                <li>
+                  <a href="../relatorios/gerar.html">Geração de Relatórios</a>
+                </li>
+                <li>
+                  <a href="../relatorios/exportar.html">Exportação de Dados</a>
+                </li>
+              </ul>
+            </li>
+            <li class="sidebar-group">
+              <button
+                class="sidebar-toggle"
+                type="button"
+                aria-expanded="false"
+              >
+                FAQ
+              </button>
+              <ul class="sidebar-submenu">
+                <li>
+                  <a href="../duvidas/perguntas-frequentes.html"
+                    >Dúvidas Frequentes</a
+                  >
+                </li>
+                <li><a href="../duvidas/videos.html">Vídeos Tutoriais</a></li>
+                <li>
+                  <a href="../duvidas/enviar-duvida.html">Enviar Dúvidas</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <div class="article-title">
+          <h1 id="introduction">Introdução</h1>
+        </div>
+
+        <p>
+          O EduAloca é um sistema web desenvolvido para modernizar o
+          planejamento acadêmico do SENAI Bahia, especialmente nos processos de
+          organização de grades horárias, alocação de docentes, distribuição de
+          turmas e gerenciamento de salas e laboratórios.
+        </p>
+
+        <p>
+          O projeto nasce da necessidade de substituir o uso de múltiplas
+          planilhas eletrônicas e conferências manuais por uma solução digital
+          integrada, capaz de reduzir erros humanos, evitar conflitos de
+          horários, controlar a carga horária docente e melhorar a utilização
+          dos espaços físicos da instituição.
+        </p>
+
+        <p>
+          A proposta do sistema está diretamente relacionada aos desafios
+          enfrentados pela gestão educacional no cenário atual. A montagem
+          manual de horários exige a análise simultânea de diversas variáveis,
+          como disponibilidade dos professores, compatibilidade entre docentes e
+          disciplinas, capacidade dos ambientes, turnos de aula e limites de
+          carga horária. Quando esse processo é realizado de forma
+          descentralizada, o risco de inconsistências aumenta e o tempo de
+          planejamento se torna excessivo.
+        </p>
+
+        <h2 id="visao-geral">Visão Geral</h2>
+
+        <p>
+          Nesse contexto, o EduAloca atua como uma ferramenta de apoio à tomada
+          de decisão. O sistema centraliza informações acadêmicas em uma única
+          base de dados, permitindo que docentes, turmas, disciplinas e espaços
+          físicos sejam gerenciados de maneira organizada. Além disso, suas
+          validações automáticas ajudam a impedir alocações inválidas antes que
+          elas sejam consolidadas, reduzindo retrabalho e melhorando a
+          confiabilidade da grade horária.
+        </p>
+
+        <p>
+          Com uma estrutura modular e foco na validação automática de regras
+          institucionais, o EduAloca busca oferecer mais agilidade, precisão e
+          rastreabilidade à coordenação pedagógica. A solução foi pensada para
+          apoiar desde o cadastro das informações básicas até a análise dos
+          conflitos encontrados durante o planejamento.
+        </p>
+
+        <h2 id="funcionalidades">Funcionalidades</h2>
+
+        <p>
+          Entre suas principais funcionalidades, o EduAloca oferece o cadastro
+          centralizado de docentes, disciplinas, turmas, salas e laboratórios,
+          além da validação de conflitos de horário antes da consolidação da
+          grade. O sistema também auxilia no controle da disponibilidade e da
+          carga horária dos docentes, na organização da ocupação dos espaços
+          físicos e na geração de relatórios gerenciais para acompanhamento do
+          planejamento acadêmico.
+        </p>
+
+        <h2 id="impacto">Impacto Esperado</h2>
+
+        <p>
+          Outro ponto importante do projeto é a preocupação com a transparência
+          e a rastreabilidade. Ao registrar alterações e permitir consultas mais
+          claras sobre a ocupação de salas, a escala dos docentes e a
+          distribuição das aulas, o EduAloca fortalece o controle institucional
+          e facilita o acompanhamento das decisões tomadas pela equipe
+          pedagógica.
+        </p>
+
+        <p>
+          Assim, o EduAloca não se limita a automatizar uma tarefa operacional.
+          A solução busca promover uma transformação no modo como o planejamento
+          acadêmico é realizado, liberando coordenadores de atividades
+          repetitivas e permitindo maior dedicação a ações estratégicas, como
+          melhoria dos cursos, acompanhamento dos alunos e aperfeiçoamento
+          contínuo da qualidade educacional.
+        </p>
+      </main>
+
+      <aside class="indice-pagina" aria-label="Nesta pagina">
+        <nav>
+          <a class="active" href="#introduction">Introdução</a>
+          <a href="#visao-geral">Visão Geral</a>
+          <a href="#funcionalidades">Funcionalidades</a>
+          <a href="#impacto">Impacto</a>
+        </nav>
+      </aside>
+    </div>
+
+    <script src="../../src/app/sidebar.controller.js"></script>
+  </body>
+</html>

@@ -1,0 +1,153 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --c-accent: #234ce0;
+  --c-bg: #ffffff;
+  --c-text: #2d2d2d;
+  --c-text-muted: #666666;
+  --c-link: #e0234e;
+  --c-hover-blue: #2563eb;
+  --c-heading: #111111;
+  --c-indice-link: #888888;
+
+  --indice-pagina-w: 200px;
+  --font-prose: var(--font-site);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-prose);
+  font-size: 15.5px;
+  line-height: 1.75;
+  color: var(--c-text);
+  background: var(--c-bg);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+img,
+svg {
+  display: block;
+}
+
+.content {
+  align-self: start;
+  padding: 44px 56px 24px 104px;
+  max-width: 1180px;
+}
+
+.content h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--c-heading);
+  margin: 118px 0 22px;
+  letter-spacing: -0.005em;
+  scroll-margin-top: 96px;
+}
+
+.content a {
+  color: var(--c-link);
+  transition: opacity 0.15s;
+}
+
+.content a:hover {
+  text-decoration: underline;
+}
+
+.content strong {
+  font-weight: 700;
+}
+
+/* Índice da página (coluna direita) */
+.indice-pagina {
+  position: sticky;
+  top: var(--topbar-h);
+  height: calc(100vh - var(--topbar-h));
+  overflow-y: auto;
+  padding: 44px 20px 48px;
+  scrollbar-width: none;
+}
+
+.indice-pagina::-webkit-scrollbar {
+  display: none;
+}
+
+.indice-pagina nav {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: relative;
+  padding-left: 36px;
+}
+
+.indice-pagina nav::before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 8px;
+  bottom: 8px;
+  width: 2px;
+  background: #e9e9e9;
+}
+
+.indice-pagina a {
+  position: relative;
+  font-size: 16px;
+  color: #4b4b4b;
+  display: block;
+  line-height: 1.45;
+}
+
+.indice-pagina a::before {
+  content: "";
+  position: absolute;
+  left: -36px;
+  top: 7px;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #e9e9e9;
+  border-radius: 50%;
+  background: #fff;
+  z-index: 1;
+  transition:
+    background 0.2s,
+    border-color 0.2s;
+}
+
+.indice-pagina a.active::before,
+.indice-pagina a:hover::before {
+  border-color: #e9e9e9;
+  background: #fff;
+}
+
+.video-description {
+  color: #777777;
+  margin-top: 10px;
+}
+
+.video-container {
+  margin-top: 80px;
+  margin-bottom: 60px;
+}
+
+.video-container video {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  display: block;
+}
+
+.content ul {
+  list-style-type: none;
+}

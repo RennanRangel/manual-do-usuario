@@ -1,0 +1,73 @@
+:root {
+  --font-prose: var(--font-site);
+  --color-title: rgb(21, 21, 21);
+  --color-body: rgb(64, 64, 64);
+  --size-title: 24px;
+  --size-body: 16px;
+  --line-prose: 26px;
+}
+
+.content {
+  font-family: var(--font-prose);
+  color: var(--color-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+.article-title {
+  display: block;
+  margin: 0;
+}
+
+.article-title h1,
+.content h1 {
+  display: block;
+  color: var(--color-title);
+  font-family: var(--font-prose);
+  font-size: var(--size-title);
+  font-weight: 700;
+  line-height: var(--line-prose);
+  margin: 20px 0;
+  letter-spacing: 0;
+  unicode-bidi: isolate;
+  -webkit-font-smoothing: antialiased;
+}
+
+.content p {
+  display: block;
+  color: var(--color-body);
+  font-family: var(--font-prose);
+  font-size: var(--size-body);
+  font-weight: 400;
+  line-height: var(--line-prose);
+  margin: 16px 0;
+  unicode-bidi: isolate;
+  -webkit-font-smoothing: antialiased;
+}
+
+.content ul,
+.content ol,
+.topic-list {
+  margin: 16px 0;
+  padding-left: 24px;
+  color: var(--color-body);
+  font-family: var(--font-prose);
+  font-size: var(--size-body);
+  font-weight: 400;
+  line-height: var(--line-prose);
+  -webkit-font-smoothing: antialiased;
+}
+
+.content li,
+.topic-list li {
+  margin: 8px 0;
+  color: var(--color-body);
+  font-family: var(--font-prose);
+  font-size: var(--size-body);
+  font-weight: 400;
+  line-height: var(--line-prose);
+}
+
+.content code {
+  font-family: ui-monospace, "Cascadia Code", "Segoe UI Mono", monospace;
+  font-size: 0.9em;
+}

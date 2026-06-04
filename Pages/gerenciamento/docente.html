@@ -1,0 +1,334 @@
+﻿<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EduAloca - Docentes</title>
+    <link rel="stylesheet" href="../../CSS/global/fonts.css" />
+    <link rel="stylesheet" href="../../CSS/global/typography.css" />
+    <link rel="stylesheet" href="../../CSS/navbar.css" />
+    <link rel="stylesheet" href="../../CSS/sidebar.css" />
+    <link rel="stylesheet" href="../../CSS/modules/manual.css" />
+  </head>
+
+  <body>
+    <header class="docs-topbar">
+      <button
+        class="menu-button"
+        type="button"
+        aria-label="Abrir menu"
+        aria-expanded="true"
+      >
+        <img src="../../Assets/IMG/menu.png" alt="" width="28" height="28" />
+      </button>
+
+      <a class="EduAloca" href="#" aria-label="EduAloca">
+        <img
+          src="../../Assets/IMG/Blue_and_White_Modern_Artificial_Intelligence_Logo.png"
+          alt="Logo"
+        />
+      </a>
+    </header>
+
+    <div class="page-shell">
+      <aside class="sidebar" aria-label="Menu da documentação">
+        <nav>
+          <ul class="sidebar-list">
+            <li>
+              <a class="section-link" href="../home/home.html">Introdução</a>
+            </li>
+
+            <li class="sidebar-group">
+              <button
+                class="sidebar-toggle"
+                type="button"
+                aria-expanded="false"
+              >
+                Autenticação
+              </button>
+              <ul class="sidebar-submenu">
+                <li>
+                  <a href="../autenticacao/login.html">Como Fazer Login</a>
+                </li>
+                <li>
+                  <a href="../autenticacao/recuperar-senha.html"
+                    >Como Recuperar a Senha</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="sidebar-group">
+              <button
+                class="sidebar-toggle"
+                type="button"
+                aria-expanded="false"
+              >
+                Gerenciamento de Informações
+              </button>
+              <ul class="sidebar-submenu">
+                <li><a href="../Gerenciamento/docente.html">Docentes</a></li>
+                <li>
+                  <a href="../Gerenciamento/disciplinas.html">Disciplinas</a>
+                </li>
+                <li><a href="../Gerenciamento/turmas.html">Turmas</a></li>
+                <li><a href="../Gerenciamento/cursos.html">Cursos</a></li>
+                <li><a href="../Gerenciamento/salas.html">Salas</a></li>
+                <li><a href="../Gerenciamento/blocos.html">Blocos</a></li>
+                <li><a href="../Gerenciamento/areas.html">Áreas</a></li>
+                <li>
+                  <a href="../Gerenciamento/funcionarios.html">Funcionários</a>
+                </li>
+              </ul>
+            </li>
+            <li class="sidebar-group">
+              <button
+                class="sidebar-toggle"
+                type="button"
+                aria-expanded="false"
+              >
+                Alocação
+              </button>
+              <ul class="sidebar-submenu">
+                <li>
+                  <a href="../alocacao/alocacao-gerar.html"
+                    >Geração de Alocação</a
+                  >
+                </li>
+                <li>
+                  <a href="../alocacao/alocacao-docentes.html"
+                    >Alocação de Docentes</a
+                  >
+                </li>
+                <li>
+                  <a href="../alocacao/alocacao-salas.html"
+                    >Alocação de Salas</a
+                  >
+                </li>
+                <li>
+                  <a href="../alocacao/alocacao-ajustar.html"
+                    >Ajustes Manuais</a
+                  >
+                </li>
+                <li>
+                  <a href="../alocacao/dias-nao-letivos.html"
+                    >Dias não Letivos</a
+                  >
+                </li>
+                <li>
+                  <a href="../alocacao/alocacao-visualizar.html"
+                    >Visualizar Grade</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="sidebar-group">
+              <button
+                class="sidebar-toggle"
+                type="button"
+                aria-expanded="false"
+              >
+                Relatórios
+              </button>
+              <ul class="sidebar-submenu">
+                <li>
+                  <a href="../relatorios/gerar.html">Geração de Relatórios</a>
+                </li>
+                <li>
+                  <a href="../relatorios/exportar.html">Exportação de Dados</a>
+                </li>
+              </ul>
+            </li>
+            <li class="sidebar-group">
+              <button
+                class="sidebar-toggle"
+                type="button"
+                aria-expanded="false"
+              >
+                FAQ
+              </button>
+              <ul class="sidebar-submenu">
+                <li>
+                  <a href="../duvidas/perguntas-frequentes.html"
+                    >Dúvidas Frequentes</a
+                  >
+                </li>
+                <li><a href="../duvidas/videos.html">Vídeos Tutoriais</a></li>
+                <li>
+                  <a href="../duvidas/enviar-duvida.html">Enviar Dúvidas</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <div class="article-title">
+          <h1 id="gerenciamento-docente">Gerenciamento de Docentes</h1>
+        </div>
+
+        <p>
+          O módulo de Gerenciamento de Docentes do EduAloca centraliza a
+          administração do corpo docente do SENAI Bahia, fornecendo os dados
+          necessários para o motor de alocação automática respeitar as regras
+          institucionais e trabalhistas. Suas operações compreendem rotinas
+          organizadas para manter o histórico e as restrições de cada
+          profissional atualizados.
+        </p>
+
+        <h2 id="cadastrar-docentes">Cadastrar Docentes</h2>
+
+        <p>
+          O processo de cadastro é realizado via formulário estruturado por
+          grupos de dados. Abaixo estão as categorias e os respectivos campos
+          preenchidos:
+        </p>
+
+        <ul>
+          <li>
+            Dados Pessoais e Contato: Inclui o <strong>Nome</strong> para
+            identificação, a <strong>Matrícula</strong> (código institucional),
+            o <strong>E-mail</strong> corporativo e o
+            <strong>Telefone</strong> para contato com a coordenação.
+          </li>
+          <li>
+            Informações Contratuais: Define o
+            <strong>Tipo de Contrato</strong> (regime trabalhista), a
+            <strong>Carga Horária</strong> máxima e os
+            <strong>Turnos e Dias Disponíveis</strong> para lecionar.
+          </li>
+          <li>
+            Perfil Pedagógico: Registra a <strong>Área</strong> de ensino, as
+            <strong>Disciplinas Alocadas</strong> no semestre, as
+            <strong>Disciplinas Preferenciais</strong> (maior afinidade) e a
+            <strong>Ambientação Pedagógica</strong> (capacitação do SENAI).
+          </li>
+          <li>
+            Controle e Administração: Contém a
+            <strong>Assinatura Digital</strong> (validação de grades), o
+            <strong>Status</strong> (ativo/inativo) e a
+            <strong>Observação</strong> livre para anotações.
+          </li>
+        </ul>
+
+        <div class="video-container">
+          <video controls>
+            <source
+              src="../../Assets/media/docentes/Cadastro_Docente.mp4"
+              type="video/mp4"
+            />
+            Seu navegador não suporta a reprodução de vídeos.
+          </video>
+          <p class="video-description">Vídeo Tutorial: Cadastrar Docente</p>
+        </div>
+
+        <h2 id="atualizar-docentes">Editar Docentes</h2>
+
+        <p>
+          O processo de atualização salva de forma definitiva as modificações no
+          perfil do docente. Isso garante que o motor de alocação trabalhe com
+          as regras mais recentes da coordenação.
+        </p>
+
+        <p>
+          Para editar, acesse a tela de listagem e utilize a busca ou os filtros
+          para encontrar o profissional. Em seguida, clique no ícone do
+          <strong>lápis</strong>.
+        </p>
+
+        <p>
+          O sistema carregará as informações já preenchidas. O formulário é
+          organizado em blocos visuais, permitindo fazer alterações diretas nos
+          campos necessários, como identificação, contrato ou disciplinas.
+        </p>
+
+        <p>
+          Após os ajustes, clique no botão <strong>Atualizar</strong>. O sistema
+          validará os dados, gravará as alterações e exibirá uma notificação de
+          sucesso.
+        </p>
+
+        <div class="video-container">
+          <video controls>
+            <source
+              src="../../Assets/media/docentes/Editando_Docente.mp4"
+              type="video/mp4"
+            />
+            Seu navegador não suporta a reprodução de vídeos.
+          </video>
+          <p class="video-description">Vídeo Tutorial: Editar Docente</p>
+        </div>
+
+        <h2 id="excluir-docentes">Excluir Docentes</h2>
+
+        <p>
+          O processo de exclusão remove o registro do docente de forma
+          definitiva e permanente da base de dados ativa do sistema. Essa ação é
+          irreversível e deve ser realizada com cautela, pois desvincula o
+          profissional de qualquer rotina ativa e impede que seu perfil seja
+          considerado em futuros processamentos do motor de alocação de
+          horários.
+        </p>
+
+        <p>
+          O fluxo operacional é executado de forma rápida diretamente a partir
+          da tela de listagem de docentes, onde localiza-se o professor desejado
+          na tabela de registros e clica-se no ícone da
+          <strong>lixeira</strong> correspondente.
+        </p>
+
+        <p>
+          O sistema processa a remoção, limpa os vínculos associados e atualiza
+          a listagem de docentes instantaneamente.
+        </p>
+
+        <div class="video-container">
+          <video controls>
+            <source
+              src="../../Assets/media/docentes/Exclusao_Docente.mp4"
+              type="video/mp4"
+            />
+            Seu navegador não suporta a reprodução de vídeos.
+          </video>
+          <p class="video-description">Vídeo Tutorial: Excluir Docente</p>
+        </div>
+
+        <h2 id="filtrar-docentes">Filtrar Docentes</h2>
+
+        <p>
+          Para otimizar a busca, o sistema disponibiliza ferramentas de
+          filtragem na tela de consulta. Essa funcionalidade permite gerenciar
+          grandes volumes de dados de forma ágil, encontrando perfis para
+          edições ou conferências.
+        </p>
+
+        <p>
+          Utilize a barra de pesquisa ou combine os filtros dinâmicos no topo da
+          tela. Os critérios de busca permitem localizar docentes pelo
+          <strong>Nome completo</strong>,
+          <strong>Matrícula institucional</strong>, <strong>Área</strong> de
+          atuação ou pelo <strong>Status</strong> cadastral.
+        </p>
+
+        <p>
+          Os resultados na listagem são atualizados instantaneamente ao aplicar
+          os parâmetros. Essa precisão garante que a coordenação encontre o
+          registro exato em poucos segundos, agilizando o fluxo diário.
+        </p>
+      </main>
+
+      <aside class="indice-pagina" aria-label="Nesta pagina">
+        <nav>
+          <a class="active" href="#gerenciamento-docente">Visão Geral</a>
+          <a href="#cadastrar-docentes">Cadastrar Docentes</a>
+          <a href="#atualizar-docentes">Editar Docentes</a>
+          <a href="#excluir-docentes">Excluir Docentes</a>
+          <a href="#filtrar-docentes">Filtrar Docentes</a>
+        </nav>
+      </aside>
+    </div>
+
+    <script src="../../src/app/sidebar.controller.js"></script>
+  </body>
+</html>

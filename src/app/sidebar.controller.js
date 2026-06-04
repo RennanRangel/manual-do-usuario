@@ -1,86 +1,163 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
+  const menuButton = document.querySelector(".menu-button");
+  const sidebar = document.querySelector(".sidebar");
 
-    document.querySelectorAll('.edu-nav-item.open .edu-nav-sublist').forEach(sublist => {
-        sublist.style.maxHeight = sublist.scrollHeight + 'px';
+  if (menuButton && sidebar) {
+    menuButton.addEventListener("click", () => {
+      document.body.classList.toggle("sidebar-closed");
+      sidebar.classList.toggle("active");
+    });
+  }
+
+  function obterCaminhoAtual() {
+    return decodeURIComponent(window.location.pathname);
+  }
+
+  function obterNomeArquivo(caminho) {
+    if (!caminho) return "";
+    return caminho.split(/[/\\]/).pop().toLowerCase();
+  }
+
+  function limparDestaqueSidebar() {
+    document
+      .querySelectorAll(
+        ".sidebar .section-link.active, .sidebar .sidebar-toggle.active, .sidebar .sidebar-submenu a.active",
+      )
+      .forEach((el) => {
+        el.classList.remove("active");
+      });
+  }
+
+  function fecharSubmenus() {
+    document.querySelectorAll(".sidebar-group").forEach((group) => {
+      group.classList.remove("is-open");
+      const toggle = group.querySelector(".sidebar-toggle");
+      if (toggle) {
+        toggle.setAttribute("aria-expanded", "false");
+      }
+    });
+  }
+
+  function expandirGrupo(group) {
+    if (!group) return;
+    const toggle = group.querySelector(".sidebar-toggle");
+    group.classList.add("is-open");
+    if (toggle) {
+      toggle.setAttribute("aria-expanded", "true");
+    }
+  }
+
+  function recolherGrupo(group) {
+    if (!group) return;
+    const toggle = group.querySelector(".sidebar-toggle");
+    group.classList.remove("is-open");
+    if (toggle) {
+      toggle.setAttribute("aria-expanded", "false");
+    }
+  }
+
+  function obterSubtopicoDaPaginaAtual() {
+    const arquivoAtual = obterNomeArquivo(obterCaminhoAtual());
+    let subtopico = null;
+
+    document.querySelectorAll(".sidebar-submenu a[href]").forEach((link) => {
+      const href = link.getAttribute("href");
+      if (!href) return;
+      if (obterNomeArquivo(href) === arquivoAtual) {
+        subtopico = link;
+      }
     });
 
-    inicializarSumario();
-    });
+    return subtopico;
+  }
 
+  function obterGrupoDaPaginaAtual() {
+    const subtopico = obterSubtopicoDaPaginaAtual();
+    return subtopico ? subtopico.closest(".sidebar-group") : null;
+  }
 
+  function marcarTopicoAtual() {
+    const arquivoAtual = obterNomeArquivo(obterCaminhoAtual());
+    limparDestaqueSidebar();
 
-function inicializarSumario() {
-    const tocList = document.querySelector('.edu-toc-list');
-    const mainContent = document.querySelector('.edu-main-content');
-    const sidebarRight = document.querySelector('.edu-sidebar-right');
+    document
+      .querySelectorAll(".sidebar-list > li > .section-link[href]")
+      .forEach((link) => {
+        const href = link.getAttribute("href");
+        if (!href) return;
+        if (obterNomeArquivo(href) === arquivoAtual) {
+          link.classList.add("active");
+        }
+      });
 
-    if (!tocList || !mainContent || !sidebarRight) return;
+    const subtopicoAtual = obterSubtopicoDaPaginaAtual();
+    if (subtopicoAtual) {
+      subtopicoAtual.classList.add("active");
 
-    const headings = mainContent.querySelectorAll('h2, h3');
+      const toggle = subtopicoAtual
+        .closest(".sidebar-group")
+        ?.querySelector(".sidebar-toggle");
+      if (toggle) {
+        toggle.classList.add("active");
+      }
+    }
+  }
 
-    if (headings.length === 0) {
-        sidebarRight.style.display = 'none';
-        return;
+  function alternarGrupo(group) {
+    if (!group) return;
+
+    const estavaAberto = group.classList.contains("is-open");
+
+    if (estavaAberto) {
+      recolherGrupo(group);
+    } else {
+      fecharSubmenus();
+      expandirGrupo(group);
     }
 
-    const tocTitle = document.createElement('div');
-    tocTitle.className = 'edu-toc-title';
-    tocTitle.textContent = 'NESTA PÁGINA';
-    tocList.before(tocTitle);
+    marcarTopicoAtual();
+  }
 
-    headings.forEach((heading) => {
-        if (!heading.id) {
-            heading.id = heading.textContent.toLowerCase().trim()
-                .normalize('NFD').replace(/[\u0300-\u036f]/g, '') 
-                .replace(/\s+/g, '-')
-                .replace(/[^\w-]+/g, '');
-        }
+  if (sidebar) {
+    sidebar.addEventListener("click", (event) => {
+      const toggle = event.target.closest(".sidebar-toggle");
+      if (!toggle) return;
 
-        const li = document.createElement('li');
-        li.className = `edu-toc-item edu-toc-${heading.tagName.toLowerCase()}`;
-
-        const a = document.createElement('a');
-        a.href = `#${heading.id}`;
-        a.className = 'edu-toc-link';
-        a.textContent = heading.textContent;
-
-        li.appendChild(a);
-        tocList.appendChild(li);
+      event.preventDefault();
+      event.stopPropagation();
+      alternarGrupo(toggle.closest(".sidebar-group"));
     });
-}
+  }
 
-
-function alternarNavegacao(event, element) {
-    const parent = element.parentElement;
-    const sublist = parent.querySelector('.edu-nav-sublist');
-
-    if (sublist) {
-        const isOpen = parent.classList.contains('open');
-        const currentPath = window.location.pathname;
-        const targetHref = element.getAttribute('href');
-        const targetFile = targetHref.split('/').pop();
-
-       
-        if (currentPath.endsWith(targetFile)) {
-            event.preventDefault();
-
-            if (isOpen) {
-                parent.classList.remove('open');
-                sublist.style.maxHeight = '0px';
-            } else {
-                document.querySelectorAll('.edu-nav-item.open').forEach(item => {
-                    if (item !== parent) {
-                        item.classList.remove('open');
-                        const otherSublist = item.querySelector('.edu-nav-sublist');
-                        if (otherSublist) otherSublist.style.maxHeight = '0px';
-                    }
-                });
-
-                parent.classList.add('open');
-                sublist.style.maxHeight = sublist.scrollHeight + 'px';
-            }
-        } else {
-            parent.classList.add('open');
-        }
+  function iniciarSidebar() {
+    const grupoAtual = obterGrupoDaPaginaAtual();
+    marcarTopicoAtual();
+    if (grupoAtual) {
+      expandirGrupo(grupoAtual);
     }
-}
+  }
+
+  iniciarSidebar();
+
+  const indiceLinks = document.querySelectorAll(".indice-pagina a");
+  const sections = Array.from(indiceLinks)
+    .map((link) => document.querySelector(link.getAttribute("href")))
+    .filter(Boolean);
+
+  if (sections.length) {
+    window.addEventListener("scroll", () => {
+      let current = sections[0];
+      sections.forEach((section) => {
+        if (section.getBoundingClientRect().top <= 200) current = section;
+      });
+      indiceLinks.forEach((link) => {
+        link.classList.toggle(
+          "active",
+          link.getAttribute("href") === `#${current.id}`,
+        );
+      });
+    });
+  }
+
+  window.alternarNavegacao = function () {};
+});

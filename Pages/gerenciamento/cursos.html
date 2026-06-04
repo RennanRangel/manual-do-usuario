@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EduAloca - Cursos</title>
+    <link rel="stylesheet" href="../../CSS/global/fonts.css" />
+    <link rel="stylesheet" href="../../CSS/global/typography.css" />
+    <link rel="stylesheet" href="../../CSS/navbar.css" />
+    <link rel="stylesheet" href="../../CSS/sidebar.css" />
+    <link rel="stylesheet" href="../../CSS/modules/manual.css" />
+  </head>
+  <body>
+    <header class="docs-topbar">
+      <button
+        class="menu-button"
+        type="button"
+        aria-label="Abrir menu"
+        aria-expanded="true"
+      >
+        <img src="../../Assets/IMG/menu.png" alt="" width="28" height="28" />
+      </button>
+
+      <a class="EduAloca" href="#" aria-label="EduAloca">
+        <img
+          src="../../Assets/IMG/Blue_and_White_Modern_Artificial_Intelligence_Logo.png"
+          alt="Logo"
+        />
+      </a>
+    </header>
+
+    <div class="page-shell">
+      <aside class="sidebar" aria-label="Menu da documentação">
+        <nav>
+          <ul class="sidebar-list">
+            <li>
+              <a class="section-link" href="../home/home.html">Introdução</a>
+            </li>
+
+            <li class="sidebar-group">
+              <button
+                class="sidebar-toggle"
+                type="button"
+                aria-expanded="false"
+              >
+                Autenticação
+              </button>
+              <ul class="sidebar-submenu">
+                <li>
+                  <a href="../autenticacao/login.html">Como Fazer Login</a>
+                </li>
+                <li>
+                  <a href="../autenticacao/recuperar-senha.html"
+                    >Como Recuperar a Senha</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="sidebar-group">
+              <button
+                class="sidebar-toggle"
+                type="button"
+                aria-expanded="false"
+              >
+                Gerenciamento de Informações
+              </button>
+              <ul class="sidebar-submenu">
+                <li><a href="../Gerenciamento/docente.html">Docentes</a></li>
+                <li>
+                  <a href="../Gerenciamento/disciplinas.html">Disciplinas</a>
+                </li>
+                <li><a href="../Gerenciamento/turmas.html">Turmas</a></li>
+                <li><a href="../Gerenciamento/cursos.html">Cursos</a></li>
+                <li><a href="../Gerenciamento/salas.html">Salas</a></li>
+                <li><a href="../Gerenciamento/blocos.html">Blocos</a></li>
+                <li><a href="../Gerenciamento/areas.html">Áreas</a></li>
+                <li>
+                  <a href="../Gerenciamento/funcionarios.html">Funcionários</a>
+                </li>
+              </ul>
+            </li>
+            <li class="sidebar-group">
+              <button
+                class="sidebar-toggle"
+                type="button"
+                aria-expanded="false"
+              >
+                Alocação
+              </button>
+              <ul class="sidebar-submenu">
+                <li>
+                  <a href="../alocacao/alocacao-gerar.html"
+                    >Geração de Alocação</a
+                  >
+                </li>
+                <li>
+                  <a href="../alocacao/alocacao-docentes.html"
+                    >Alocação de Docentes</a
+                  >
+                </li>
+                <li>
+                  <a href="../alocacao/alocacao-salas.html"
+                    >Alocação de Salas</a
+                  >
+                </li>
+                <li>
+                  <a href="../alocacao/alocacao-ajustar.html"
+                    >Ajustes Manuais</a
+                  >
+                </li>
+                <li>
+                  <a href="../alocacao/dias-nao-letivos.html"
+                    >Dias não Letivos</a
+                  >
+                </li>
+                <li>
+                  <a href="../alocacao/alocacao-visualizar.html"
+                    >Visualizar Grade</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="sidebar-group">
+              <button
+                class="sidebar-toggle"
+                type="button"
+                aria-expanded="false"
+              >
+                Relatórios
+              </button>
+              <ul class="sidebar-submenu">
+                <li>
+                  <a href="../relatorios/gerar.html">Geração de Relatórios</a>
+                </li>
+                <li>
+                  <a href="../relatorios/exportar.html">Exportação de Dados</a>
+                </li>
+              </ul>
+            </li>
+            <li class="sidebar-group">
+              <button
+                class="sidebar-toggle"
+                type="button"
+                aria-expanded="false"
+              >
+                FAQ
+              </button>
+              <ul class="sidebar-submenu">
+                <li>
+                  <a href="../duvidas/perguntas-frequentes.html"
+                    >Dúvidas Frequentes</a
+                  >
+                </li>
+                <li><a href="../duvidas/videos.html">Vídeos Tutoriais</a></li>
+                <li>
+                  <a href="../duvidas/enviar-duvida.html">Enviar Dúvidas</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <div class="article-title">
+          <h1 id="gerenciamento-cursos">Gerenciamento de Cursos</h1>
+        </div>
+
+        <p>
+          O módulo de Gerenciamento de Cursos do EduAloca permite a
+          administração e o cadastro das ofertas de ensino e matrizes
+          curriculares ativas. O perfeito cadastramento e configuração dos
+          cursos são primordiais para que o sistema de alocação de horários
+          ordene as turmas e professores nos turnos e salas apropriados.
+        </p>
+
+        <h2 id="cadastrar-cursos">Cadastrar Cursos</h2>
+
+        <p>
+          O processo de cadastro é estruturado por grupos de dados
+          institucionais e pedagógicos. Abaixo estão as categorias e os campos:
+        </p>
+
+        <ul>
+          <li>
+            Identificação e Estrutura: Registra o <strong>Nome</strong> completo
+            do curso, vincula a <strong>Matriz Curricular</strong> ativa, e
+            define a <strong>Modalidade do curso</strong> (Técnico,
+            Qualificação) e a <strong>Modalidade de ensino</strong> (Presencial,
+            EAD, Semipresencial).
+          </li>
+          <li>
+            Organização Curricular: Mapeia a <strong>Área</strong> de atuação,
+            define a <strong>Duração</strong> e a <strong>CH Total</strong>, e
+            divide o currículo em <strong>Disciplinas Obrigatórias</strong>,
+            <strong>Optativas</strong> e <strong>Eletivas</strong>.
+          </li>
+          <li>
+            Controle de Cadastro: Define o
+            <strong>Status</strong> (ativo/inativo) para novas alocações e
+            inclui um campo de <strong>Observações</strong> para anotações da
+            coordenação.
+          </li>
+        </ul>
+
+        <div class="video-container">
+          <video controls>
+            <source
+              src="../../Assets/media/cursos/Curso_Cadastrar.mp4"
+              type="video/mp4"
+            />
+            Seu navegador não suporta a reprodução de vídeos.
+          </video>
+          <p class="video-description">Vídeo Tutorial: Cadastrar Curso</p>
+        </div>
+
+        <h2 id="atualizar-cursos">Editar Cursos</h2>
+
+        <p>
+          A edição permite manter as informações acadêmicas do curso sempre
+          atualizadas e precisas, garantindo que o motor de alocação utilize os
+          dados corretos.
+        </p>
+        <p>
+          Para editar, localize o registro desejado na listagem de cursos e
+          clique no botão de ação <strong>Editar</strong> (ícone de lápis). O
+          sistema carregará o formulário já preenchido com as informações
+          atuais, permitindo alterar livremente detalhes como carga horária,
+          modalidade, área ou nomenclatura.
+        </p>
+        <p>
+          Após revisar os ajustes, clique em <strong>Salvar</strong>. O sistema
+          gravará as alterações instantaneamente no banco de dados e exibirá uma
+          notificação atestando o sucesso da atualização.
+        </p>
+
+        <div class="video-container">
+          <video controls>
+            <source
+              src="../../Assets/media/cursos/Curso_Atualizar.mp4"
+              type="video/mp4"
+            />
+            Seu navegador não suporta a reprodução de vídeos.
+          </video>
+          <p class="video-description">Vídeo Tutorial: Editar Curso</p>
+        </div>
+
+        <h2 id="excluir-cursos">Excluir Cursos</h2>
+
+        <p>
+          A exclusão é uma operação sensível, recomendada apenas para situações
+          em que um curso ou grade curricular deixe de ser ofertado de forma
+          definitiva pela unidade. Essa ação remove o registro do sistema.
+        </p>
+        <p>
+          Para remover, localize o curso na listagem e clique no botão de
+          <strong>Exclusão</strong> (representado pelo ícone de lixeira). Por
+          segurança, o sistema exigirá uma confirmação e verificará
+          automaticamente se existem vínculos ativos, como turmas em andamento
+          ou professores alocados. Caso existam dependências, a exclusão será
+          bloqueada para proteger os dados, sendo orientado apenas inativar o
+          curso.
+        </p>
+
+        <div class="video-container">
+          <video controls>
+            <source
+              src="../../Assets/media/cursos/Curso_Excluido.mp4"
+              type="video/mp4"
+            />
+            Seu navegador não suporta a reprodução de vídeos.
+          </video>
+          <p class="video-description">Vídeo Tutorial: Excluir Curso</p>
+        </div>
+
+        <h2 id="filtrar-cursos">Filtrar Cursos</h2>
+
+        <p>
+          A tela de listagem de cursos possui um sistema de filtros de busca
+          rápida criado para otimizar a navegação e a gestão visual de grandes
+          volumes de dados na plataforma.
+        </p>
+        <p>
+          Você pode refinar e afunilar os resultados simultaneamente pelo
+          <strong>Nome</strong> do curso, pela
+          <strong>Modalidade do curso</strong>, pela
+          <strong>Modalidade de ensino</strong> ou pela <strong>Área</strong> de
+          atuação. O painel é atualizado dinamicamente em tempo real à medida
+          que você seleciona os filtros, dispensando o uso de botões de pesquisa
+          adicionais.
+        </p>
+      </main>
+
+      <aside class="indice-pagina" aria-label="Nesta pagina">
+        <nav>
+          <a class="active" href="#gerenciamento-cursos">Visão Geral</a>
+          <a href="#cadastrar-cursos">Cadastrar Cursos</a>
+          <a href="#atualizar-cursos">Editar Cursos</a>
+          <a href="#excluir-cursos">Excluir Cursos</a>
+          <a href="#filtrar-cursos">Filtrar Cursos</a>
+        </nav>
+      </aside>
+    </div>
+
+    <script src="../../src/app/sidebar.controller.js"></script>
+  </body>
+</html>

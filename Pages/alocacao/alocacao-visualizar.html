@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EduAloca - Visualizar Grade</title>
+    <link rel="stylesheet" href="../../CSS/global/fonts.css" />
+    <link rel="stylesheet" href="../../CSS/global/typography.css" />
+    <link rel="stylesheet" href="../../CSS/navbar.css" />
+    <link rel="stylesheet" href="../../CSS/sidebar.css" />
+    <link rel="stylesheet" href="../../CSS/modules/manual.css" />
+  </head>
+  <body>
+    <header class="docs-topbar">
+      <button
+        class="menu-button"
+        type="button"
+        aria-label="Abrir menu"
+        aria-expanded="true"
+      >
+        <img src="../../Assets/IMG/menu.png" alt="" width="28" height="28" />
+      </button>
+
+      <a class="EduAloca" href="#" aria-label="EduAloca">
+        <img
+          src="../../Assets/IMG/Blue_and_White_Modern_Artificial_Intelligence_Logo.png"
+          alt="Logo"
+        />
+      </a>
+    </header>
+
+    <div class="page-shell">
+      <aside class="sidebar" aria-label="Menu da documentação">
+        <nav>
+          <ul class="sidebar-list">
+            <li>
+              <a class="section-link" href="../home/home.html">Introdução</a>
+            </li>
+
+            <li class="sidebar-group">
+              <button
+                class="sidebar-toggle"
+                type="button"
+                aria-expanded="false"
+              >
+                Autenticação
+              </button>
+              <ul class="sidebar-submenu">
+                <li>
+                  <a href="../autenticacao/login.html">Como Fazer Login</a>
+                </li>
+                <li>
+                  <a href="../autenticacao/recuperar-senha.html"
+                    >Como Recuperar a Senha</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="sidebar-group">
+              <button
+                class="sidebar-toggle"
+                type="button"
+                aria-expanded="false"
+              >
+                Gerenciamento de Informações
+              </button>
+              <ul class="sidebar-submenu">
+                <li><a href="../Gerenciamento/docente.html">Docentes</a></li>
+                <li>
+                  <a href="../Gerenciamento/disciplinas.html">Disciplinas</a>
+                </li>
+                <li><a href="../Gerenciamento/turmas.html">Turmas</a></li>
+                <li><a href="../Gerenciamento/cursos.html">Cursos</a></li>
+                <li><a href="../Gerenciamento/salas.html">Salas</a></li>
+                <li><a href="../Gerenciamento/blocos.html">Blocos</a></li>
+                <li><a href="../Gerenciamento/areas.html">Áreas</a></li>
+                <li>
+                  <a href="../Gerenciamento/funcionarios.html">Funcionários</a>
+                </li>
+              </ul>
+            </li>
+            <li class="sidebar-group">
+              <button
+                class="sidebar-toggle"
+                type="button"
+                aria-expanded="false"
+              >
+                Alocação
+              </button>
+              <ul class="sidebar-submenu">
+                <li>
+                  <a href="../alocacao/alocacao-gerar.html"
+                    >Geração de Alocação</a
+                  >
+                </li>
+                <li>
+                  <a href="../alocacao/alocacao-docentes.html"
+                    >Alocação de Docentes</a
+                  >
+                </li>
+                <li>
+                  <a href="../alocacao/alocacao-salas.html"
+                    >Alocação de Salas</a
+                  >
+                </li>
+                <li>
+                  <a href="../alocacao/alocacao-ajustar.html"
+                    >Ajustes Manuais</a
+                  >
+                </li>
+                <li>
+                  <a href="../alocacao/dias-nao-letivos.html"
+                    >Dias não Letivos</a
+                  >
+                </li>
+                <li>
+                  <a href="../alocacao/alocacao-visualizar.html"
+                    >Visualizar Grade</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="sidebar-group">
+              <button
+                class="sidebar-toggle"
+                type="button"
+                aria-expanded="false"
+              >
+                Relatórios
+              </button>
+              <ul class="sidebar-submenu">
+                <li>
+                  <a href="../relatorios/gerar.html">Geração de Relatórios</a>
+                </li>
+                <li>
+                  <a href="../relatorios/exportar.html">Exportação de Dados</a>
+                </li>
+              </ul>
+            </li>
+            <li class="sidebar-group">
+              <button
+                class="sidebar-toggle"
+                type="button"
+                aria-expanded="false"
+              >
+                FAQ
+              </button>
+              <ul class="sidebar-submenu">
+                <li>
+                  <a href="../duvidas/perguntas-frequentes.html"
+                    >Dúvidas Frequentes</a
+                  >
+                </li>
+                <li><a href="../duvidas/videos.html">Vídeos Tutoriais</a></li>
+                <li>
+                  <a href="../duvidas/enviar-duvida.html">Enviar Dúvidas</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <div class="article-title">
+          <h1 id="visualizar-alocacao">Visualizar Grade</h1>
+        </div>
+
+        <p>
+          O módulo de Visualizar Grade do EduAloca é a central de consulta
+          interativa onde você pode acompanhar de perto todo o cronograma letivo
+          planejado e gerado para o campus. Essa interface foi pensada para
+          facilitar o seu dia a dia, centralizando todas as informações cruciais
+          de horários de docentes, turmas e salas em exibições dinâmicas,
+          intuitivas e com formato prático de calendário.
+        </p>
+
+        <h2 id="exibicao-grade">Exibição de Grade Consolidada</h2>
+
+        <p>
+          O painel oferece uma visualização bastante limpa e estruturada,
+          apresentando os dados no formato de uma tabela semanal completa. Ela
+          abrange todos os turnos de funcionamento da instituição (matutino,
+          vespertino e noturno) e se estende de segunda-feira a sábado. Com
+          isso, o usuário consegue conferir exatamente quais aulas estão
+          marcadas para cada período do dia, identificando de relance a
+          disciplina que será ministrada, o professor responsável e a sala ou
+          laboratório onde a aula vai acontecer.
+        </p>
+
+        <h2 id="filtros-visualizacao">Visualização por Filtros</h2>
+
+        <p>
+          Para que você não precise procurar informações no meio de um
+          calendário enorme, o sistema conta com filtros inteligentes e
+          avançados de busca. Assim, é possível isolar cronogramas específicos
+          para facilitar a leitura. Você pode optar por visualizar apenas a
+          grade horária de uma determinada <strong>Turma</strong>, acompanhar a
+          agenda completa de um <strong>Docente</strong> específico, focar nos
+          horários de um <strong>Curso</strong> inteiro ou verificar a
+          disponibilidade e uso de uma <strong>Sala ou Laboratório</strong>. A
+          cada filtro aplicado, o calendário se ajusta e atualiza os resultados
+          instantaneamente na tela.
+        </p>
+
+        <h2 id="status-calendario">Status do Calendário</h2>
+
+        <p>
+          Na parte superior da tela de visualização, cada grade horária exibe um
+          selo indicando o seu status atual de consolidação no sistema. O status
+          <strong>Rascunho</strong> indica que o calendário ainda está em fase
+          de planejamento, recebendo ajustes da coordenação, e por isso ainda
+          não está visível para professores e alunos. Já o status
+          <strong>Publicada</strong> significa que o processo foi concluído e os
+          horários são oficiais, estando liberados para a consulta de todo o
+          corpo docente e administrativo. Por fim, o status
+          <strong>Arquivada</strong> demonstra que aquele calendário letivo já
+          foi encerrado e não sofrerá mais alterações, servindo a partir desse
+          momento apenas como um registro histórico para consultas futuras.
+        </p>
+      </main>
+
+      <aside class="indice-pagina" aria-label="Nesta pagina">
+        <nav>
+          <a class="active" href="#visualizar-alocacao">Visão Geral</a>
+          <a href="#exibicao-grade">Exibição de Grade</a>
+          <a href="#filtros-visualizacao">Visualização por Filtros</a>
+          <a href="#status-calendario">Status do Calendário</a>
+        </nav>
+      </aside>
+    </div>
+
+    <script src="../../src/app/sidebar.controller.js"></script>
+  </body>
+</html>

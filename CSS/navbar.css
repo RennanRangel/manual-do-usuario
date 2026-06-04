@@ -1,0 +1,47 @@
+﻿:root {
+  --c-topbar: #042464;
+  --topbar-h: 56px;
+}
+
+.docs-topbar {
+  position: fixed;
+  inset-block-start: 0;
+  inset-inline: 0;
+  height: var(--topbar-h);
+  background: var(--c-topbar);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 18px;
+  z-index: 200;
+}
+
+.menu-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  flex-shrink: 0;
+}
+
+.menu-button img {
+  display: block;
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+.EduAloca {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.EduAloca img {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+}

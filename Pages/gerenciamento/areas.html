@@ -1,0 +1,297 @@
+﻿<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EduAloca - Áreas</title>
+    <link rel="stylesheet" href="../../CSS/global/fonts.css" />
+    <link rel="stylesheet" href="../../CSS/global/typography.css" />
+    <link rel="stylesheet" href="../../CSS/navbar.css" />
+    <link rel="stylesheet" href="../../CSS/sidebar.css" />
+    <link rel="stylesheet" href="../../CSS/modules/manual.css" />
+  </head>
+
+  <body>
+    <header class="docs-topbar">
+      <button
+        class="menu-button"
+        type="button"
+        aria-label="Abrir menu"
+        aria-expanded="true"
+      >
+        <img src="../../Assets/IMG/menu.png" alt="" width="28" height="28" />
+      </button>
+
+      <a class="EduAloca" href="#" aria-label="EduAloca">
+        <img
+          src="../../Assets/IMG/Blue_and_White_Modern_Artificial_Intelligence_Logo.png"
+          alt="Logo"
+        />
+      </a>
+    </header>
+
+    <div class="page-shell">
+      <aside class="sidebar" aria-label="Menu da documentação">
+        <nav>
+          <ul class="sidebar-list">
+            <li>
+              <a class="section-link" href="../home/home.html">Introdução</a>
+            </li>
+
+            <li class="sidebar-group">
+              <button
+                class="sidebar-toggle"
+                type="button"
+                aria-expanded="false"
+              >
+                Autenticação
+              </button>
+              <ul class="sidebar-submenu">
+                <li>
+                  <a href="../autenticacao/login.html">Como Fazer Login</a>
+                </li>
+                <li>
+                  <a href="../autenticacao/recuperar-senha.html"
+                    >Como Recuperar a Senha</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="sidebar-group">
+              <button
+                class="sidebar-toggle"
+                type="button"
+                aria-expanded="false"
+              >
+                Gerenciamento de Informações
+              </button>
+              <ul class="sidebar-submenu">
+                <li><a href="../Gerenciamento/docente.html">Docentes</a></li>
+                <li>
+                  <a href="../Gerenciamento/disciplinas.html">Disciplinas</a>
+                </li>
+                <li><a href="../Gerenciamento/turmas.html">Turmas</a></li>
+                <li><a href="../Gerenciamento/cursos.html">Cursos</a></li>
+                <li><a href="../Gerenciamento/salas.html">Salas</a></li>
+                <li><a href="../Gerenciamento/blocos.html">Blocos</a></li>
+                <li><a href="../Gerenciamento/areas.html">Áreas</a></li>
+                <li>
+                  <a href="../Gerenciamento/funcionarios.html">Funcionários</a>
+                </li>
+              </ul>
+            </li>
+            <li class="sidebar-group">
+              <button
+                class="sidebar-toggle"
+                type="button"
+                aria-expanded="false"
+              >
+                Alocação
+              </button>
+              <ul class="sidebar-submenu">
+                <li>
+                  <a href="../alocacao/alocacao-gerar.html"
+                    >Geração de Alocação</a
+                  >
+                </li>
+                <li>
+                  <a href="../alocacao/alocacao-docentes.html"
+                    >Alocação de Docentes</a
+                  >
+                </li>
+                <li>
+                  <a href="../alocacao/alocacao-salas.html"
+                    >Alocação de Salas</a
+                  >
+                </li>
+                <li>
+                  <a href="../alocacao/alocacao-ajustar.html"
+                    >Ajustes Manuais</a
+                  >
+                </li>
+                <li>
+                  <a href="../alocacao/dias-nao-letivos.html"
+                    >Dias não Letivos</a
+                  >
+                </li>
+                <li>
+                  <a href="../alocacao/alocacao-visualizar.html"
+                    >Visualizar Grade</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="sidebar-group">
+              <button
+                class="sidebar-toggle"
+                type="button"
+                aria-expanded="false"
+              >
+                Relatórios
+              </button>
+              <ul class="sidebar-submenu">
+                <li>
+                  <a href="../relatorios/gerar.html">Geração de Relatórios</a>
+                </li>
+                <li>
+                  <a href="../relatorios/exportar.html">Exportação de Dados</a>
+                </li>
+              </ul>
+            </li>
+            <li class="sidebar-group">
+              <button
+                class="sidebar-toggle"
+                type="button"
+                aria-expanded="false"
+              >
+                FAQ
+              </button>
+              <ul class="sidebar-submenu">
+                <li>
+                  <a href="../duvidas/perguntas-frequentes.html"
+                    >Dúvidas Frequentes</a
+                  >
+                </li>
+                <li><a href="../duvidas/videos.html">Vídeos Tutoriais</a></li>
+                <li>
+                  <a href="../duvidas/enviar-duvida.html">Enviar Dúvidas</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <div class="article-title">
+          <h1 id="gerenciamento-areas">Gerenciamento de Áreas</h1>
+        </div>
+
+        <p>
+          O módulo de Gerenciamento de Áreas do EduAloca é responsável pela
+          organização dos núcleos ou departamentos pedagógicos e tecnológicos da
+          instituição. Ele serve para agrupar as disciplinas e os docentes de
+          acordo com a sua área de especialidade técnica ou científica.
+        </p>
+
+        <h2 id="cadastrar-areas">Cadastrar Áreas</h2>
+
+        <p>
+          O cadastro de áreas e departamentos estrutura o organograma da
+          instituição. Abaixo estão as categorias e os campos do formulário:
+        </p>
+
+        <ul>
+          <li>
+            Identificação e Liderança: Define o <strong>Nome</strong> oficial do
+            departamento e seleciona o <strong>Coordenador</strong> responsável
+            pela gerência executiva.
+          </li>
+          <li>
+            Controle Administrativo: Aponta o
+            <strong>Status</strong> (ativo/inativo) e utiliza o campo de
+            <strong>Observações</strong> para inserir notas relevantes sobre a
+            gestão da área.
+          </li>
+        </ul>
+
+        <div class="video-container">
+          <video controls>
+            <source
+              src="../../Assets/media/areas/Area_Cadastrar.mp4"
+              type="video/mp4"
+            />
+            Seu navegador não suporta a reprodução de vídeos.
+          </video>
+          <p class="video-description">Vídeo Tutorial: Cadastrar Área</p>
+        </div>
+
+        <h2 id="atualizar-areas">Editar Áreas</h2>
+
+        <p>
+          Atualizações regulares são necessárias sempre que houver casos de
+          troca de coordenação pedagógica, reestruturações internas ou mudanças
+          de nomenclatura do departamento.
+        </p>
+        <p>
+          Para modificar as atribuições e informações, localize a área desejada
+          na tabela e clique no botão <strong>Editar</strong>. O sistema
+          carregará instantaneamente os dados atuais, permitindo que você
+          realize e revise todas as alterações de forma prática.
+        </p>
+        <p>
+          Após concluir as correções, clique em <strong>Salvar</strong> para
+          gravar as novas informações de forma centralizada e em tempo real no
+          banco de dados da instituição.
+        </p>
+
+        <div class="video-container">
+          <video controls>
+            <source
+              src="../../Assets/media/areas/Area_Atualizar.mp4"
+              type="video/mp4"
+            />
+            Seu navegador não suporta a reprodução de vídeos.
+          </video>
+          <p class="video-description">Vídeo Tutorial: Editar Área</p>
+        </div>
+
+        <h2 id="excluir-areas">Excluir Áreas</h2>
+
+        <p>
+          Núcleos ou áreas de ensino que foram descontinuados permanentemente do
+          organograma da instituição devem ser excluídos da plataforma,
+          prevenindo que docentes ou disciplinas sejam alocados de forma
+          incorreta no futuro.
+        </p>
+        <p>
+          Para prosseguir com a remoção de maneira segura, localize o
+          departamento na listagem, clique no ícone de
+          <strong>lápis</strong> para acessar a edição e acione o botão
+          <strong>Excluir</strong> localizado no rodapé. O sistema exibirá
+          prontamente uma confirmação de segurança para certificar que nenhum
+          professor ou disciplina permaneça atrelado à área antes de excluí-la.
+        </p>
+
+        <div class="video-container">
+          <video controls>
+            <source
+              src="../../Assets/media/areas/Area_Excluir.mp4"
+              type="video/mp4"
+            />
+            Seu navegador não suporta a reprodução de vídeos.
+          </video>
+          <p class="video-description">Vídeo Tutorial: Excluir Área</p>
+        </div>
+
+        <h2 id="filtrar-areas">Filtrar Áreas</h2>
+
+        <p>
+          Para coordenadores que lidam com estruturas organizacionais extensas,
+          o painel central disponibiliza filtros de pesquisa inteligentes para
+          localizar registros de forma instantânea.
+        </p>
+        <p>
+          Você pode cruzar múltiplos critérios simultâneos, realizando buscas
+          pelo <strong>Nome</strong> descritivo da área ou especificamente pelo
+          <strong>Coordenador</strong> responsável pelo setor. Os resultados na
+          tela serão recarregados e atualizados dinamicamente à medida que você
+          digita.
+        </p>
+      </main>
+
+      <aside class="indice-pagina" aria-label="Nesta pagina">
+        <nav>
+          <a class="active" href="#gerenciamento-areas">Visão Geral</a>
+          <a href="#cadastrar-areas">Cadastrar Áreas</a>
+          <a href="#atualizar-areas">Editar Áreas</a>
+          <a href="#excluir-areas">Excluir Áreas</a>
+          <a href="#filtrar-areas">Filtrar Áreas</a>
+        </nav>
+      </aside>
+    </div>
+
+    <script src="../../src/app/sidebar.controller.js"></script>
+  </body>
+</html>

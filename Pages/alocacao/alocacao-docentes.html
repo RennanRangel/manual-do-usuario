@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EduAloca - Alocação de Docentes</title>
+    <link rel="stylesheet" href="../../CSS/global/fonts.css" />
+    <link rel="stylesheet" href="../../CSS/global/typography.css" />
+    <link rel="stylesheet" href="../../CSS/navbar.css" />
+    <link rel="stylesheet" href="../../CSS/sidebar.css" />
+    <link rel="stylesheet" href="../../CSS/modules/manual.css" />
+  </head>
+  <body>
+    <header class="docs-topbar">
+      <button
+        class="menu-button"
+        type="button"
+        aria-label="Abrir menu"
+        aria-expanded="true"
+      >
+        <img src="../../Assets/IMG/menu.png" alt="" width="28" height="28" />
+      </button>
+
+      <a class="EduAloca" href="#" aria-label="EduAloca">
+        <img
+          src="../../Assets/IMG/Blue_and_White_Modern_Artificial_Intelligence_Logo.png"
+          alt="Logo"
+        />
+      </a>
+    </header>
+
+    <div class="page-shell">
+      <aside class="sidebar" aria-label="Menu da documentação">
+        <nav>
+          <ul class="sidebar-list">
+            <li>
+              <a class="section-link" href="../home/home.html">Introdução</a>
+            </li>
+
+            <li class="sidebar-group">
+              <button
+                class="sidebar-toggle"
+                type="button"
+                aria-expanded="false"
+              >
+                Autenticação
+              </button>
+              <ul class="sidebar-submenu">
+                <li>
+                  <a href="../autenticacao/login.html">Como Fazer Login</a>
+                </li>
+                <li>
+                  <a href="../autenticacao/recuperar-senha.html"
+                    >Como Recuperar a Senha</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="sidebar-group">
+              <button
+                class="sidebar-toggle"
+                type="button"
+                aria-expanded="false"
+              >
+                Gerenciamento de Informações
+              </button>
+              <ul class="sidebar-submenu">
+                <li><a href="../Gerenciamento/docente.html">Docentes</a></li>
+                <li>
+                  <a href="../Gerenciamento/disciplinas.html">Disciplinas</a>
+                </li>
+                <li><a href="../Gerenciamento/turmas.html">Turmas</a></li>
+                <li><a href="../Gerenciamento/cursos.html">Cursos</a></li>
+                <li><a href="../Gerenciamento/salas.html">Salas</a></li>
+                <li><a href="../Gerenciamento/blocos.html">Blocos</a></li>
+                <li><a href="../Gerenciamento/areas.html">Áreas</a></li>
+                <li>
+                  <a href="../Gerenciamento/funcionarios.html">Funcionários</a>
+                </li>
+              </ul>
+            </li>
+            <li class="sidebar-group">
+              <button
+                class="sidebar-toggle"
+                type="button"
+                aria-expanded="false"
+              >
+                Alocação
+              </button>
+              <ul class="sidebar-submenu">
+                <li>
+                  <a href="../alocacao/alocacao-gerar.html"
+                    >Geração de Alocação</a
+                  >
+                </li>
+                <li>
+                  <a href="../alocacao/alocacao-docentes.html"
+                    >Alocação de Docentes</a
+                  >
+                </li>
+                <li>
+                  <a href="../alocacao/alocacao-salas.html"
+                    >Alocação de Salas</a
+                  >
+                </li>
+                <li>
+                  <a href="../alocacao/alocacao-ajustar.html"
+                    >Ajustes Manuais</a
+                  >
+                </li>
+                <li>
+                  <a href="../alocacao/dias-nao-letivos.html"
+                    >Dias não Letivos</a
+                  >
+                </li>
+                <li>
+                  <a href="../alocacao/alocacao-visualizar.html"
+                    >Visualizar Grade</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="sidebar-group">
+              <button
+                class="sidebar-toggle"
+                type="button"
+                aria-expanded="false"
+              >
+                Relatórios
+              </button>
+              <ul class="sidebar-submenu">
+                <li>
+                  <a href="../relatorios/gerar.html">Geração de Relatórios</a>
+                </li>
+                <li>
+                  <a href="../relatorios/exportar.html">Exportação de Dados</a>
+                </li>
+              </ul>
+            </li>
+            <li class="sidebar-group">
+              <button
+                class="sidebar-toggle"
+                type="button"
+                aria-expanded="false"
+              >
+                FAQ
+              </button>
+              <ul class="sidebar-submenu">
+                <li>
+                  <a href="../duvidas/perguntas-frequentes.html"
+                    >Dúvidas Frequentes</a
+                  >
+                </li>
+                <li><a href="../duvidas/videos.html">Vídeos Tutoriais</a></li>
+                <li>
+                  <a href="../duvidas/enviar-duvida.html">Enviar Dúvidas</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <div class="article-title">
+          <h1 id="alocacao-docentes">Alocação de Docentes</h1>
+        </div>
+
+        <p>
+          O painel de Alocação de Docentes do EduAloca permite a consulta
+          detalhada, o acompanhamento da carga de trabalho e o monitoramento das
+          agendas atribuídas a cada professor. Esta ferramenta é crucial para
+          verificar se o motor do solver distribuiu as aulas respeitando os
+          limites trabalhistas e a compatibilidade técnica do corpo docente.
+        </p>
+
+        <h2 id="monitoramento-carga">Carga Horária</h2>
+
+        <p>
+          O sistema apresenta indicadores visuais dinâmicos para cada professor
+          cadastrado. A coordenação pode acompanhar em tempo real o total de
+          horas de aulas atribuídas no período letivo selecionado e verificar a
+          conformidade com as restrições flexíveis de balanceamento, cujo
+          objetivo ideal é manter a ocupação do docente na faixa estabelecida
+          entre 75% e 90% do seu limite contratual.
+        </p>
+
+        <p>
+          Caso um professor receba mais aulas do que o permitido pelo seu
+          contrato ou fique abaixo da meta mínima de alocação pedagógica, o
+          painel exibirá alertas visuais de aviso no perfil do docente,
+          permitindo que os coordenadores identifiquem a necessidade de fazer
+          ajustes na grade horária.
+        </p>
+
+        <h2 id="visualizacao-agenda">Visualização de Grade e Horários</h2>
+
+        <p>
+          A agenda semanal individual de cada docente pode ser consultada de
+          forma interativa. O painel exibe a distribuição cronológica dos blocos
+          de aula ocupados pelo professor nos turnos matutino, vespertino e
+          noturno, discriminando a turma atendida, a disciplina ministrada e a
+          sala ou laboratório físico preferencial.
+        </p>
+
+        <p>
+          Esta visão integrada facilita a conferência de restrições rígidas
+          cruciais do sistema, garantindo que o professor não possua choques de
+          horários com múltiplas disciplinas simultâneas e atue apenas nos
+          turnos e dias da semana previamente autorizados em seu cadastro de
+          disponibilidade.
+        </p>
+
+        <h2 id="ajustes-e-filtros">Filtros e Busca de Docentes</h2>
+
+        <p>
+          Para gerenciar de forma rápida e prática a distribuição do corpo
+          docente por blocos e cursos, a tela disponibiliza seletores de busca
+          avançada. A coordenação pode refinar a visualização de alocações
+          buscando por Nome do professor, Área pedagógica de atuação, Curso
+          técnico correspondente ou pelo Status cadastral, isolando os dados de
+          interesse na tabela instantaneamente.
+        </p>
+      </main>
+
+      <aside class="indice-pagina" aria-label="Nesta pagina">
+        <nav>
+          <a class="active" href="#alocacao-docentes">Visão Geral</a>
+          <a href="#monitoramento-carga">Monitoramento de Carga</a>
+          <a href="#visualizacao-agenda">Visualização de Agenda</a>
+          <a href="#ajustes-e-filtros">Filtros e Busca</a>
+        </nav>
+      </aside>
+    </div>
+
+    <script src="../../src/app/sidebar.controller.js"></script>
+  </body>
+</html>

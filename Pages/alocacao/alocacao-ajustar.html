@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EduAloca - Ajustes Manuais</title>
+    <link rel="stylesheet" href="../../CSS/global/fonts.css" />
+    <link rel="stylesheet" href="../../CSS/global/typography.css" />
+    <link rel="stylesheet" href="../../CSS/navbar.css" />
+    <link rel="stylesheet" href="../../CSS/sidebar.css" />
+    <link rel="stylesheet" href="../../CSS/modules/manual.css" />
+  </head>
+  <body>
+    <header class="docs-topbar">
+      <button
+        class="menu-button"
+        type="button"
+        aria-label="Abrir menu"
+        aria-expanded="true"
+      >
+        <img src="../../Assets/IMG/menu.png" alt="" width="28" height="28" />
+      </button>
+
+      <a class="EduAloca" href="#" aria-label="EduAloca">
+        <img
+          src="../../Assets/IMG/Blue_and_White_Modern_Artificial_Intelligence_Logo.png"
+          alt="Logo"
+        />
+      </a>
+    </header>
+
+    <div class="page-shell">
+      <aside class="sidebar" aria-label="Menu da documentação">
+        <nav>
+          <ul class="sidebar-list">
+            <li>
+              <a class="section-link" href="../home/home.html">Introdução</a>
+            </li>
+
+            <li class="sidebar-group">
+              <button
+                class="sidebar-toggle"
+                type="button"
+                aria-expanded="false"
+              >
+                Autenticação
+              </button>
+              <ul class="sidebar-submenu">
+                <li>
+                  <a href="../autenticacao/login.html">Como Fazer Login</a>
+                </li>
+                <li>
+                  <a href="../autenticacao/recuperar-senha.html"
+                    >Como Recuperar a Senha</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="sidebar-group">
+              <button
+                class="sidebar-toggle"
+                type="button"
+                aria-expanded="false"
+              >
+                Gerenciamento de Informações
+              </button>
+              <ul class="sidebar-submenu">
+                <li><a href="../Gerenciamento/docente.html">Docentes</a></li>
+                <li>
+                  <a href="../Gerenciamento/disciplinas.html">Disciplinas</a>
+                </li>
+                <li><a href="../Gerenciamento/turmas.html">Turmas</a></li>
+                <li><a href="../Gerenciamento/cursos.html">Cursos</a></li>
+                <li><a href="../Gerenciamento/salas.html">Salas</a></li>
+                <li><a href="../Gerenciamento/blocos.html">Blocos</a></li>
+                <li><a href="../Gerenciamento/areas.html">Áreas</a></li>
+                <li>
+                  <a href="../Gerenciamento/funcionarios.html">Funcionários</a>
+                </li>
+              </ul>
+            </li>
+            <li class="sidebar-group">
+              <button
+                class="sidebar-toggle"
+                type="button"
+                aria-expanded="false"
+              >
+                Alocação
+              </button>
+              <ul class="sidebar-submenu">
+                <li>
+                  <a href="../alocacao/alocacao-gerar.html"
+                    >Geração de Alocação</a
+                  >
+                </li>
+                <li>
+                  <a href="../alocacao/alocacao-docentes.html"
+                    >Alocação de Docentes</a
+                  >
+                </li>
+                <li>
+                  <a href="../alocacao/alocacao-salas.html"
+                    >Alocação de Salas</a
+                  >
+                </li>
+                <li>
+                  <a href="../alocacao/alocacao-ajustar.html"
+                    >Ajustes Manuais</a
+                  >
+                </li>
+                <li>
+                  <a href="../alocacao/dias-nao-letivos.html"
+                    >Dias não Letivos</a
+                  >
+                </li>
+                <li>
+                  <a href="../alocacao/alocacao-visualizar.html"
+                    >Visualizar Grade</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="sidebar-group">
+              <button
+                class="sidebar-toggle"
+                type="button"
+                aria-expanded="false"
+              >
+                Relatórios
+              </button>
+              <ul class="sidebar-submenu">
+                <li>
+                  <a href="../relatorios/gerar.html">Geração de Relatórios</a>
+                </li>
+                <li>
+                  <a href="../relatorios/exportar.html">Exportação de Dados</a>
+                </li>
+              </ul>
+            </li>
+            <li class="sidebar-group">
+              <button
+                class="sidebar-toggle"
+                type="button"
+                aria-expanded="false"
+              >
+                FAQ
+              </button>
+              <ul class="sidebar-submenu">
+                <li>
+                  <a href="../duvidas/perguntas-frequentes.html"
+                    >Dúvidas Frequentes</a
+                  >
+                </li>
+                <li><a href="../duvidas/videos.html">Vídeos Tutoriais</a></li>
+                <li>
+                  <a href="../duvidas/enviar-duvida.html">Enviar Dúvidas</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <div class="article-title">
+          <h1 id="ajustar-alocacao">Ajustes Manuais</h1>
+        </div>
+
+        <p>
+          O módulo de Ajustes Manuais do EduAloca permite que os coordenadores
+          pedagógicos realizem correções diretas e pontuais sobre a grade de
+          aulas gerada automaticamente. Essa funcionalidade é de extrema
+          importância para acomodar decisões humanas de última hora ou resolver
+          pequenos conflitos residuais.
+        </p>
+
+        <h2 id="realizar-ajustes">Como Realizar Ajustes na Grade</h2>
+
+        <p>
+          O usuário acessa a grade horária interativa e clica diretamente no
+          bloco de aula que deseja alterar. O painel disponibilizará seletores
+          rápidos para redefinir o docente alocado, modificar a sala ou
+          laboratório de destino, ou mesmo trocar o dia da semana e o turno de
+          realização da aula.
+        </p>
+
+        <p>
+          Caso o coordenador pedagógico precise fazer uma alteração mais ampla,
+          é possível desvincular temporariamente uma aula de seu horário e
+          mantê-la como uma aula órfã para encaixá-la posteriormente em um novo
+          intervalo disponível na malha horária.
+        </p>
+
+        <h2 id="validacao-conflitos">Validações de Conflitos em Tempo Real</h2>
+
+        <p>
+          Ao modificar qualquer parâmetro manualmente, o sistema do EduAloca
+          executa uma validação em tempo real das restrições rígidas. Caso o
+          ajuste manual insira o docente em dois horários simultâneos ou aloque
+          uma turma em salas conflitantes, o sistema exibirá uma notificação de
+          alerta na cor laranja.
+        </p>
+
+        <p>
+          Essa barreira de segurança ajuda a impedir a consolidação de grades
+          com erros antes da persistência definitiva, garantindo a integridade
+          dos dados e o respeito aos limites contratuais trabalhistas de cada
+          professor.
+        </p>
+
+        <h2 id="salvar-ajustes">Salvar e Persistir as Modificações</h2>
+
+        <p>
+          Após concluir toda a rodada de correções e ajustes manuais, é
+          fundamental que as alterações feitas sejam devidamente consolidadas no
+          banco de dados para evitar a perda de trabalho. O coordenador pode
+          finalizar o processo clicando no botão
+          <strong>Salvar Alterações</strong> localizado no painel superior.
+        </p>
+        <p>
+          Ao realizar essa ação, o sistema permite que você escolha sob qual
+          status deseja persistir a grade atualizada: como um
+          <strong>Rascunho</strong>, caso os ajustes ainda estejam em fase de
+          revisão pela coordenação, ou como <strong>Publicada</strong>,
+          oficializando as novas distribuições e tornando-as ativas e
+          operacionais para a visualização de toda a instituição.
+        </p>
+      </main>
+
+      <aside class="indice-pagina" aria-label="Nesta pagina">
+        <nav>
+          <a class="active" href="#ajustar-alocacao">Visão Geral</a>
+          <a href="#realizar-ajustes">Realizar Ajustes</a>
+          <a href="#validacao-conflitos">Validações de Conflitos</a>
+          <a href="#salvar-ajustes">Salvar Ajustes</a>
+        </nav>
+      </aside>
+    </div>
+
+    <script src="../../src/app/sidebar.controller.js"></script>
+  </body>
+</html>

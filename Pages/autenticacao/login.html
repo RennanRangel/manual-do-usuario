@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Como Fazer Login - EduAloca</title>
+    <link rel="stylesheet" href="../../CSS/global/fonts.css" />
+    <link rel="stylesheet" href="../../CSS/global/typography.css" />
+    <link rel="stylesheet" href="../../CSS/navbar.css" />
+    <link rel="stylesheet" href="../../CSS/sidebar.css" />
+    <link rel="stylesheet" href="../../CSS/modules/manual.css" />
+  </head>
+  <body>
+    <header class="docs-topbar">
+      <button
+        class="menu-button"
+        type="button"
+        aria-label="Abrir menu"
+        aria-expanded="true"
+      >
+        <img src="../../Assets/IMG/menu.png" alt="" width="28" height="28" />
+      </button>
+
+      <a class="EduAloca" href="#" aria-label="EduAloca">
+        <img
+          src="../../Assets/IMG/Blue_and_White_Modern_Artificial_Intelligence_Logo.png"
+          alt="Logo"
+        />
+      </a>
+    </header>
+
+    <div class="page-shell">
+      <aside class="sidebar" aria-label="Menu da documentação">
+        <nav>
+          <ul class="sidebar-list">
+            <li>
+              <a class="section-link" href="../home/home.html">Introdução</a>
+            </li>
+
+            <li class="sidebar-group">
+              <button
+                class="sidebar-toggle"
+                type="button"
+                aria-expanded="false"
+              >
+                Autenticação
+              </button>
+              <ul class="sidebar-submenu">
+                <li>
+                  <a href="../autenticacao/login.html">Como Fazer Login</a>
+                </li>
+                <li>
+                  <a href="../autenticacao/recuperar-senha.html"
+                    >Como Recuperar a Senha</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="sidebar-group">
+              <button
+                class="sidebar-toggle"
+                type="button"
+                aria-expanded="false"
+              >
+                Gerenciamento de Informações
+              </button>
+              <ul class="sidebar-submenu">
+                <li><a href="../Gerenciamento/docente.html">Docentes</a></li>
+                <li>
+                  <a href="../Gerenciamento/disciplinas.html">Disciplinas</a>
+                </li>
+                <li><a href="../Gerenciamento/turmas.html">Turmas</a></li>
+                <li><a href="../Gerenciamento/cursos.html">Cursos</a></li>
+                <li><a href="../Gerenciamento/salas.html">Salas</a></li>
+                <li><a href="../Gerenciamento/blocos.html">Blocos</a></li>
+                <li><a href="../Gerenciamento/areas.html">Áreas</a></li>
+                <li>
+                  <a href="../Gerenciamento/funcionarios.html">Funcionários</a>
+                </li>
+              </ul>
+            </li>
+            <li class="sidebar-group">
+              <button
+                class="sidebar-toggle"
+                type="button"
+                aria-expanded="false"
+              >
+                Alocação
+              </button>
+              <ul class="sidebar-submenu">
+                <li>
+                  <a href="../alocacao/alocacao-gerar.html"
+                    >Geração de Alocação</a
+                  >
+                </li>
+                <li>
+                  <a href="../alocacao/alocacao-docentes.html"
+                    >Alocação de Docentes</a
+                  >
+                </li>
+                <li>
+                  <a href="../alocacao/alocacao-salas.html"
+                    >Alocação de Salas</a
+                  >
+                </li>
+                <li>
+                  <a href="../alocacao/alocacao-ajustar.html"
+                    >Ajustes Manuais</a
+                  >
+                </li>
+                <li>
+                  <a href="../alocacao/dias-nao-letivos.html"
+                    >Dias não Letivos</a
+                  >
+                </li>
+                <li>
+                  <a href="../alocacao/alocacao-visualizar.html"
+                    >Visualizar Grade</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="sidebar-group">
+              <button
+                class="sidebar-toggle"
+                type="button"
+                aria-expanded="false"
+              >
+                Relatórios
+              </button>
+              <ul class="sidebar-submenu">
+                <li>
+                  <a href="../relatorios/gerar.html">Geração de Relatórios</a>
+                </li>
+                <li>
+                  <a href="../relatorios/exportar.html">Exportação de Dados</a>
+                </li>
+              </ul>
+            </li>
+            <li class="sidebar-group">
+              <button
+                class="sidebar-toggle"
+                type="button"
+                aria-expanded="false"
+              >
+                FAQ
+              </button>
+              <ul class="sidebar-submenu">
+                <li>
+                  <a href="../duvidas/perguntas-frequentes.html"
+                    >Dúvidas Frequentes</a
+                  >
+                </li>
+                <li><a href="../duvidas/videos.html">Vídeos Tutoriais</a></li>
+                <li>
+                  <a href="../duvidas/enviar-duvida.html">Enviar Dúvidas</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <div class="article-title">
+          <h1 id="como-fazer-login">Como Fazer Login</h1>
+        </div>
+
+        <p>
+          O acesso ao EduAloca é restrito a usuários autorizados da instituição,
+          como coordenadores pedagógicos, técnicos de ensino e administradores
+          do sistema. A autenticação garante que cada nível de usuário acesse
+          apenas as funcionalidades permitidas para o seu perfil.
+        </p>
+
+        <h2 id="perfis-de-acesso">Perfis de Acesso</h2>
+
+        <p>
+          O sistema disponibiliza três tipos de perfis. Após o login, o EduAloca
+          identifica automaticamente o perfil vinculado às suas credenciais e
+          exibe somente os módulos e ações permitidos para o seu usuário.
+        </p>
+
+        <p>
+          O perfil Administrador possui acesso a todo o sistema, podendo
+          utilizar todos os módulos e funcionalidades disponíveis no EduAloca,
+          incluindo cadastro, alocação, relatórios e gestão acadêmica.
+        </p>
+
+        <p>
+          O perfil Visualização é destinado à consulta, possibilitando
+          visualizar grades, alocações e relatórios sem alterar dados ou
+          executar ações de cadastro e edição.
+        </p>
+
+        <p>
+          O perfil Docente tem acesso aos calendários e informações pertinentes
+          à sua atuação, permitindo acompanhar a própria grade de horários e
+          demais dados relacionados às suas aulas e alocações.
+        </p>
+
+        <h2 id="passo-a-passo">Passo a Passo para o Acesso</h2>
+
+        <p>
+          Para entrar no sistema e iniciar o gerenciamento ou consulta das
+          alocações acadêmicas, o primeiro passo é acessar a tela de login. Abra
+          o seu navegador de preferência e insira a URL oficial do sistema
+          EduAloca fornecida pela coordenação de TI da sua unidade.
+        </p>
+
+        <p>
+          Em seguida, você deve inserir suas credenciais nos campos indicados.
+          No campo E-mail institucional, digite o seu e-mail padrão do SENAI
+          (como seu.nome@fieb.org.br) e preencha a sua senha secreta logo
+          abaixo.
+        </p>
+
+        <p>
+          Para finalizar, basta concluir a autenticação clicando firmemente no
+          botão Entrar. Se os dados informados estiverem totalmente corretos, o
+          sistema validará o seu perfil.
+        </p>
+      </main>
+
+      <aside class="indice-pagina" aria-label="Nesta pagina">
+        <nav>
+          <a class="active" href="#como-fazer-login">Como Fazer Login</a>
+          <a href="#perfis-de-acesso">Perfis de Acesso</a>
+          <a href="#passo-a-passo">Passo a Passo</a>
+        </nav>
+      </aside>
+    </div>
+
+    <script src="../../src/app/sidebar.controller.js"></script>
+  </body>
+</html>

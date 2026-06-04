@@ -1,0 +1,303 @@
+﻿<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EduAloca - Blocos</title>
+    <link rel="stylesheet" href="../../CSS/global/fonts.css" />
+    <link rel="stylesheet" href="../../CSS/global/typography.css" />
+    <link rel="stylesheet" href="../../CSS/navbar.css" />
+    <link rel="stylesheet" href="../../CSS/sidebar.css" />
+    <link rel="stylesheet" href="../../CSS/modules/manual.css" />
+  </head>
+  <body>
+    <header class="docs-topbar">
+      <button
+        class="menu-button"
+        type="button"
+        aria-label="Abrir menu"
+        aria-expanded="true"
+      >
+        <img src="../../Assets/IMG/menu.png" alt="" width="28" height="28" />
+      </button>
+
+      <a class="EduAloca" href="#" aria-label="EduAloca">
+        <img
+          src="../../Assets/IMG/Blue_and_White_Modern_Artificial_Intelligence_Logo.png"
+          alt="Logo"
+        />
+      </a>
+    </header>
+
+    <div class="page-shell">
+      <aside class="sidebar" aria-label="Menu da documentação">
+        <nav>
+          <ul class="sidebar-list">
+            <li>
+              <a class="section-link" href="../home/home.html">Introdução</a>
+            </li>
+
+            <li class="sidebar-group">
+              <button
+                class="sidebar-toggle"
+                type="button"
+                aria-expanded="false"
+              >
+                Autenticação
+              </button>
+              <ul class="sidebar-submenu">
+                <li>
+                  <a href="../autenticacao/login.html">Como Fazer Login</a>
+                </li>
+                <li>
+                  <a href="../autenticacao/recuperar-senha.html"
+                    >Como Recuperar a Senha</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="sidebar-group">
+              <button
+                class="sidebar-toggle"
+                type="button"
+                aria-expanded="false"
+              >
+                Gerenciamento de Informações
+              </button>
+              <ul class="sidebar-submenu">
+                <li><a href="../Gerenciamento/docente.html">Docentes</a></li>
+                <li>
+                  <a href="../Gerenciamento/disciplinas.html">Disciplinas</a>
+                </li>
+                <li><a href="../Gerenciamento/turmas.html">Turmas</a></li>
+                <li><a href="../Gerenciamento/cursos.html">Cursos</a></li>
+                <li><a href="../Gerenciamento/salas.html">Salas</a></li>
+                <li><a href="../Gerenciamento/blocos.html">Blocos</a></li>
+                <li><a href="../Gerenciamento/areas.html">Áreas</a></li>
+                <li>
+                  <a href="../Gerenciamento/funcionarios.html">Funcionários</a>
+                </li>
+              </ul>
+            </li>
+            <li class="sidebar-group">
+              <button
+                class="sidebar-toggle"
+                type="button"
+                aria-expanded="false"
+              >
+                Alocação
+              </button>
+              <ul class="sidebar-submenu">
+                <li>
+                  <a href="../alocacao/alocacao-gerar.html"
+                    >Geração de Alocação</a
+                  >
+                </li>
+                <li>
+                  <a href="../alocacao/alocacao-docentes.html"
+                    >Alocação de Docentes</a
+                  >
+                </li>
+                <li>
+                  <a href="../alocacao/alocacao-salas.html"
+                    >Alocação de Salas</a
+                  >
+                </li>
+                <li>
+                  <a href="../alocacao/alocacao-ajustar.html"
+                    >Ajustes Manuais</a
+                  >
+                </li>
+                <li>
+                  <a href="../alocacao/dias-nao-letivos.html"
+                    >Dias não Letivos</a
+                  >
+                </li>
+                <li>
+                  <a href="../alocacao/alocacao-visualizar.html"
+                    >Visualizar Grade</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="sidebar-group">
+              <button
+                class="sidebar-toggle"
+                type="button"
+                aria-expanded="false"
+              >
+                Relatórios
+              </button>
+              <ul class="sidebar-submenu">
+                <li>
+                  <a href="../relatorios/gerar.html">Geração de Relatórios</a>
+                </li>
+                <li>
+                  <a href="../relatorios/exportar.html">Exportação de Dados</a>
+                </li>
+              </ul>
+            </li>
+            <li class="sidebar-group">
+              <button
+                class="sidebar-toggle"
+                type="button"
+                aria-expanded="false"
+              >
+                FAQ
+              </button>
+              <ul class="sidebar-submenu">
+                <li>
+                  <a href="../duvidas/perguntas-frequentes.html"
+                    >Dúvidas Frequentes</a
+                  >
+                </li>
+                <li><a href="../duvidas/videos.html">Vídeos Tutoriais</a></li>
+                <li>
+                  <a href="../duvidas/enviar-duvida.html">Enviar Dúvidas</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <div class="article-title">
+          <h1 id="gerenciamento-blocos">Gerenciamento de Blocos</h1>
+        </div>
+
+        <p>
+          O módulo de Gerenciamento de Blocos do EduAloca centraliza o
+          mapeamento físico e as características estruturais de cada pavilhão ou
+          setor do campus. Essas informações alimentam indiretamente as regras
+          de alocação de salas e a logística de deslocamento dos alunos e
+          docentes.
+        </p>
+
+        <h2 id="cadastrar-blocos">Cadastrar Blocos</h2>
+
+        <p>
+          O cadastro de blocos utiliza um formulário simplificado focado na
+          infraestrutura física do pavilhão. Abaixo estão as categorias e os
+          campos:
+        </p>
+
+        <ul>
+          <li>
+            Identificação: Registra a <strong>Letra</strong> (alfabética,
+            numérica ou nome) que identifica o pavilhão.
+          </li>
+          <li>
+            Infraestrutura de Apoio: Marca a existência de
+            <strong>Banheiro</strong> comum,
+            <strong>Banheiro cadeirante</strong> (acessibilidade) e a presença
+            de <strong>Bebedouro</strong>.
+          </li>
+          <li>
+            Controle Operacional: Define o
+            <strong>Status</strong> (ativo/inativo) e disponibiliza o campo de
+            <strong>Observações</strong> para anotações gerais sobre a
+            infraestrutura.
+          </li>
+        </ul>
+
+        <div class="video-container">
+          <video controls>
+            <source
+              src="../../Assets/media/blocos/Bloco_Cadastrar.mp4"
+              type="video/mp4"
+            />
+            Seu navegador não suporta a reprodução de vídeos.
+          </video>
+          <p class="video-description">Vídeo Tutorial: Cadastrar Bloco</p>
+        </div>
+
+        <h2 id="atualizar-blocos">Editar Blocos</h2>
+
+        <p>
+          As atualizações são fundamentais para refletir quaisquer mudanças
+          estruturais ou reformas físicas diretamente no sistema do campus.
+        </p>
+        <p>
+          Para alterar os dados de um pavilhão, localize o respectivo bloco na
+          tabela geral e clique no botão <strong>Editar</strong>. O sistema
+          abrirá o formulário já preenchido com as informações atuais,
+          permitindo que você corrija ou atualize facilmente os dados de
+          infraestrutura e acessibilidade.
+        </p>
+        <p>
+          Após revisar e alterar as informações necessárias, clique em
+          <strong>Salvar</strong> para gravar as novas configurações de forma
+          permanente no banco de dados.
+        </p>
+
+        <div class="video-container">
+          <video controls>
+            <source
+              src="../../Assets/media/blocos/Bloco_Atualizar.mp4"
+              type="video/mp4"
+            />
+            Seu navegador não suporta a reprodução de vídeos.
+          </video>
+          <p class="video-description">Vídeo Tutorial: Editar Bloco</p>
+        </div>
+
+        <h2 id="excluir-blocos">Excluir Blocos</h2>
+
+        <p>
+          Caso pavilhões inteiros sejam desativados permanentemente, demolidos
+          ou desmembrados da unidade, eles podem ser removidos da plataforma.
+          Isso garante que a lista de espaços se mantenha sempre enxuta e
+          coerente com a realidade física do campus.
+        </p>
+        <p>
+          Para remover um bloco de forma segura, localize-o na listagem, clique
+          no ícone de <strong>lápis</strong> para acessar a edição e, em
+          seguida, acione o botão de <strong>Excluir</strong>. O sistema exibirá
+          uma etapa de confirmação de segurança rigorosa para evitar exclusões
+          indevidas ou acidentais de pavilhões que ainda possuam salas
+          vinculadas e ativas.
+        </p>
+
+        <div class="video-container">
+          <video controls>
+            <source
+              src="../../Assets/media/blocos/Bloco_Excluir.mp4"
+              type="video/mp4"
+            />
+            Seu navegador não suporta a reprodução de vídeos.
+          </video>
+          <p class="video-description">Vídeo Tutorial: Excluir Bloco</p>
+        </div>
+
+        <h2 id="filtrar-blocos">Filtrar Blocos</h2>
+
+        <p>
+          O painel central do sistema oferece filtros de pesquisa rápidos e
+          diretos, criados para otimizar a navegação e a gestão visual dos
+          ambientes, especialmente em campi muito extensos.
+        </p>
+        <p>
+          Você pode buscar blocos específicos digitando a
+          <strong>Letra</strong> ou o nome de identificação, ou então refinar a
+          visualização da lista filtrando pelo
+          <strong>Status</strong> operacional atual, atualizando os resultados
+          instantaneamente.
+        </p>
+      </main>
+
+      <aside class="indice-pagina" aria-label="Nesta pagina">
+        <nav>
+          <a class="active" href="#gerenciamento-blocos">Visão Geral</a>
+          <a href="#cadastrar-blocos">Cadastrar Blocos</a>
+          <a href="#atualizar-blocos">Editar Blocos</a>
+          <a href="#excluir-blocos">Excluir Blocos</a>
+          <a href="#filtrar-blocos">Filtrar Blocos</a>
+        </nav>
+      </aside>
+    </div>
+
+    <script src="../../src/app/sidebar.controller.js"></script>
+  </body>
+</html>

@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EduAloca - Funcionários</title>
+    <link rel="stylesheet" href="../../CSS/global/fonts.css" />
+    <link rel="stylesheet" href="../../CSS/global/typography.css" />
+    <link rel="stylesheet" href="../../CSS/navbar.css" />
+    <link rel="stylesheet" href="../../CSS/sidebar.css" />
+    <link rel="stylesheet" href="../../CSS/modules/manual.css" />
+  </head>
+  <body>
+    <header class="docs-topbar">
+      <button
+        class="menu-button"
+        type="button"
+        aria-label="Abrir menu"
+        aria-expanded="true"
+      >
+        <img src="../../Assets/IMG/menu.png" alt="" width="28" height="28" />
+      </button>
+
+      <a class="EduAloca" href="#" aria-label="EduAloca">
+        <img
+          src="../../Assets/IMG/Blue_and_White_Modern_Artificial_Intelligence_Logo.png"
+          alt="Logo"
+        />
+      </a>
+    </header>
+
+    <div class="page-shell">
+      <aside class="sidebar" aria-label="Menu da documentação">
+        <nav>
+          <ul class="sidebar-list">
+            <li>
+              <a class="section-link" href="../home/home.html">Introdução</a>
+            </li>
+
+            <li class="sidebar-group">
+              <button
+                class="sidebar-toggle"
+                type="button"
+                aria-expanded="false"
+              >
+                Autenticação
+              </button>
+              <ul class="sidebar-submenu">
+                <li>
+                  <a href="../autenticacao/login.html">Como Fazer Login</a>
+                </li>
+                <li>
+                  <a href="../autenticacao/recuperar-senha.html"
+                    >Como Recuperar a Senha</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="sidebar-group">
+              <button
+                class="sidebar-toggle"
+                type="button"
+                aria-expanded="false"
+              >
+                Gerenciamento de Informações
+              </button>
+              <ul class="sidebar-submenu">
+                <li><a href="../Gerenciamento/docente.html">Docentes</a></li>
+                <li>
+                  <a href="../Gerenciamento/disciplinas.html">Disciplinas</a>
+                </li>
+                <li><a href="../Gerenciamento/turmas.html">Turmas</a></li>
+                <li><a href="../Gerenciamento/cursos.html">Cursos</a></li>
+                <li><a href="../Gerenciamento/salas.html">Salas</a></li>
+                <li><a href="../Gerenciamento/blocos.html">Blocos</a></li>
+                <li><a href="../Gerenciamento/areas.html">Áreas</a></li>
+                <li>
+                  <a href="../Gerenciamento/funcionarios.html">Funcionários</a>
+                </li>
+              </ul>
+            </li>
+            <li class="sidebar-group">
+              <button
+                class="sidebar-toggle"
+                type="button"
+                aria-expanded="false"
+              >
+                Alocação
+              </button>
+              <ul class="sidebar-submenu">
+                <li>
+                  <a href="../alocacao/alocacao-gerar.html"
+                    >Geração de Alocação</a
+                  >
+                </li>
+                <li>
+                  <a href="../alocacao/alocacao-docentes.html"
+                    >Alocação de Docentes</a
+                  >
+                </li>
+                <li>
+                  <a href="../alocacao/alocacao-salas.html"
+                    >Alocação de Salas</a
+                  >
+                </li>
+                <li>
+                  <a href="../alocacao/alocacao-ajustar.html"
+                    >Ajustes Manuais</a
+                  >
+                </li>
+                <li>
+                  <a href="../alocacao/dias-nao-letivos.html"
+                    >Dias não Letivos</a
+                  >
+                </li>
+                <li>
+                  <a href="../alocacao/alocacao-visualizar.html"
+                    >Visualizar Grade</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="sidebar-group">
+              <button
+                class="sidebar-toggle"
+                type="button"
+                aria-expanded="false"
+              >
+                Relatórios
+              </button>
+              <ul class="sidebar-submenu">
+                <li>
+                  <a href="../relatorios/gerar.html">Geração de Relatórios</a>
+                </li>
+                <li>
+                  <a href="../relatorios/exportar.html">Exportação de Dados</a>
+                </li>
+              </ul>
+            </li>
+            <li class="sidebar-group">
+              <button
+                class="sidebar-toggle"
+                type="button"
+                aria-expanded="false"
+              >
+                FAQ
+              </button>
+              <ul class="sidebar-submenu">
+                <li>
+                  <a href="../duvidas/perguntas-frequentes.html"
+                    >Dúvidas Frequentes</a
+                  >
+                </li>
+                <li><a href="../duvidas/videos.html">Vídeos Tutoriais</a></li>
+                <li>
+                  <a href="../duvidas/enviar-duvida.html">Enviar Dúvidas</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <div class="article-title">
+          <h1 id="gerenciamento-funcionarios">Gerenciamento de Funcionários</h1>
+        </div>
+
+        <p>
+          O módulo de Gerenciamento de Funcionários do EduAloca centraliza o
+          cadastro e controle de perfis administrativos, técnicos e de
+          coordenação da plataforma, definindo suas permissões de visualização e
+          edição dentro da ferramenta.
+        </p>
+
+        <h2 id="cadastrar-funcionarios">Cadastrar Funcionários</h2>
+
+        <p>
+          O registro de colaboradores é realizado por meio de um formulário
+          estruturado. Abaixo estão as categorias e os campos:
+        </p>
+
+        <ul>
+          <li>
+            Identificação Básica: Registra o <strong>Nome</strong> completo, o
+            <strong>E-mail</strong> corporativo (utilizado como identificação) e
+            o <strong>Telefone</strong> de contato.
+          </li>
+          <li>
+            Hierarquia e Acesso: Define o <strong>Cargo</strong> exercido, o
+            <strong>Setor</strong> de atuação e o <strong>Perfil</strong> de
+            uso, que determina as permissões na plataforma.
+          </li>
+          <li>
+            Controle de Conta: Configura o
+            <strong>Status</strong> (ativo/inativo) e utiliza o campo de
+            <strong>Observações</strong> para notas relevantes de RH ou suporte.
+          </li>
+        </ul>
+
+        <div class="video-container">
+          <video controls>
+            <source
+              src="../../Assets/media/funcionarios/Funcionarios_Cadastrar (1).mp4"
+              type="video/mp4"
+            />
+            Seu navegador não suporta a reprodução de vídeos.
+          </video>
+          <p class="video-description">Vídeo Tutorial: Cadastrar Funcionário</p>
+        </div>
+
+        <h2 id="atualizar-funcionarios">Editar Funcionários</h2>
+
+        <p>
+          A manutenção contínua e rotineira das contas de usuários é uma prática
+          essencial para refletir adequadamente promoções, transferências de
+          equipe ou simples ajustes cadastrais e de contato.
+        </p>
+        <p>
+          Para alterar os dados de um colaborador, localize-o na listagem geral
+          e acesse o botão <strong>Editar</strong> na sua respectiva linha. O
+          formulário exibirá automaticamente todos os dados pré-configurados,
+          permitindo que você eleve ou reduza permissões, altere cargos e
+          atualize setores.
+        </p>
+        <p>
+          Após alterar as informações e privilégios sensíveis, revise suas
+          escolhas e clique em <strong>Salvar</strong> para que as mudanças e os
+          novos acessos entrem em vigor instantaneamente na plataforma.
+        </p>
+
+        <div class="video-container">
+          <video controls>
+            <source
+              src="../../Assets/media/funcionarios/Funcionario_Atualizar.mp4"
+              type="video/mp4"
+            />
+            Seu navegador não suporta a reprodução de vídeos.
+          </video>
+          <p class="video-description">Vídeo Tutorial: Editar Funcionário</p>
+        </div>
+
+        <h2 id="excluir-funcionarios">Excluir Funcionários</h2>
+
+        <p>
+          A exclusão é um procedimento severo que apaga definitivamente os dados
+          da conta do banco de dados. Ela deve ser utilizada primariamente em
+          casos de desligamento definitivo da instituição, assegurando que o
+          colaborador não mantenha nenhum tipo de acesso não autorizado à
+          ferramenta.
+        </p>
+        <p>
+          Para executar a remoção com segurança, encontre o perfil do
+          funcionário na tabela, clique no ícone de <strong>lápis</strong> para
+          entrar no modo de edição e acione o botão <strong>Excluir</strong>.
+          Para assegurar o controle, o sistema exigirá a aprovação em uma janela
+          de segurança, confirmando a ação antes da exclusão permanente da
+          conta.
+        </p>
+
+        <div class="video-container">
+          <video controls>
+            <source
+              src="../../Assets/media/funcionarios/Funcionario_Excluir.mp4"
+              type="video/mp4"
+            />
+            Seu navegador não suporta a reprodução de vídeos.
+          </video>
+          <p class="video-description">Vídeo Tutorial: Excluir Funcionário</p>
+        </div>
+
+        <h2 id="filtrar-funcionarios">Filtrar Funcionários</h2>
+
+        <p>
+          Com o objetivo de viabilizar a auditoria eficiente e a gestão diária
+          de dezenas de contas ativas e inativas, a tabela principal de
+          funcionários está equipada com uma série de filtros lógicos avançados.
+        </p>
+        <p>
+          Você pode aplicar pesquisas refinadas e compostas cruzando livremente
+          parâmetros como o <strong>Nome</strong> completo, trechos do endereço
+          de <strong>E-mail</strong>, ou restringir as exibições selecionando
+          <strong>Cargo</strong>, <strong>Setor</strong> departamental ou o
+          nível hierárquico do <strong>Perfil</strong>, gerando resultados
+          instantâneos na interface.
+        </p>
+      </main>
+
+      <aside class="indice-pagina" aria-label="Nesta pagina">
+        <nav>
+          <a class="active" href="#gerenciamento-funcionarios">Visão Geral</a>
+          <a href="#cadastrar-funcionarios">Cadastrar Funcionários</a>
+          <a href="#atualizar-funcionarios">Editar Funcionários</a>
+          <a href="#excluir-funcionarios">Excluir Funcionários</a>
+          <a href="#filtrar-funcionarios">Filtrar Funcionários</a>
+        </nav>
+      </aside>
+    </div>
+
+    <script src="../../src/app/sidebar.controller.js"></script>
+  </body>
+</html>

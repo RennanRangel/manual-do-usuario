@@ -1,0 +1,308 @@
+﻿<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EduAloca - Disciplinas</title>
+    <link rel="stylesheet" href="../../CSS/global/fonts.css" />
+    <link rel="stylesheet" href="../../CSS/global/typography.css" />
+    <link rel="stylesheet" href="../../CSS/navbar.css" />
+    <link rel="stylesheet" href="../../CSS/sidebar.css" />
+    <link rel="stylesheet" href="../../CSS/modules/manual.css" />
+  </head>
+  <body>
+    <header class="docs-topbar">
+      <button
+        class="menu-button"
+        type="button"
+        aria-label="Abrir menu"
+        aria-expanded="true"
+      >
+        <img src="../../Assets/IMG/menu.png" alt="" width="28" height="28" />
+      </button>
+
+      <a class="EduAloca" href="#" aria-label="EduAloca">
+        <img
+          src="../../Assets/IMG/Blue_and_White_Modern_Artificial_Intelligence_Logo.png"
+          alt="Logo"
+        />
+      </a>
+    </header>
+
+    <div class="page-shell">
+      <aside class="sidebar" aria-label="Menu da documentação">
+        <nav>
+          <ul class="sidebar-list">
+            <li>
+              <a class="section-link" href="../home/home.html">Introdução</a>
+            </li>
+
+            <li class="sidebar-group">
+              <button
+                class="sidebar-toggle"
+                type="button"
+                aria-expanded="false"
+              >
+                Autenticação
+              </button>
+              <ul class="sidebar-submenu">
+                <li>
+                  <a href="../autenticacao/login.html">Como Fazer Login</a>
+                </li>
+                <li>
+                  <a href="../autenticacao/recuperar-senha.html"
+                    >Como Recuperar a Senha</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="sidebar-group">
+              <button
+                class="sidebar-toggle"
+                type="button"
+                aria-expanded="false"
+              >
+                Gerenciamento de Informações
+              </button>
+              <ul class="sidebar-submenu">
+                <li><a href="../Gerenciamento/docente.html">Docentes</a></li>
+                <li>
+                  <a href="../Gerenciamento/disciplinas.html">Disciplinas</a>
+                </li>
+                <li><a href="../Gerenciamento/turmas.html">Turmas</a></li>
+                <li><a href="../Gerenciamento/cursos.html">Cursos</a></li>
+                <li><a href="../Gerenciamento/salas.html">Salas</a></li>
+                <li><a href="../Gerenciamento/blocos.html">Blocos</a></li>
+                <li><a href="../Gerenciamento/areas.html">Áreas</a></li>
+                <li>
+                  <a href="../Gerenciamento/funcionarios.html">Funcionários</a>
+                </li>
+              </ul>
+            </li>
+            <li class="sidebar-group">
+              <button
+                class="sidebar-toggle"
+                type="button"
+                aria-expanded="false"
+              >
+                Alocação
+              </button>
+              <ul class="sidebar-submenu">
+                <li>
+                  <a href="../alocacao/alocacao-gerar.html"
+                    >Geração de Alocação</a
+                  >
+                </li>
+                <li>
+                  <a href="../alocacao/alocacao-docentes.html"
+                    >Alocação de Docentes</a
+                  >
+                </li>
+                <li>
+                  <a href="../alocacao/alocacao-salas.html"
+                    >Alocação de Salas</a
+                  >
+                </li>
+                <li>
+                  <a href="../alocacao/alocacao-ajustar.html"
+                    >Ajustes Manuais</a
+                  >
+                </li>
+                <li>
+                  <a href="../alocacao/dias-nao-letivos.html"
+                    >Dias não Letivos</a
+                  >
+                </li>
+                <li>
+                  <a href="../alocacao/alocacao-visualizar.html"
+                    >Visualizar Grade</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="sidebar-group">
+              <button
+                class="sidebar-toggle"
+                type="button"
+                aria-expanded="false"
+              >
+                Relatórios
+              </button>
+              <ul class="sidebar-submenu">
+                <li>
+                  <a href="../relatorios/gerar.html">Geração de Relatórios</a>
+                </li>
+                <li>
+                  <a href="../relatorios/exportar.html">Exportação de Dados</a>
+                </li>
+              </ul>
+            </li>
+            <li class="sidebar-group">
+              <button
+                class="sidebar-toggle"
+                type="button"
+                aria-expanded="false"
+              >
+                FAQ
+              </button>
+              <ul class="sidebar-submenu">
+                <li>
+                  <a href="../duvidas/perguntas-frequentes.html"
+                    >Dúvidas Frequentes</a
+                  >
+                </li>
+                <li><a href="../duvidas/videos.html">Vídeos Tutoriais</a></li>
+                <li>
+                  <a href="../duvidas/enviar-duvida.html">Enviar Dúvidas</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <div class="article-title">
+          <h1 id="gerenciamento-disciplina">Gerenciamento de Disciplinas</h1>
+        </div>
+
+        <p>
+          O módulo de Gerenciamento de Disciplinas do EduAloca permite o
+          controle e a parametrização completa das matérias curriculares
+          ofertadas pela instituição. As configurações de cada disciplina são
+          cruciais para que o motor de alocação consiga calcular a distribuição
+          de aulas respeitando as restrições de matriz curricular, modalidades
+          de ensino, carga horária e dependências físicas e pedagógicas.
+        </p>
+
+        <h2 id="cadastrar-disciplinas">Cadastrar Disciplinas</h2>
+
+        <p>
+          O processo de cadastro é realizado via formulário estruturado por
+          grupos de dados. Abaixo estão as categorias e os respectivos campos:
+        </p>
+
+        <ul>
+          <li>
+            Identificação Básica: Registra o <strong>Nome</strong> completo e o
+            <strong>Código</strong> institucional da disciplina, além de
+            vincular o <strong>Módulo</strong>, a
+            <strong>Matriz Curricular</strong> e o
+            <strong>Curso</strong> correspondente.
+          </li>
+          <li>
+            Planejamento e Carga Horária: Define a
+            <strong>Modalidade</strong> (EAD, Semipresencial ou Presencial), os
+            períodos para <strong>Iniciar Em (%)</strong> e
+            <strong>Finalizar Até (%)</strong> e detalha a carga horária em
+            <strong>CH Presencial</strong>, <strong>CH EAD</strong> e
+            <strong>CH Total</strong>.
+          </li>
+          <li>
+            Alocação e Estrutura: Aponta a <strong>Sala Preferencial</strong> ou
+            laboratório ideal e lista as
+            <strong>Dependências</strong> (pré-requisitos) da matéria.
+          </li>
+          <li>
+            Controle: Define o <strong>Status</strong> (ativo/inativo) no
+            sistema e disponibiliza um campo de
+            <strong>Observações</strong> para anotações gerais.
+          </li>
+        </ul>
+
+        <div class="video-container">
+          <video controls>
+            <source
+              src="../../Assets/media/disciplinas/Disciplinas_Cadastrar.mp4"
+              type="video/mp4"
+            />
+            Seu navegador não suporta a reprodução de vídeos.
+          </video>
+          <p class="video-description">Vídeo Tutorial: Cadastrar Disciplina</p>
+        </div>
+
+        <h2 id="atualizar-disciplinas">Editar Disciplinas</h2>
+
+        <p>
+          A atualização dos dados garante que o motor de alocação trabalhe com o
+          planejamento mais recente do semestre. Modificações na carga horária,
+          tipo de disciplina ou dependências impactarão automaticamente as
+          próximas execuções.
+        </p>
+
+        <p>
+          Para editar, localize a disciplina na listagem e clique no botão
+          <strong>Editar</strong>. O sistema carregará as informações
+          preenchidas anteriormente para você alterar os campos necessários.
+        </p>
+
+        <p>
+          Após revisar os ajustes, clique em <strong>Salvar</strong>. As
+          modificações entrarão em vigor instantaneamente no sistema.
+        </p>
+
+        <div class="video-container">
+          <video controls>
+            <source
+              src="../../Assets/media/disciplinas/Disciplinas_Atualizar.mp4"
+              type="video/mp4"
+            />
+            Seu navegador não suporta a reprodução de vídeos.
+          </video>
+          <p class="video-description">Vídeo Tutorial: Editar Disciplina</p>
+        </div>
+
+        <h2 id="excluir-disciplinas">Excluir Disciplinas</h2>
+
+        <p>
+          A exclusão é uma ação permanente que desvincula a disciplina de todas
+          as ofertas e planejamentos de turmas não consolidadas. Utilize-a
+          apenas se o registro for incorreto ou retirado do catálogo.
+        </p>
+
+        <p>
+          Para excluir de forma segura, localize a disciplina, clique no ícone
+          de <strong>lápis</strong> para editar e, dentro do formulário, acione
+          o botão de <strong>Excluir</strong>. O sistema solicitará uma
+          confirmação final para prevenir exclusões acidentais.
+        </p>
+
+        <div class="video-container">
+          <video controls>
+            <source
+              src="../../Assets/media/disciplinas/Disciplina_Excluida.mp4"
+              type="video/mp4"
+            />
+            Seu navegador não suporta a reprodução de vídeos.
+          </video>
+          <p class="video-description">Vídeo Tutorial: Excluir Disciplina</p>
+        </div>
+
+        <h2 id="filtrar-disciplinas">Filtrar Disciplinas</h2>
+
+        <p>
+          Para gerenciar de forma rápida e prática a grade curricular, o sistema
+          conta com ferramentas de busca inteligente. É possível refinar a
+          listagem de disciplinas buscando por <strong>Nome</strong>,
+          <strong>Código</strong>, <strong>Curso</strong> ou
+          <strong>Modalidade</strong>. Os resultados são apresentados
+          dinamicamente na tela, facilitando a localização de registros
+          específicos e a conferência de dados em tempo real.
+        </p>
+      </main>
+
+      <aside class="indice-pagina" aria-label="Nesta pagina">
+        <nav>
+          <a class="active" href="#gerenciamento-disciplina">Visão Geral</a>
+          <a href="#cadastrar-disciplinas">Cadastrar Disciplinas</a>
+          <a href="#atualizar-disciplinas">Editar Disciplinas</a>
+          <a href="#excluir-disciplinas">Excluir Disciplinas</a>
+          <a href="#filtrar-disciplinas">Filtrar Disciplinas</a>
+        </nav>
+      </aside>
+    </div>
+
+    <script src="../../src/app/sidebar.controller.js"></script>
+  </body>
+</html>

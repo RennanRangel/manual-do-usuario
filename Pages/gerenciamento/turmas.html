@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EduAloca - Turmas</title>
+    <link rel="stylesheet" href="../../CSS/global/fonts.css" />
+    <link rel="stylesheet" href="../../CSS/global/typography.css" />
+    <link rel="stylesheet" href="../../CSS/navbar.css" />
+    <link rel="stylesheet" href="../../CSS/sidebar.css" />
+    <link rel="stylesheet" href="../../CSS/modules/manual.css" />
+  </head>
+  <body>
+    <header class="docs-topbar">
+      <button
+        class="menu-button"
+        type="button"
+        aria-label="Abrir menu"
+        aria-expanded="true"
+      >
+        <img src="../../Assets/IMG/menu.png" alt="" width="28" height="28" />
+      </button>
+
+      <a class="EduAloca" href="#" aria-label="EduAloca">
+        <img
+          src="../../Assets/IMG/Blue_and_White_Modern_Artificial_Intelligence_Logo.png"
+          alt="Logo"
+        />
+      </a>
+    </header>
+
+    <div class="page-shell">
+      <aside class="sidebar" aria-label="Menu da documentação">
+        <nav>
+          <ul class="sidebar-list">
+            <li>
+              <a class="section-link" href="../home/home.html">Introdução</a>
+            </li>
+
+            <li class="sidebar-group">
+              <button
+                class="sidebar-toggle"
+                type="button"
+                aria-expanded="false"
+              >
+                Autenticação
+              </button>
+              <ul class="sidebar-submenu">
+                <li>
+                  <a href="../autenticacao/login.html">Como Fazer Login</a>
+                </li>
+                <li>
+                  <a href="../autenticacao/recuperar-senha.html"
+                    >Como Recuperar a Senha</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="sidebar-group">
+              <button
+                class="sidebar-toggle"
+                type="button"
+                aria-expanded="false"
+              >
+                Gerenciamento de Informações
+              </button>
+              <ul class="sidebar-submenu">
+                <li><a href="../Gerenciamento/docente.html">Docentes</a></li>
+                <li>
+                  <a href="../Gerenciamento/disciplinas.html">Disciplinas</a>
+                </li>
+                <li><a href="../Gerenciamento/turmas.html">Turmas</a></li>
+                <li><a href="../Gerenciamento/cursos.html">Cursos</a></li>
+                <li><a href="../Gerenciamento/salas.html">Salas</a></li>
+                <li><a href="../Gerenciamento/blocos.html">Blocos</a></li>
+                <li><a href="../Gerenciamento/areas.html">Áreas</a></li>
+                <li>
+                  <a href="../Gerenciamento/funcionarios.html">Funcionários</a>
+                </li>
+              </ul>
+            </li>
+            <li class="sidebar-group">
+              <button
+                class="sidebar-toggle"
+                type="button"
+                aria-expanded="false"
+              >
+                Alocação
+              </button>
+              <ul class="sidebar-submenu">
+                <li>
+                  <a href="../alocacao/alocacao-gerar.html"
+                    >Geração de Alocação</a
+                  >
+                </li>
+                <li>
+                  <a href="../alocacao/alocacao-docentes.html"
+                    >Alocação de Docentes</a
+                  >
+                </li>
+                <li>
+                  <a href="../alocacao/alocacao-salas.html"
+                    >Alocação de Salas</a
+                  >
+                </li>
+                <li>
+                  <a href="../alocacao/alocacao-ajustar.html"
+                    >Ajustes Manuais</a
+                  >
+                </li>
+                <li>
+                  <a href="../alocacao/dias-nao-letivos.html"
+                    >Dias não Letivos</a
+                  >
+                </li>
+                <li>
+                  <a href="../alocacao/alocacao-visualizar.html"
+                    >Visualizar Grade</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="sidebar-group">
+              <button
+                class="sidebar-toggle"
+                type="button"
+                aria-expanded="false"
+              >
+                Relatórios
+              </button>
+              <ul class="sidebar-submenu">
+                <li>
+                  <a href="../relatorios/gerar.html">Geração de Relatórios</a>
+                </li>
+                <li>
+                  <a href="../relatorios/exportar.html">Exportação de Dados</a>
+                </li>
+              </ul>
+            </li>
+            <li class="sidebar-group">
+              <button
+                class="sidebar-toggle"
+                type="button"
+                aria-expanded="false"
+              >
+                FAQ
+              </button>
+              <ul class="sidebar-submenu">
+                <li>
+                  <a href="../duvidas/perguntas-frequentes.html"
+                    >Dúvidas Frequentes</a
+                  >
+                </li>
+                <li><a href="../duvidas/videos.html">Vídeos Tutoriais</a></li>
+                <li>
+                  <a href="../duvidas/enviar-duvida.html">Enviar Dúvidas</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <div class="article-title">
+          <h1 id="gerenciamento-turmas">Gerenciamento de Turmas</h1>
+        </div>
+
+        <p>
+          O módulo de Gerenciamento de Turmas do EduAloca é essencial para
+          coordenar as turmas letivas ativas na instituição. Mapear de forma
+          precisa cada turma e seu regime de estudos garante que o motor de
+          alocação consiga cruzar as agendas dos docentes e os horários das
+          disciplinas com exatidão, evitando choques de grade.
+        </p>
+
+        <h2 id="cadastrar-turmas">Cadastrar Turmas</h2>
+
+        <p>
+          O processo de cadastro é realizado via formulário estruturado por
+          grupos de dados acadêmicos e temporais. Abaixo estão as categorias e
+          os campos:
+        </p>
+
+        <ul>
+          <li>
+            Identificação Acadêmica: Reúne o <strong>Código</strong> exclusivo
+            da turma, o <strong>Módulo</strong>, o <strong>Turno</strong>, o
+            <strong>Curso</strong> e o <strong>Período Letivo</strong> vigente.
+          </li>
+          <li>
+            Dias e Horários: Mapeia os <strong>Dias da Semana</strong> de aulas
+            regulares e define com exatidão o <strong>Horário Início</strong> e
+            o <strong>Horário Fim</strong>.
+          </li>
+          <li>
+            Perfil da Turma: Especifica a <strong>Quantidade</strong> de alunos
+            e a necessidade de <strong>Acessibilidade</strong> (física ou
+            pedagógica).
+          </li>
+          <li>
+            Controle de Cadastro: Define o
+            <strong>Status</strong> (ativa/inativa) no sistema e um campo de
+            <strong>Observações</strong> para registrar particularidades.
+          </li>
+        </ul>
+
+        <div class="video-container">
+          <video controls>
+            <source
+              src="../../Assets/media/turmas/Turma_Cadastro.mp4"
+              type="video/mp4"
+            />
+            Seu navegador não suporta a reprodução de vídeos.
+          </video>
+          <p class="video-description">Vídeo Tutorial: Cadastrar Turma</p>
+        </div>
+
+        <h2 id="atualizar-turmas">Editar Turmas</h2>
+
+        <p>
+          A manutenção contínua dos parâmetros da turma garante que o
+          planejamento pedagógico acompanhe eventuais mudanças na oferta letiva,
+          assegurando que o motor de alocação opere sempre com dados
+          atualizados.
+        </p>
+
+        <p>
+          Para editar, localize a turma na listagem geral e clique no botão
+          <strong>Editar</strong>. O sistema preencherá automaticamente o
+          formulário de edição, permitindo que você altere de forma livre as
+          informações de horários, turnos ou quantidade de alunos.
+        </p>
+
+        <p>
+          Ao concluir e clicar em <strong>Salvar</strong>, o sistema atualizará
+          dinamicamente os cálculos logísticos, prevenindo choques de grade nas
+          próximas execuções.
+        </p>
+
+        <div class="video-container">
+          <video controls>
+            <source
+              src="../../Assets/media/turmas/Turma_Atualizar.mp4"
+              type="video/mp4"
+            />
+            Seu navegador não suporta a reprodução de vídeos.
+          </video>
+          <p class="video-description">Vídeo Tutorial: Editar Turma</p>
+        </div>
+
+        <h2 id="excluir-turmas">Excluir Turmas</h2>
+
+        <p>
+          Caso uma turma seja cancelada do calendário acadêmico ou tenha sido
+          cadastrada incorretamente, ela poderá ser permanentemente removida.
+          Esse processo é essencial para liberar recursos ociosos e espaços
+          físicos no planejamento.
+        </p>
+
+        <p>
+          Para remover de forma segura, localize a turma, clique no ícone de
+          <strong>lápis</strong> para entrar no modo de edição e acione o botão
+          de <strong>Excluir</strong>. O sistema sempre exigirá uma confirmação
+          de segurança final, prevenindo exclusões acidentais de turmas que já
+          possuam grades consolidadas.
+        </p>
+
+        <div class="video-container">
+          <video controls>
+            <source
+              src="../../Assets/media/turmas/Turma_Exclusao.mp4"
+              type="video/mp4"
+            />
+            Seu navegador não suporta a reprodução de vídeos.
+          </video>
+          <p class="video-description">Vídeo Tutorial: Excluir Turma</p>
+        </div>
+
+        <h2 id="filtrar-turmas">Filtrar Turmas</h2>
+
+        <p>
+          Para facilitar o gerenciamento diário, o sistema oferece ferramentas
+          de busca inteligente que otimizam a localização e o acompanhamento de
+          turmas ativas na instituição.
+        </p>
+
+        <p>
+          Você pode buscar e isolar turmas específicas combinando diferentes
+          critérios de pesquisa, como o <strong>Código</strong> identificador, o
+          <strong>Turno</strong>, o nome do <strong>Curso</strong> ou o
+          <strong>Período Letivo</strong>. Ao aplicar os filtros, os resultados
+          são processados e listados instantaneamente na tela, agilizando o
+          trabalho da coordenação.
+        </p>
+      </main>
+
+      <aside class="indice-pagina" aria-label="Nesta pagina">
+        <nav>
+          <a class="active" href="#gerenciamento-turmas">Visão Geral</a>
+          <a href="#cadastrar-turmas">Cadastrar Turmas</a>
+          <a href="#atualizar-turmas">Editar Turmas</a>
+          <a href="#excluir-turmas">Excluir Turmas</a>
+          <a href="#filtrar-turmas">Filtrar Turmas</a>
+        </nav>
+      </aside>
+    </div>
+
+    <script src="../../src/app/sidebar.controller.js"></script>
+  </body>
+</html>
