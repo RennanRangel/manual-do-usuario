@@ -10,7 +10,6 @@
 .content {
   font-family: var(--font-prose);
   color: var(--color-body);
-  -webkit-font-smoothing: antialiased;
 }
 
 .article-title {
@@ -27,9 +26,6 @@
   font-weight: 700;
   line-height: var(--line-prose);
   margin: 20px 0;
-  letter-spacing: 0;
-  unicode-bidi: isolate;
-  -webkit-font-smoothing: antialiased;
 }
 
 .content p {
@@ -40,8 +36,7 @@
   font-weight: 400;
   line-height: var(--line-prose);
   margin: 16px 0;
-  unicode-bidi: isolate;
-  -webkit-font-smoothing: antialiased;
+  text-align: justify;
 }
 
 .content ul,
@@ -54,7 +49,7 @@
   font-size: var(--size-body);
   font-weight: 400;
   line-height: var(--line-prose);
-  -webkit-font-smoothing: antialiased;
+  text-align: justify;
 }
 
 .content li,
@@ -65,9 +60,5 @@
   font-size: var(--size-body);
   font-weight: 400;
   line-height: var(--line-prose);
-}
-
-.content code {
-  font-family: ui-monospace, "Cascadia Code", "Segoe UI Mono", monospace;
-  font-size: 0.9em;
+  text-align: justify;
 }
