@@ -151,3 +151,8 @@ svg {
 .content ul {
   list-style-type: none;
 }
+
+.wip-notice {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
