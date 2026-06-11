@@ -31,7 +31,7 @@
     </header>
 
     <div class="page-shell">
-      <aside class="sidebar" aria-label="Menu da documentação">
+            <aside class="sidebar" aria-label="Menu da documentação">
         <nav>
           <ul class="sidebar-list">
             <li>
@@ -50,7 +50,6 @@
                 <li>
                   <a href="../autenticacao/login.html">Como Fazer Login</a>
                 </li>
-
               </ul>
             </li>
 
@@ -60,7 +59,7 @@
                 type="button"
                 aria-expanded="false"
               >
-                Gerenciamento de Informações
+                Configurações Básicas
               </button>
               <ul class="sidebar-submenu">
                 <li><a href="../Gerenciamento/docente.html">Docentes</a></li>
@@ -83,27 +82,27 @@
                 type="button"
                 aria-expanded="false"
               >
-                Alocação
+                Planejamento Letivo
               </button>
               <ul class="sidebar-submenu">
                 <li>
                   <a href="../alocacao/alocacao-gerar.html"
-                    >Geração de Alocação</a
+                    >Geração da Grade</a
                   >
                 </li>
                 <li>
                   <a href="../alocacao/alocacao-docentes.html"
-                    >Alocação de Docentes</a
+                    >Alocação Docentes</a
                   >
                 </li>
                 <li>
                   <a href="../alocacao/alocacao-salas.html"
-                    >Alocação de Salas</a
+                    >Distribuição de Salas</a
                   >
                 </li>
                 <li>
                   <a href="../alocacao/alocacao-ajustar.html"
-                    >Ajustes Manuais</a
+                    >Ajustes na Grade</a
                   >
                 </li>
                 <li>
@@ -131,7 +130,9 @@
                   <a href="../relatorios/gerar.html">Geração de Relatórios</a>
                 </li>
                 <li>
-                  <a href="../relatorios/exportar.html">Exportação de Relatórios</a>
+                  <a href="../relatorios/exportar.html"
+                    >Exportação de Relatórios</a
+                  >
                 </li>
               </ul>
             </li>
@@ -210,22 +211,18 @@
         <h2 id="atualizar-funcionarios">Editar Funcionários</h2>
 
         <p>
-          A manutenção contínua e rotineira das contas de usuários é uma prática
-          essencial para refletir adequadamente promoções, transferências de
-          equipe ou simples ajustes cadastrais e de contato.
+          O processo de atualização salva de forma definitiva as modificações no
+          funcionário, garantindo que o sistema de planejamento trabalhe com as regras
+          mais recentes da coordenação.
         </p>
-        <p>
-          Para alterar os dados de um colaborador, localize-o na listagem geral
-          e acesse o botão <strong>Editar</strong> na sua respectiva linha. O
-          formulário exibirá automaticamente todos os dados pré-configurados,
-          permitindo que você eleve ou reduza permissões, altere cargos e
-          atualize setores.
-        </p>
-        <p>
-          Após alterar as informações e privilégios sensíveis, revise suas
-          escolhas e clique em <strong>Salvar</strong> para que as mudanças e os
-          novos acessos entrem em vigor instantaneamente na plataforma.
-        </p>
+
+        <ul>
+          <li>Acesse a tela de listagem e utilize a busca ou os filtros para encontrar o funcionário.</li>
+          <li>Clique no botão <strong>Editar</strong> (ou no ícone do lápis).</li>
+          <li>O sistema carregará as informações já preenchidas, permitindo fazer alterações diretas nos campos necessários, como cargos, setores ou permissões de acesso.</li>
+          <li>Após os ajustes, clique no botão <strong>Salvar</strong>.</li>
+          <li>O sistema validará os dados, gravará as alterações e exibirá uma notificação de sucesso.</li>
+        </ul>
 
         <div class="video-container">
           <video controls>
@@ -241,20 +238,16 @@
         <h2 id="excluir-funcionarios">Excluir Funcionários</h2>
 
         <p>
-          A exclusão é um procedimento severo que apaga definitivamente os dados
-          da conta do banco de dados. Ela deve ser utilizada primariamente em
-          casos de desligamento definitivo da instituição, assegurando que o
-          colaborador não mantenha nenhum tipo de acesso não autorizado à
-          ferramenta.
+          O processo de exclusão remove o registro do funcionário de forma definitiva,
+          assegurando que o colaborador desligado não mantenha nenhum tipo de acesso ao sistema.
         </p>
-        <p>
-          Para executar a remoção com segurança, encontre o perfil do
-          funcionário na tabela, clique no ícone de <strong>lápis</strong> para
-          entrar no modo de edição e acione o botão <strong>Excluir</strong>.
-          Para assegurar o controle, o sistema exigirá a aprovação em uma janela
-          de segurança, confirmando a ação antes da exclusão permanente da
-          conta.
-        </p>
+
+        <ul>
+          <li>Acesse a tela de listagem e utilize a busca ou os filtros para encontrar o funcionário.</li>
+          <li>Clique no ícone do <strong>lápis</strong> para entrar no modo de edição.</li>
+          <li>Dentro do formulário, clique no botão <strong>Excluir</strong>.</li>
+          <li>Após a confirmação, o sistema processará a remoção e atualizará a listagem automaticamente.</li>
+        </ul>
 
         <div class="video-container">
           <video controls>
@@ -269,14 +262,7 @@
 
       </main>
 
-      <aside class="indice-pagina" aria-label="Nesta pagina">
-        <nav>
-          <a class="active" href="#gerenciamento-funcionarios">Visão Geral</a>
-          <a href="#cadastrar-funcionarios">Cadastrar Funcionários</a>
-          <a href="#atualizar-funcionarios">Editar Funcionários</a>
-          <a href="#excluir-funcionarios">Excluir Funcionários</a>
-        </nav>
-      </aside>
+
     </div>
 
     <script src="../../src/app/sidebar.controller.js"></script>

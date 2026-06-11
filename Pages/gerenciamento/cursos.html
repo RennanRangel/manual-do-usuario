@@ -31,7 +31,7 @@
     </header>
 
     <div class="page-shell">
-      <aside class="sidebar" aria-label="Menu da documentação">
+            <aside class="sidebar" aria-label="Menu da documentação">
         <nav>
           <ul class="sidebar-list">
             <li>
@@ -50,7 +50,6 @@
                 <li>
                   <a href="../autenticacao/login.html">Como Fazer Login</a>
                 </li>
-
               </ul>
             </li>
 
@@ -60,7 +59,7 @@
                 type="button"
                 aria-expanded="false"
               >
-                Gerenciamento de Informações
+                Configurações Básicas
               </button>
               <ul class="sidebar-submenu">
                 <li><a href="../Gerenciamento/docente.html">Docentes</a></li>
@@ -83,27 +82,27 @@
                 type="button"
                 aria-expanded="false"
               >
-                Alocação
+                Planejamento Letivo
               </button>
               <ul class="sidebar-submenu">
                 <li>
                   <a href="../alocacao/alocacao-gerar.html"
-                    >Geração de Alocação</a
+                    >Geração da Grade</a
                   >
                 </li>
                 <li>
                   <a href="../alocacao/alocacao-docentes.html"
-                    >Alocação de Docentes</a
+                    >Alocação Docentes</a
                   >
                 </li>
                 <li>
                   <a href="../alocacao/alocacao-salas.html"
-                    >Alocação de Salas</a
+                    >Distribuição de Salas</a
                   >
                 </li>
                 <li>
                   <a href="../alocacao/alocacao-ajustar.html"
-                    >Ajustes Manuais</a
+                    >Ajustes na Grade</a
                   >
                 </li>
                 <li>
@@ -131,7 +130,9 @@
                   <a href="../relatorios/gerar.html">Geração de Relatórios</a>
                 </li>
                 <li>
-                  <a href="../relatorios/exportar.html">Exportação de Relatórios</a>
+                  <a href="../relatorios/exportar.html"
+                    >Exportação de Relatórios</a
+                  >
                 </li>
               </ul>
             </li>
@@ -215,22 +216,18 @@
         <h2 id="atualizar-cursos">Editar Cursos</h2>
 
         <p>
-          A edição permite manter as informações acadêmicas do curso sempre
-          atualizadas e precisas, garantindo que o motor de alocação utilize os
-          dados corretos.
+          O processo de atualização salva de forma definitiva as modificações no
+          curso, garantindo que o sistema de planejamento trabalhe com as regras
+          mais recentes da coordenação.
         </p>
-        <p>
-          Para editar, localize o registro desejado na listagem de cursos e
-          clique no botão de ação <strong>Editar</strong> (ícone de lápis). O
-          sistema carregará o formulário já preenchido com as informações
-          atuais, permitindo alterar livremente detalhes como carga horária,
-          modalidade, área ou nomenclatura.
-        </p>
-        <p>
-          Após revisar os ajustes, clique em <strong>Salvar</strong>. O sistema
-          gravará as alterações instantaneamente no banco de dados e exibirá uma
-          notificação atestando o sucesso da atualização.
-        </p>
+
+        <ul>
+          <li>Acesse a tela de listagem e utilize a busca ou os filtros para encontrar o curso.</li>
+          <li>Clique no ícone do <strong>lápis</strong> (ou botão de editar).</li>
+          <li>O sistema carregará as informações já preenchidas, permitindo fazer alterações diretas nos campos necessários, como carga horária, modalidade, área ou nomenclatura.</li>
+          <li>Após os ajustes, clique no botão <strong>Salvar</strong>.</li>
+          <li>O sistema validará os dados, gravará as alterações e exibirá uma notificação de sucesso.</li>
+        </ul>
 
         <div class="video-container">
           <video controls>
@@ -246,19 +243,15 @@
         <h2 id="excluir-cursos">Excluir Cursos</h2>
 
         <p>
-          A exclusão é uma operação sensível, recomendada apenas para situações
-          em que um curso ou grade curricular deixe de ser ofertado de forma
-          definitiva pela unidade. Essa ação remove o registro do sistema.
+          O processo de exclusão remove o registro do curso de forma definitiva,
+          sendo recomendado apenas quando um curso deixe de ser ofertado pela unidade.
         </p>
-        <p>
-          Para remover, localize o curso na listagem e clique no botão de
-          <strong>Exclusão</strong> (representado pelo ícone de lixeira). Por
-          segurança, o sistema exigirá uma confirmação e verificará
-          automaticamente se existem vínculos ativos, como turmas em andamento
-          ou professores alocados. Caso existam dependências, a exclusão será
-          bloqueada para proteger os dados, sendo orientado apenas inativar o
-          curso.
-        </p>
+
+        <ul>
+          <li>Acesse a tela de listagem e utilize a busca ou os filtros para encontrar o curso.</li>
+          <li>Clique no ícone da <strong>lixeira</strong> (ou botão de exclusão).</li>
+          <li>Após a confirmação, o sistema processará a remoção e atualizará a listagem automaticamente (ou bloqueará se houver dependências ativas).</li>
+        </ul>
 
         <div class="video-container">
           <video controls>
@@ -273,14 +266,7 @@
 
       </main>
 
-      <aside class="indice-pagina" aria-label="Nesta pagina">
-        <nav>
-          <a class="active" href="#gerenciamento-cursos">Visão Geral</a>
-          <a href="#cadastrar-cursos">Cadastrar Cursos</a>
-          <a href="#atualizar-cursos">Editar Cursos</a>
-          <a href="#excluir-cursos">Excluir Cursos</a>
-        </nav>
-      </aside>
+
     </div>
 
     <script src="../../src/app/sidebar.controller.js"></script>

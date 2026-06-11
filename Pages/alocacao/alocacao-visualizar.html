@@ -31,7 +31,7 @@
     </header>
 
     <div class="page-shell">
-      <aside class="sidebar" aria-label="Menu da documentação">
+            <aside class="sidebar" aria-label="Menu da documentação">
         <nav>
           <ul class="sidebar-list">
             <li>
@@ -50,7 +50,6 @@
                 <li>
                   <a href="../autenticacao/login.html">Como Fazer Login</a>
                 </li>
-
               </ul>
             </li>
 
@@ -60,7 +59,7 @@
                 type="button"
                 aria-expanded="false"
               >
-                Gerenciamento de Informações
+                Configurações Básicas
               </button>
               <ul class="sidebar-submenu">
                 <li><a href="../Gerenciamento/docente.html">Docentes</a></li>
@@ -83,27 +82,27 @@
                 type="button"
                 aria-expanded="false"
               >
-                Alocação
+                Planejamento Letivo
               </button>
               <ul class="sidebar-submenu">
                 <li>
                   <a href="../alocacao/alocacao-gerar.html"
-                    >Geração de Alocação</a
+                    >Geração da Grade</a
                   >
                 </li>
                 <li>
                   <a href="../alocacao/alocacao-docentes.html"
-                    >Alocação de Docentes</a
+                    >Alocação Docentes</a
                   >
                 </li>
                 <li>
                   <a href="../alocacao/alocacao-salas.html"
-                    >Alocação de Salas</a
+                    >Distribuição de Salas</a
                   >
                 </li>
                 <li>
                   <a href="../alocacao/alocacao-ajustar.html"
-                    >Ajustes Manuais</a
+                    >Ajustes na Grade</a
                   >
                 </li>
                 <li>
@@ -131,7 +130,9 @@
                   <a href="../relatorios/gerar.html">Geração de Relatórios</a>
                 </li>
                 <li>
-                  <a href="../relatorios/exportar.html">Exportação de Relatórios</a>
+                  <a href="../relatorios/exportar.html"
+                    >Exportação de Relatórios</a
+                  >
                 </li>
               </ul>
             </li>
@@ -175,57 +176,42 @@
 
         <h2 id="exibicao-grade">Exibição de Grade Consolidada</h2>
 
-        <p>
-          O painel oferece uma visualização bastante limpa e estruturada,
-          apresentando os dados no formato de uma tabela semanal completa. Ela
-          abrange todos os turnos de funcionamento da instituição (matutino,
-          vespertino e noturno) e se estende de segunda-feira a sábado. Com
-          isso, o usuário consegue conferir exatamente quais aulas estão
-          marcadas para cada período do dia, identificando de relance a
-          disciplina que será ministrada, o professor responsável e a sala ou
-          laboratório onde a aula vai acontecer.
-        </p>
+      <p>
+        O painel oferece uma visualização bastante limpa e estruturada, apresentando os dados no formato de uma tabela semanal completa:
+      </p>
 
-        <h2 id="filtros-visualizacao">Visualização por Filtros</h2>
+      <ul>
+        <li><strong>Turnos e Dias:</strong> Abrange todos os turnos de funcionamento da instituição (matutino, vespertino e noturno) de segunda-feira a sábado.</li>
+        <li><strong>Informações Principais:</strong> Permite identificar de relance a disciplina ministrada, o professor responsável e a sala ou laboratório correspondente para cada período do dia.</li>
+      </ul>
 
-        <p>
-          Para que você não precise procurar informações no meio de um
-          calendário enorme, o sistema conta com filtros inteligentes e
-          avançados de busca. Assim, é possível isolar cronogramas específicos
-          para facilitar a leitura. Você pode optar por visualizar apenas a
-          grade horária de uma determinada <strong>Turma</strong>, acompanhar a
-          agenda completa de um <strong>Docente</strong> específico, focar nos
-          horários de um <strong>Curso</strong> inteiro ou verificar a
-          disponibilidade e uso de uma <strong>Sala ou Laboratório</strong>. A
-          cada filtro aplicado, o calendário se ajusta e atualiza os resultados
-          instantaneamente na tela.
-        </p>
+      <h2 id="filtros-visualizacao">Visualização por Filtros</h2>
 
-        <h2 id="status-calendario">Status do Calendário</h2>
+      <p>
+        Para otimizar a busca de informações, o sistema conta com filtros inteligentes e avançados que permitem isolar cronogramas específicos:
+      </p>
 
-        <p>
-          Na parte superior da tela de visualização, cada grade horária exibe um
-          selo indicando o seu status atual de consolidação no sistema. O status
-          <strong>Rascunho</strong> indica que o calendário ainda está em fase
-          de planejamento, recebendo ajustes da coordenação, e por isso ainda
-          não está visível para professores e alunos. Já o status
-          <strong>Publicada</strong> significa que o processo foi concluído e os
-          horários são oficiais, estando liberados para a consulta de todo o
-          corpo docente e administrativo. Por fim, o status
-          <strong>Arquivada</strong> demonstra que aquele calendário letivo já
-          foi encerrado e não sofrerá mais alterações, servindo a partir desse
-          momento apenas como um registro histórico para consultas futuras.
-        </p>
+      <ul>
+        <li><strong>Busca por Turma:</strong> Permite visualizar isoladamente a grade horária de uma determinada turma.</li>
+        <li><strong>Busca por Docente:</strong> Permite acompanhar a agenda completa de aulas e alocações de um docente específico.</li>
+        <li><strong>Atualização Instantânea:</strong> O calendário atualiza os resultados na tela no mesmo instante em que um filtro é aplicado.</li>
+      </ul>
+
+      <h2 id="status-calendario">Status do Calendário</h2>
+
+      <p>
+        Na parte inferior da tela de alocação, cada grade horária exibe um selo indicando o seu status atual de consolidação no sistema:
+      </p>
+
+      <ul>
+        <li><strong>Rascunho:</strong> O calendário está em planejamento e recebendo ajustes da coordenação, não estando visível para professores e alunos.</li>
+        <li><strong>Publicada:</strong> O processo de alocação foi concluído e os horários são oficiais, liberados para consulta dos coordenadores e gestores.</li>
+        <li><strong>Arquivada:</strong> O calendário letivo já foi encerrado e serve apenas como registro histórico para consultas futuras.</li>
+      </ul>
+
       </main>
 
-      <aside class="indice-pagina" aria-label="Nesta pagina">
-        <nav>
-          <a class="active" href="#visualizar-alocacao">Visão Geral</a>
-          <a href="#exibicao-grade">Exibição de Grade</a>
-          <a href="#filtros-visualizacao">Visualização por Filtros</a>
-          <a href="#status-calendario">Status do Calendário</a>
-        </nav>
-      </aside>
+
     </div>
 
     <script src="../../src/app/sidebar.controller.js"></script>

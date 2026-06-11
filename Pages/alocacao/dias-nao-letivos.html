@@ -31,7 +31,7 @@
     </header>
 
     <div class="page-shell">
-      <aside class="sidebar" aria-label="Menu da documentação">
+            <aside class="sidebar" aria-label="Menu da documentação">
         <nav>
           <ul class="sidebar-list">
             <li>
@@ -50,7 +50,6 @@
                 <li>
                   <a href="../autenticacao/login.html">Como Fazer Login</a>
                 </li>
-
               </ul>
             </li>
 
@@ -60,7 +59,7 @@
                 type="button"
                 aria-expanded="false"
               >
-                Gerenciamento de Informações
+                Configurações Básicas
               </button>
               <ul class="sidebar-submenu">
                 <li><a href="../Gerenciamento/docente.html">Docentes</a></li>
@@ -83,27 +82,27 @@
                 type="button"
                 aria-expanded="false"
               >
-                Alocação
+                Planejamento Letivo
               </button>
               <ul class="sidebar-submenu">
                 <li>
                   <a href="../alocacao/alocacao-gerar.html"
-                    >Geração de Alocação</a
+                    >Geração da Grade</a
                   >
                 </li>
                 <li>
                   <a href="../alocacao/alocacao-docentes.html"
-                    >Alocação de Docentes</a
+                    >Alocação Docentes</a
                   >
                 </li>
                 <li>
                   <a href="../alocacao/alocacao-salas.html"
-                    >Alocação de Salas</a
+                    >Distribuição de Salas</a
                   >
                 </li>
                 <li>
                   <a href="../alocacao/alocacao-ajustar.html"
-                    >Ajustes Manuais</a
+                    >Ajustes na Grade</a
                   >
                 </li>
                 <li>
@@ -131,7 +130,9 @@
                   <a href="../relatorios/gerar.html">Geração de Relatórios</a>
                 </li>
                 <li>
-                  <a href="../relatorios/exportar.html">Exportação de Relatórios</a>
+                  <a href="../relatorios/exportar.html"
+                    >Exportação de Relatórios</a
+                  >
                 </li>
               </ul>
             </li>
@@ -165,15 +166,7 @@
         </div>
 
         <p>
-          O módulo de Dias não Letivos do EduAloca é a ferramenta essencial para
-          o controle e cadastro de datas especiais no calendário acadêmico nas
-          quais as aulas regulares não devem ocorrer. Isso engloba uma série de
-          eventos, como feriados nacionais, estaduais ou municipais específicos,
-          além de suspensões institucionais programadas, emendas de feriados,
-          paralisações, reuniões pedagógicas gerais e recessos escolares. O
-          cadastro correto dessas datas é o que garante que o sistema não
-          alocará professores e turmas em dias em que a instituição estará
-          fechada.
+          O módulo de Dias não Letivos do EduAloca permite cadastrar datas especiais no calendário acadêmico em que não haverá aulas (como feriados, recessos e reuniões pedagógicas). O registro correto dessas datas garante que o sistema não realize alocações de turmas e professores nos dias em que a instituição estiver fechada.
         </p>
 
         <h2 id="marcar-dias">Marcar Dias não Letivos</h2>
@@ -198,12 +191,7 @@
         </p>
       </main>
 
-      <aside class="indice-pagina" aria-label="Nesta pagina">
-        <nav>
-          <a class="active" href="#dias-nao-letivos">Visão Geral</a>
-          <a href="#marcar-dias">Marcar Dias</a>
-        </nav>
-      </aside>
+
     </div>
 
     <script src="../../src/app/sidebar.controller.js"></script>

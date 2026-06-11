@@ -18,12 +18,10 @@
 }
 
 body:not(.sidebar-closed) .page-shell {
-  background: linear-gradient(
-    to right,
-    var(--c-sidebar-bg) 0,
-    var(--c-sidebar-bg) var(--sidebar-w),
-    #ffffff var(--sidebar-w)
-  );
+  background: linear-gradient(to right,
+      var(--c-sidebar-bg) 0,
+      var(--c-sidebar-bg) var(--sidebar-w),
+      #ffffff var(--sidebar-w));
 }
 
 body.sidebar-closed .page-shell {
@@ -60,6 +58,7 @@ body.sidebar-closed .sidebar {
 .sidebar::-webkit-scrollbar {
   width: 4px;
 }
+
 .sidebar::-webkit-scrollbar-thumb {
   background: #ddd;
   border-radius: 2px;
@@ -153,7 +152,7 @@ body.sidebar-closed .sidebar {
   gap: 5px;
 }
 
-.sidebar-group.is-open > .sidebar-submenu {
+.sidebar-group.is-open>.sidebar-submenu {
   display: flex;
 }
 

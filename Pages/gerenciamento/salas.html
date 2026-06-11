@@ -31,7 +31,7 @@
     </header>
 
     <div class="page-shell">
-      <aside class="sidebar" aria-label="Menu da documentação">
+            <aside class="sidebar" aria-label="Menu da documentação">
         <nav>
           <ul class="sidebar-list">
             <li>
@@ -50,7 +50,6 @@
                 <li>
                   <a href="../autenticacao/login.html">Como Fazer Login</a>
                 </li>
-
               </ul>
             </li>
 
@@ -60,7 +59,7 @@
                 type="button"
                 aria-expanded="false"
               >
-                Gerenciamento de Informações
+                Configurações Básicas
               </button>
               <ul class="sidebar-submenu">
                 <li><a href="../Gerenciamento/docente.html">Docentes</a></li>
@@ -83,27 +82,27 @@
                 type="button"
                 aria-expanded="false"
               >
-                Alocação
+                Planejamento Letivo
               </button>
               <ul class="sidebar-submenu">
                 <li>
                   <a href="../alocacao/alocacao-gerar.html"
-                    >Geração de Alocação</a
+                    >Geração da Grade</a
                   >
                 </li>
                 <li>
                   <a href="../alocacao/alocacao-docentes.html"
-                    >Alocação de Docentes</a
+                    >Alocação Docentes</a
                   >
                 </li>
                 <li>
                   <a href="../alocacao/alocacao-salas.html"
-                    >Alocação de Salas</a
+                    >Distribuição de Salas</a
                   >
                 </li>
                 <li>
                   <a href="../alocacao/alocacao-ajustar.html"
-                    >Ajustes Manuais</a
+                    >Ajustes na Grade</a
                   >
                 </li>
                 <li>
@@ -131,7 +130,9 @@
                   <a href="../relatorios/gerar.html">Geração de Relatórios</a>
                 </li>
                 <li>
-                  <a href="../relatorios/exportar.html">Exportação de Relatórios</a>
+                  <a href="../relatorios/exportar.html"
+                    >Exportação de Relatórios</a
+                  >
                 </li>
               </ul>
             </li>
@@ -215,25 +216,18 @@
         <h2 id="atualizar-salas">Editar Salas</h2>
 
         <p>
-          A manutenção dos cadastros físicos é vital para garantir que o sistema
-          de alocação trabalhe de forma eficiente com as reais condições e
-          limitações da infraestrutura do campus.
+          O processo de atualização salva de forma definitiva as modificações na
+          sala, garantindo que o sistema de planejamento trabalhe com as regras
+          mais recentes da coordenação.
         </p>
 
-        <p>
-          Para editar as informações de um ambiente, localize a sala desejada na
-          listagem e clique no botão <strong>Editar</strong>. O sistema exibirá
-          imediatamente o formulário preenchido, permitindo que você altere
-          livremente detalhes como equipamentos disponíveis, status ou a
-          capacidade máxima do ambiente.
-        </p>
-
-        <p>
-          Após revisar e finalizar os ajustes, clique em
-          <strong>Salvar</strong>. As atualizações serão instantaneamente
-          consideradas pelo motor de inteligência do sistema nas próximas
-          gerações automáticas de horários.
-        </p>
+        <ul>
+          <li>Acesse a tela de listagem e utilize a busca ou os filtros para encontrar a sala.</li>
+          <li>Clique no botão <strong>Editar</strong> (ou no ícone do lápis).</li>
+          <li>O sistema carregará as informações já preenchidas, permitindo fazer alterações diretas nos campos necessários, como equipamentos, status ou capacidade máxima.</li>
+          <li>Após os ajustes, clique no botão <strong>Salvar</strong>.</li>
+          <li>O sistema validará os dados, gravará as alterações e exibirá uma notificação de sucesso.</li>
+        </ul>
 
         <div class="video-container">
           <video controls>
@@ -249,19 +243,16 @@
         <h2 id="excluir-salas">Excluir Salas</h2>
 
         <p>
-          Caso uma sala de aula ou laboratório seja definitivamente desativado,
-          sofra interdições severas ou passe por reformas de longo prazo, ele
-          poderá ser removido do cadastro para evitar que o sistema realize
-          alocações indevidas.
+          O processo de exclusão remove o registro da sala de forma definitiva,
+          evitando que o sistema realize alocações indevidas.
         </p>
 
-        <p>
-          Para efetuar a remoção de forma controlada, localize a respectiva sala
-          na tabela, clique no ícone de <strong>lápis</strong> para acessar a
-          edição e acione o botão de <strong>Excluir</strong>. Para assegurar a
-          integridade da base de dados, o sistema solicitará uma confirmação de
-          segurança, prevenindo exclusões acidentais de locais ainda em uso.
-        </p>
+        <ul>
+          <li>Acesse a tela de listagem e utilize a busca ou os filtros para encontrar a sala.</li>
+          <li>Clique no ícone do <strong>lápis</strong> para entrar no modo de edição.</li>
+          <li>Dentro do formulário, clique no botão <strong>Excluir</strong>.</li>
+          <li>Após a confirmação, o sistema processará a remoção e atualizará a listagem automaticamente.</li>
+        </ul>
 
         <div class="video-container">
           <video controls>
@@ -277,14 +268,7 @@
        
       </main>
 
-      <aside class="indice-pagina" aria-label="Nesta pagina">
-        <nav>
-          <a class="active" href="#gerenciamento-salas">Visão Geral</a>
-          <a href="#cadastrar-salas">Cadastrar Salas</a>
-          <a href="#atualizar-salas">Editar Salas</a>
-          <a href="#excluir-salas">Excluir Salas</a>
-        </nav>
-      </aside>
+
     </div>
 
     <script src="../../src/app/sidebar.controller.js"></script>

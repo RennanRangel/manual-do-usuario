@@ -31,7 +31,7 @@
     </header>
 
     <div class="page-shell">
-      <aside class="sidebar" aria-label="Menu da documentação">
+            <aside class="sidebar" aria-label="Menu da documentação">
         <nav>
           <ul class="sidebar-list">
             <li>
@@ -50,7 +50,6 @@
                 <li>
                   <a href="../autenticacao/login.html">Como Fazer Login</a>
                 </li>
-
               </ul>
             </li>
 
@@ -60,7 +59,7 @@
                 type="button"
                 aria-expanded="false"
               >
-                Gerenciamento de Informações
+                Configurações Básicas
               </button>
               <ul class="sidebar-submenu">
                 <li><a href="../Gerenciamento/docente.html">Docentes</a></li>
@@ -83,27 +82,27 @@
                 type="button"
                 aria-expanded="false"
               >
-                Alocação
+                Planejamento Letivo
               </button>
               <ul class="sidebar-submenu">
                 <li>
                   <a href="../alocacao/alocacao-gerar.html"
-                    >Geração de Alocação</a
+                    >Geração da Grade</a
                   >
                 </li>
                 <li>
                   <a href="../alocacao/alocacao-docentes.html"
-                    >Alocação de Docentes</a
+                    >Alocação Docentes</a
                   >
                 </li>
                 <li>
                   <a href="../alocacao/alocacao-salas.html"
-                    >Alocação de Salas</a
+                    >Distribuição de Salas</a
                   >
                 </li>
                 <li>
                   <a href="../alocacao/alocacao-ajustar.html"
-                    >Ajustes Manuais</a
+                    >Ajustes na Grade</a
                   >
                 </li>
                 <li>
@@ -131,7 +130,9 @@
                   <a href="../relatorios/gerar.html">Geração de Relatórios</a>
                 </li>
                 <li>
-                  <a href="../relatorios/exportar.html">Exportação de Relatórios</a>
+                  <a href="../relatorios/exportar.html"
+                    >Exportação de Relatórios</a
+                  >
                 </li>
               </ul>
             </li>
@@ -217,24 +218,18 @@
         <h2 id="atualizar-turmas">Editar Turmas</h2>
 
         <p>
-          A manutenção contínua dos parâmetros da turma garante que o
-          planejamento pedagógico acompanhe eventuais mudanças na oferta letiva,
-          assegurando que o motor de alocação opere sempre com dados
-          atualizados.
+          O processo de atualização salva de forma definitiva as modificações na
+          turma, garantindo que o sistema de planejamento trabalhe com as regras
+          mais recentes da coordenação.
         </p>
 
-        <p>
-          Para editar, localize a turma na listagem geral e clique no botão
-          <strong>Editar</strong>. O sistema preencherá automaticamente o
-          formulário de edição, permitindo que você altere de forma livre as
-          informações de horários, turnos ou quantidade de alunos.
-        </p>
-
-        <p>
-          Ao concluir e clicar em <strong>Salvar</strong>, o sistema atualizará
-          dinamicamente os cálculos logísticos, prevenindo choques de grade nas
-          próximas execuções.
-        </p>
+        <ul>
+          <li>Acesse a tela de listagem e utilize a busca ou os filtros para encontrar a turma.</li>
+          <li>Clique no botão <strong>Editar</strong> (ou no ícone do lápis).</li>
+          <li>O sistema carregará as informações já preenchidas, permitindo fazer alterações diretas nos campos necessários, como horários, turnos ou quantidade de alunos.</li>
+          <li>Após os ajustes, clique no botão <strong>Salvar</strong>.</li>
+          <li>O sistema validará os dados, gravará as alterações e exibirá uma notificação de sucesso.</li>
+        </ul>
 
         <div class="video-container">
           <video controls>
@@ -250,19 +245,16 @@
         <h2 id="excluir-turmas">Excluir Turmas</h2>
 
         <p>
-          Caso uma turma seja cancelada do calendário acadêmico ou tenha sido
-          cadastrada incorretamente, ela poderá ser permanentemente removida.
-          Esse processo é essencial para liberar recursos ociosos e espaços
-          físicos no planejamento.
+          O processo de exclusão remove o registro da turma de forma definitiva,
+          liberando recursos ociosos e espaços físicos no planejamento.
         </p>
 
-        <p>
-          Para remover de forma segura, localize a turma, clique no ícone de
-          <strong>lápis</strong> para entrar no modo de edição e acione o botão
-          de <strong>Excluir</strong>. O sistema sempre exigirá uma confirmação
-          de segurança final, prevenindo exclusões acidentais de turmas que já
-          possuam grades consolidadas.
-        </p>
+        <ul>
+          <li>Acesse a tela de listagem e utilize a busca ou os filtros para encontrar a turma.</li>
+          <li>Clique no ícone do <strong>lápis</strong> para entrar no modo de edição.</li>
+          <li>Dentro do formulário, clique no botão <strong>Excluir</strong>.</li>
+          <li>Após a confirmação, o sistema processará a remoção e atualizará a listagem automaticamente.</li>
+        </ul>
 
         <div class="video-container">
           <video controls>
@@ -278,14 +270,7 @@
 
       </main>
 
-      <aside class="indice-pagina" aria-label="Nesta pagina">
-        <nav>
-          <a class="active" href="#gerenciamento-turmas">Visão Geral</a>
-          <a href="#cadastrar-turmas">Cadastrar Turmas</a>
-          <a href="#atualizar-turmas">Editar Turmas</a>
-          <a href="#excluir-turmas">Excluir Turmas</a>
-        </nav>
-      </aside>
+
     </div>
 
     <script src="../../src/app/sidebar.controller.js"></script>

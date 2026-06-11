@@ -31,7 +31,7 @@
     </header>
 
     <div class="page-shell">
-      <aside class="sidebar" aria-label="Menu da documentação">
+            <aside class="sidebar" aria-label="Menu da documentação">
         <nav>
           <ul class="sidebar-list">
             <li>
@@ -50,7 +50,6 @@
                 <li>
                   <a href="../autenticacao/login.html">Como Fazer Login</a>
                 </li>
-
               </ul>
             </li>
 
@@ -60,7 +59,7 @@
                 type="button"
                 aria-expanded="false"
               >
-                Gerenciamento de Informações
+                Configurações Básicas
               </button>
               <ul class="sidebar-submenu">
                 <li><a href="../Gerenciamento/docente.html">Docentes</a></li>
@@ -83,27 +82,27 @@
                 type="button"
                 aria-expanded="false"
               >
-                Alocação
+                Planejamento Letivo
               </button>
               <ul class="sidebar-submenu">
                 <li>
                   <a href="../alocacao/alocacao-gerar.html"
-                    >Geração de Alocação</a
+                    >Geração da Grade</a
                   >
                 </li>
                 <li>
                   <a href="../alocacao/alocacao-docentes.html"
-                    >Alocação de Docentes</a
+                    >Alocação Docentes</a
                   >
                 </li>
                 <li>
                   <a href="../alocacao/alocacao-salas.html"
-                    >Alocação de Salas</a
+                    >Distribuição de Salas</a
                   >
                 </li>
                 <li>
                   <a href="../alocacao/alocacao-ajustar.html"
-                    >Ajustes Manuais</a
+                    >Ajustes na Grade</a
                   >
                 </li>
                 <li>
@@ -131,7 +130,9 @@
                   <a href="../relatorios/gerar.html">Geração de Relatórios</a>
                 </li>
                 <li>
-                  <a href="../relatorios/exportar.html">Exportação de Relatórios</a>
+                  <a href="../relatorios/exportar.html"
+                    >Exportação de Relatórios</a
+                  >
                 </li>
               </ul>
             </li>
@@ -222,22 +223,18 @@
         <h2 id="atualizar-disciplinas">Editar Disciplinas</h2>
 
         <p>
-          A atualização dos dados garante que o motor de alocação trabalhe com o
-          planejamento mais recente do semestre. Modificações na carga horária,
-          tipo de disciplina ou dependências impactarão automaticamente as
-          próximas execuções.
+          O processo de atualização salva de forma definitiva as modificações na
+          disciplina, garantindo que o sistema de planejamento trabalhe com
+          as regras mais recentes da coordenação.
         </p>
 
-        <p>
-          Para editar, localize a disciplina na listagem e clique no botão
-          <strong>Editar</strong>. O sistema carregará as informações
-          preenchidas anteriormente para você alterar os campos necessários.
-        </p>
-
-        <p>
-          Após revisar os ajustes, clique em <strong>Salvar</strong>. As
-          modificações entrarão em vigor instantaneamente no sistema.
-        </p>
+        <ul>
+          <li>Acesse a tela de listagem e utilize a busca ou os filtros para encontrar a disciplina.</li>
+          <li>Clique no botão <strong>Editar</strong> (ou no ícone do lápis).</li>
+          <li>O sistema carregará as informações já preenchidas, permitindo fazer alterações diretas nos campos necessários, como identificação, planejamento ou carga horária.</li>
+          <li>Após os ajustes, clique no botão <strong>Salvar</strong>.</li>
+          <li>O sistema validará os dados, gravará as alterações e exibirá uma notificação de sucesso.</li>
+        </ul>
 
         <div class="video-container">
           <video controls>
@@ -253,17 +250,17 @@
         <h2 id="excluir-disciplinas">Excluir Disciplinas</h2>
 
         <p>
-          A exclusão é uma ação permanente que desvincula a disciplina de todas
-          as ofertas e planejamentos de turmas não consolidadas. Utilize-a
-          apenas se o registro for incorreto ou retirado do catálogo.
+          O processo de exclusão remove o registro da disciplina de forma
+          definitiva, desvinculando-a de todas as ofertas e planejamentos de
+          turmas não consolidadas.
         </p>
 
-        <p>
-          Para excluir de forma segura, localize a disciplina, clique no ícone
-          de <strong>lápis</strong> para editar e, dentro do formulário, acione
-          o botão de <strong>Excluir</strong>. O sistema solicitará uma
-          confirmação final para prevenir exclusões acidentais.
-        </p>
+        <ul>
+          <li>Acesse a tela de listagem e utilize a busca ou os filtros para encontrar a disciplina.</li>
+          <li>Clique no ícone do <strong>lápis</strong> para entrar no modo de edição.</li>
+          <li>Dentro do formulário, clique no botão <strong>Excluir</strong>.</li>
+          <li>Após a confirmação, o sistema processará a remoção e atualizará a listagem automaticamente.</li>
+        </ul>
 
         <div class="video-container">
           <video controls>
@@ -278,14 +275,7 @@
 
       </main>
 
-      <aside class="indice-pagina" aria-label="Nesta pagina">
-        <nav>
-          <a class="active" href="#gerenciamento-disciplina">Visão Geral</a>
-          <a href="#cadastrar-disciplinas">Cadastrar Disciplinas</a>
-          <a href="#atualizar-disciplinas">Editar Disciplinas</a>
-          <a href="#excluir-disciplinas">Excluir Disciplinas</a>
-        </nav>
-      </aside>
+
     </div>
 
     <script src="../../src/app/sidebar.controller.js"></script>

@@ -32,7 +32,7 @@
     </header>
 
     <div class="page-shell">
-      <aside class="sidebar" aria-label="Menu da documentação">
+            <aside class="sidebar" aria-label="Menu da documentação">
         <nav>
           <ul class="sidebar-list">
             <li>
@@ -51,7 +51,6 @@
                 <li>
                   <a href="../autenticacao/login.html">Como Fazer Login</a>
                 </li>
-
               </ul>
             </li>
 
@@ -61,7 +60,7 @@
                 type="button"
                 aria-expanded="false"
               >
-                Gerenciamento de Informações
+                Configurações Básicas
               </button>
               <ul class="sidebar-submenu">
                 <li><a href="../Gerenciamento/docente.html">Docentes</a></li>
@@ -84,27 +83,27 @@
                 type="button"
                 aria-expanded="false"
               >
-                Alocação
+                Planejamento Letivo
               </button>
               <ul class="sidebar-submenu">
                 <li>
                   <a href="../alocacao/alocacao-gerar.html"
-                    >Geração de Alocação</a
+                    >Geração da Grade</a
                   >
                 </li>
                 <li>
                   <a href="../alocacao/alocacao-docentes.html"
-                    >Alocação de Docentes</a
+                    >Alocação Docentes</a
                   >
                 </li>
                 <li>
                   <a href="../alocacao/alocacao-salas.html"
-                    >Alocação de Salas</a
+                    >Distribuição de Salas</a
                   >
                 </li>
                 <li>
                   <a href="../alocacao/alocacao-ajustar.html"
-                    >Ajustes Manuais</a
+                    >Ajustes na Grade</a
                   >
                 </li>
                 <li>
@@ -132,7 +131,9 @@
                   <a href="../relatorios/gerar.html">Geração de Relatórios</a>
                 </li>
                 <li>
-                  <a href="../relatorios/exportar.html">Exportação de Relatórios</a>
+                  <a href="../relatorios/exportar.html"
+                    >Exportação de Relatórios</a
+                  >
                 </li>
               </ul>
             </li>
@@ -224,27 +225,17 @@
 
         <p>
           O processo de atualização salva de forma definitiva as modificações no
-          perfil do docente. Isso garante que o motor de alocação trabalhe com
-          as regras mais recentes da coordenação.
+          perfil do docente, garantindo que o sistema de planejamento trabalhe
+          com as regras mais recentes da coordenação.
         </p>
 
-        <p>
-          Para editar, acesse a tela de listagem e utilize a busca ou os filtros
-          para encontrar o profissional. Em seguida, clique no ícone do
-          <strong>lápis</strong>.
-        </p>
-
-        <p>
-          O sistema carregará as informações já preenchidas. O formulário é
-          organizado em blocos visuais, permitindo fazer alterações diretas nos
-          campos necessários, como identificação, contrato ou disciplinas.
-        </p>
-
-        <p>
-          Após os ajustes, clique no botão <strong>Atualizar</strong>. O sistema
-          validará os dados, gravará as alterações e exibirá uma notificação de
-          sucesso.
-        </p>
+        <ul>
+          <li>Acesse a tela de listagem e utilize a busca ou os filtros para encontrar o profissional.</li>
+          <li>Clique no ícone do <strong>lápis</strong>.</li>
+          <li>O sistema carregará as informações já preenchidas, permitindo fazer alterações diretas nos campos necessários, como identificação, contrato ou disciplinas.</li>
+          <li>Após os ajustes, clique no botão <strong>Atualizar</strong>.</li>
+          <li>O sistema validará os dados, gravará as alterações e exibirá uma notificação de sucesso.</li>
+        </ul>
 
         <div class="video-container">
           <video controls>
@@ -261,24 +252,15 @@
 
         <p>
           O processo de exclusão remove o registro do docente de forma
-          definitiva e permanente da base de dados ativa do sistema. Essa ação é
-          irreversível e deve ser realizada com cautela, pois desvincula o
-          profissional de qualquer rotina ativa e impede que seu perfil seja
-          considerado em futuros processamentos do motor de alocação de
-          horários.
+          definitiva, garantindo que apenas profissionais ativos permaneçam
+          disponíveis para o sistema de planejamento.
         </p>
 
-        <p>
-          O fluxo operacional é executado de forma rápida diretamente a partir
-          da tela de listagem de docentes, onde localiza-se o professor desejado
-          na tabela de registros e clica-se no ícone da
-          <strong>lixeira</strong> correspondente.
-        </p>
-
-        <p>
-          O sistema processa a remoção, limpa os vínculos associados e atualiza
-          a listagem de docentes instantaneamente.
-        </p>
+        <ul>
+          <li>Acesse a tela de listagem e utilize a busca ou os filtros para encontrar o profissional.</li>
+          <li>Clique no ícone da <strong>lixeira</strong>.</li>
+          <li>Após a confirmação, o sistema processará a remoção e atualizará a listagem de docentes automaticamente.</li>
+        </ul>
 
         <div class="video-container">
           <video controls>
@@ -292,14 +274,7 @@
         </div>
       </main>
 
-      <aside class="indice-pagina" aria-label="Nesta pagina">
-        <nav>
-          <a class="active" href="#gerenciamento-docente">Visão Geral</a>
-          <a href="#cadastrar-docentes">Cadastrar Docentes</a>
-          <a href="#atualizar-docentes">Editar Docentes</a>
-          <a href="#excluir-docentes">Excluir Docentes</a>
-        </nav>
-      </aside>
+
     </div>
 
     <script src="../../src/app/sidebar.controller.js"></script>
