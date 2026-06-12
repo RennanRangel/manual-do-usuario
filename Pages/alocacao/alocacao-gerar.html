@@ -1,299 +1,233 @@
 <!doctype html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EduAloca - Geração de Alocação</title>
-    <link rel="stylesheet" href="../../CSS/global/fonts.css" />
-    <link rel="stylesheet" href="../../CSS/global/typography.css" />
-    <link rel="stylesheet" href="../../CSS/navbar.css" />
-    <link rel="stylesheet" href="../../CSS/sidebar.css" />
-    <link rel="stylesheet" href="../../CSS/modules/manual.css" />
-    <link rel="icon" href="../../Assets/IMG/Blue_and_White_Modern_Artificial_Intelligence_Logo.png" type="image/png"/>
-  </head>
-  <body>
-    <header class="docs-topbar">
-      <button
-        class="menu-button"
-        type="button"
-        aria-label="Abrir menu"
-        aria-expanded="true"
-      >
-        <img src="../../Assets/IMG/menu.png" alt="" width="28" height="28" />
-      </button>
 
-      <a class="EduAloca" href="#" aria-label="EduAloca">
-        <img
-          src="../../Assets/IMG/Blue_and_White_Modern_Artificial_Intelligence_Logo.png"
-          alt="Logo"
-        />
-      </a>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EduAloca - Geração de Alocação</title>
+  <link rel="stylesheet" href="../../CSS/global/fonts.css" />
+  <link rel="stylesheet" href="../../CSS/global/typography.css" />
+  <link rel="stylesheet" href="../../CSS/navbar.css" />
+  <link rel="stylesheet" href="../../CSS/sidebar.css" />
+  <link rel="stylesheet" href="../../CSS/modules/manual.css" />
+  <link rel="icon" href="../../Assets/IMG/Blue_and_White_Modern_Artificial_Intelligence_Logo.png" type="image/png" />
+</head>
 
-    <div class="page-shell">
-            <aside class="sidebar" aria-label="Menu da documentação">
-        <nav>
-          <ul class="sidebar-list">
-            <li>
-              <a class="section-link" href="../home/home.html">Introdução</a>
-            </li>
+<body>
+  <header class="docs-topbar">
+    <button class="menu-button" type="button" aria-label="Abrir menu" aria-expanded="true">
+      <img src="../../Assets/IMG/menu.png" alt="" width="28" height="28" />
+    </button>
 
-            <li class="sidebar-group">
-              <button
-                class="sidebar-toggle"
-                type="button"
-                aria-expanded="false"
-              >
-                Autenticação
-              </button>
-              <ul class="sidebar-submenu">
-                <li>
-                  <a href="../autenticacao/login.html">Como Fazer Login</a>
-                </li>
-              </ul>
-            </li>
+    <a class="EduAloca" href="#" aria-label="EduAloca">
+      <img src="../../Assets/IMG/Blue_and_White_Modern_Artificial_Intelligence_Logo.png" alt="Logo" />
+    </a>
+  </header>
 
-            <li class="sidebar-group">
-              <button
-                class="sidebar-toggle"
-                type="button"
-                aria-expanded="false"
-              >
-                Configurações Básicas
-              </button>
-              <ul class="sidebar-submenu">
-                <li><a href="../Gerenciamento/docente.html">Docentes</a></li>
-                <li>
-                  <a href="../Gerenciamento/disciplinas.html">Disciplinas</a>
-                </li>
-                <li><a href="../Gerenciamento/turmas.html">Turmas</a></li>
-                <li><a href="../Gerenciamento/cursos.html">Cursos</a></li>
-                <li><a href="../Gerenciamento/salas.html">Salas</a></li>
-                <li><a href="../Gerenciamento/blocos.html">Blocos</a></li>
-                <li><a href="../Gerenciamento/areas.html">Áreas</a></li>
-                <li>
-                  <a href="../Gerenciamento/funcionarios.html">Funcionários</a>
-                </li>
-              </ul>
-            </li>
-            <li class="sidebar-group">
-              <button
-                class="sidebar-toggle"
-                type="button"
-                aria-expanded="false"
-              >
-                Planejamento Letivo
-              </button>
-              <ul class="sidebar-submenu">
-                <li>
-                  <a href="../alocacao/alocacao-gerar.html"
-                    >Geração da Grade</a
-                  >
-                </li>
-                <li>
-                  <a href="../alocacao/alocacao-docentes.html"
-                    >Alocação Docentes</a
-                  >
-                </li>
-                <li>
-                  <a href="../alocacao/alocacao-salas.html"
-                    >Distribuição de Salas</a
-                  >
-                </li>
-                <li>
-                  <a href="../alocacao/alocacao-ajustar.html"
-                    >Ajustes na Grade</a
-                  >
-                </li>
-                <li>
-                  <a href="../alocacao/dias-nao-letivos.html"
-                    >Dias não Letivos</a
-                  >
-                </li>
-                <li>
-                  <a href="../alocacao/alocacao-visualizar.html"
-                    >Visualizar Grade</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li class="sidebar-group">
-              <button
-                class="sidebar-toggle"
-                type="button"
-                aria-expanded="false"
-              >
-                Relatórios
-              </button>
-              <ul class="sidebar-submenu">
-                <li>
-                  <a href="../relatorios/gerar.html">Geração de Relatórios</a>
-                </li>
-                <li>
-                  <a href="../relatorios/exportar.html"
-                    >Exportação de Relatórios</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li class="sidebar-group">
-              <button
-                class="sidebar-toggle"
-                type="button"
-                aria-expanded="false"
-              >
-                FAQ
-              </button>
-              <ul class="sidebar-submenu">
-                <li>
-                  <a href="../duvidas/perguntas-frequentes.html"
-                    >Dúvidas Frequentes</a
-                  >
-                </li>
-                <li><a href="../duvidas/videos.html">Vídeos Tutoriais</a></li>
-                <li>
-                  <a href="../duvidas/enviar-duvida.html">Enviar Dúvidas</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
-      </aside>
+  <div class="page-shell">
+    <aside class="sidebar" aria-label="Menu da documentação">
+      <nav>
+        <ul class="sidebar-list">
+          <li>
+            <a class="section-link" href="../home/home.html">Introdução</a>
+          </li>
 
-      <main class="content">
-        <div class="article-title">
-          <h1 id="geracao-alocacao">Geração de Alocação</h1>
-        </div>
+          <li class="sidebar-group">
+            <button class="sidebar-toggle" type="button" aria-expanded="false">
+              Autenticação
+            </button>
+            <ul class="sidebar-submenu">
+              <li>
+                <a href="../autenticacao/login.html">Como Fazer Login</a>
+              </li>
+            </ul>
+          </li>
 
-        <p>
-          A Geração de Alocação no EduAloca é o coração do sistema, responsável
-          por distribuir automaticamente as aulas levando em consideração as
-          regras acadêmicas e operacionais da instituição. Esta seção explica,
-          de forma simplificada, como o sistema organiza as informações, planeja
-          os horários e aplica as regras definidas pela coordenação.
-        </p>
+          <li class="sidebar-group">
+            <button class="sidebar-toggle" type="button" aria-expanded="false">
+              Configurações Básicas
+            </button>
+            <ul class="sidebar-submenu">
+              <li><a href="../Gerenciamento/docente.html">Docentes</a></li>
+              <li>
+                <a href="../Gerenciamento/disciplinas.html">Disciplinas</a>
+              </li>
+              <li><a href="../Gerenciamento/turmas.html">Turmas</a></li>
+              <li><a href="../Gerenciamento/cursos.html">Cursos</a></li>
+              <li><a href="../Gerenciamento/salas.html">Salas</a></li>
+              <li><a href="../Gerenciamento/blocos.html">Blocos</a></li>
+              <li><a href="../Gerenciamento/areas.html">Áreas</a></li>
+              <li>
+                <a href="../Gerenciamento/funcionarios.html">Funcionários</a>
+              </li>
+            </ul>
+          </li>
+          <li class="sidebar-group">
+            <button class="sidebar-toggle" type="button" aria-expanded="false">
+              Alocação
+            </button>
+            <ul class="sidebar-submenu">
+              <li>
+                <a href="../alocacao/alocacao-gerar.html">Geração da Grade</a>
+              </li>
+              <li>
+                <a href="../alocacao/alocacao-docentes.html">Alocação Docentes</a>
+              </li>
+              <li>
+                <a href="../alocacao/alocacao-salas.html">Distribuição de Salas</a>
+              </li>
+              <li>
+                <a href="../alocacao/alocacao-ajustar.html">Ajustes na Grade</a>
+              </li>
+              <li>
+                <a href="../alocacao/dias-nao-letivos.html">Dias não Letivos</a>
+              </li>
+              <li>
+                <a href="../alocacao/alocacao-visualizar.html">Visualizar Grade</a>
+              </li>
+            </ul>
+          </li>
+          <li class="sidebar-group">
+            <button class="sidebar-toggle" type="button" aria-expanded="false">
+              Relatórios
+            </button>
+            <ul class="sidebar-submenu">
+              <li>
+                <a href="../relatorios/gerar.html">Geração de Relatórios</a>
+              </li>
+              <li>
+                <a href="../relatorios/exportar.html">Exportação de Relatórios</a>
+              </li>
+            </ul>
+          </li>
+          <li class="sidebar-group">
+            <button class="sidebar-toggle" type="button" aria-expanded="false">
+              FAQ
+            </button>
+            <ul class="sidebar-submenu">
+              <li>
+                <a href="../duvidas/perguntas-frequentes.html">Dúvidas Frequentes</a>
+              </li>
+              <li><a href="../duvidas/videos.html">Vídeos Tutoriais</a></li>
+              <li>
+                <a href="../duvidas/enviar-duvida.html">Enviar Dúvidas</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </aside>
 
-        <h2 id="calendario-base">Calendário Base</h2>
+    <main class="content">
+      <div class="article-title">
+        <h1 id="geracao-alocacao">Geração de Alocação</h1>
+      </div>
 
-        <p>
-          O Calendário Base define os dias disponíveis para o planejamento
-          semestral. O sistema cadastra o ano letivo e busca automaticamente os
-          feriados nacionais, estaduais e municipais do ano em vigor.
-        </p>
+      <p>
+        A Geração de Alocação no EduAloca é o coração do sistema, responsável
+        por distribuir automaticamente as aulas levando em consideração as
+        regras acadêmicas e operacionais da instituição. Esta seção explica,
+        de forma simplificada, como o sistema organiza as informações, planeja
+        os horários e aplica as regras definidas pela coordenação.
+      </p>
 
-        <p>
-          Para cada dia do ano, o sistema guarda informações importantes, como a
-          data, o dia da semana, se haverá aula ou não (dia letivo ou não
-          letivo) e os detalhes de eventuais feriados.
-        </p>
+      <h2 id="calendario-base">Calendário Letivo</h2>
 
-        <h2 id="dados-catalogo">Dados Necessários</h2>
+      <p>
+        O Calendário Letivo define os dias disponíveis para o planejamento
+        semestral. O sistema cadastra o ano letivo e busca automaticamente os
+        feriados nacionais, estaduais e municipais do ano em vigor.
+        Para cada dia do ano, o sistema guarda informações importantes, como a
+        data, o dia da semana, se haverá aula ou não (dia letivo ou não
+        letivo) e os detalhes de eventuais feriados.
+      </p>
 
-        <p>
-          Os Dados Necessários são as informações fixas que o sistema utiliza
-          para montar a alocação, agrupadas em três categorias principais:
-        </p>
+      <h2 id="dados-catalogo">Dados Necessários</h2>
 
-        <p>
-          <strong>Turmas:</strong> Identificam as turmas ativas no semestre.
-          Incluem informações como o turno das aulas, os dias da semana em que a
-          turma terá encontros, além de detalhes sobre o curso e o período.
-        </p>
+      <p>
+        Os Dados Necessários são as informações fixas que o sistema utiliza
+        para montar a alocação, agrupadas em três categorias principais:
+      </p>
 
-        <p>
-          <strong>Disciplinas:</strong> Definem as matérias que serão ensinadas.
-          Contêm a carga horária que precisa ser cumprida, a modalidade
-          (Presencial, EAD ou Semipresencial) e o período ideal para o início e
-          fim da matéria.
-        </p>
+      <p>
+        <strong>Turmas:</strong> Identificam as turmas ativas no semestre.
+        Incluem informações como o turno das aulas, os dias da semana em que a
+        turma terá encontros, além de detalhes sobre o curso e o período.
+      </p>
 
-        <p>
-          <strong>Docentes:</strong> Reúnem a lista de professores disponíveis.
-          Incluem os dias e turnos em que eles podem dar aulas, o limite de
-          horas mensais de trabalho e as matérias que estão aptos a lecionar.
-        </p>
+      <p>
+        <strong>Disciplinas:</strong> Definem as matérias que serão ensinadas.
+        Contêm a carga horária que precisa ser cumprida, a modalidade
+        (Presencial, EAD ou Semipresencial) e o período ideal para o início e
+        fim da matéria.
+      </p>
 
-        <h2 id="motor-planejamento">Inteligência do Sistema</h2>
+      <p>
+        <strong>Docentes:</strong> Reúnem a lista de professores disponíveis.
+        Incluem os dias e turnos em que eles podem dar aulas, o limite de
+        horas mensais de trabalho e as matérias que estão aptos a lecionar.
+      </p>
 
-        <p>
-          A Inteligência do Sistema do EduAloca funciona como um cérebro
-          artificial que distribui as aulas automaticamente. Ele segue a regra
-          de que cada turno de aula é dedicado a uma única disciplina, evitando
-          horários fragmentados. As matérias variam de acordo com a carga
-          horária, desde as mais curtas até as mais longas.
-        </p>
+      <h2 id="motor-planejamento">Distribuição das Aulas</h2>
 
-        <p>
-          Para organizar tudo, o sistema cruza as informações: a turma, a
-          disciplina e o professor, calculando a quantidade exata de aulas
-          necessárias no semestre.
-        </p>
+      <p>
+        O EduAloca organiza as aulas automaticamente combinando as turmas, as matérias e os professores disponíveis. Para garantir uma grade correta, equilibrada e que evite horários quebrados, o sistema calcula a quantidade de encontros necessários e os distribui seguindo algumas regras importantes de duração e compatibilidade:
+      </p>
 
-        <p>
-          Depois, ele distribui essas aulas nos horários disponíveis (manhã,
-          tarde ou noite) ao longo dos dias letivos do calendário. O objetivo é
-          criar uma grade completa que respeite as regras de funcionamento da
-          instituição.
-        </p>
+      <ul>
+        <li><strong>Duração no Noturno:</strong> Cada encontro equivale a <strong>3 horas</strong> de aula.</li>
+        <li><strong>Duração no Matutino e Vespertino:</strong> Cada encontro equivale a <strong>4 horas</strong> de aula.</li>
+        <li><strong>Dias Letivos:</strong> As aulas são planejadas apenas para os dias letivos cadastrados no calendário.</li>
+        <li><strong>Aulas aos Sábados:</strong> O sistema não coloca aulas no turno da noite (noturno) aos sábados.</li>
+        <li><strong>Turno da Turma:</strong> Durante a semana, as aulas da turma devem respeitar obrigatoriamente o seu turno de origem (matutino, vespertino ou noturno).</li>
+        <li><strong>Evitar Choques de Horário:</strong> O sistema garante que nenhum professor e nenhuma turma tenham duas aulas marcadas no mesmo dia e horário.</li>
+      </ul>
 
-        <h2 id="dados-persistencia">Dados e Histórico</h2>
+      <h2 id="dados-persistencia">Status da Alocação</h2>
 
-        <p>
-          Uma vez que a grade de horários é criada, os resultados são salvos de
-          duas formas principais. A primeira guarda a grade como um todo,
-          registrando o período escolar, a data em que foi criada e seu status
-          atual (se é apenas um Rascunho, se já foi Publicada para todos ou se
-          foi Arquivada).
-        </p>
+      <p>
+        Para manter as grades de horários organizadas, o sistema classifica cada grade em diferentes status (Rascunho, Publicada ou Arquivada).
+      </p>
 
-        <p>
-          A segunda forma é o registro individual das aulas. O sistema salva os
-          detalhes de cada encontro (qual será a turma, o professor, a matéria,
-          o dia e o turno), facilitando a visualização da agenda final e
-          consultas na plataforma.
-        </p>
+      <p>
+        Para garantir o bom funcionamento do sistema, existem limites de quantas grades podem ser guardadas em cada uma dessas etapas ao mesmo tempo:
+      </p>
 
-        <h2 id="fluxo-alocacao">Fluxo de Alocação Inicial</h2>
+      <ul>
+        <li><strong>Rascunho:</strong> Limite de até <strong>10</strong> grades em rascunho mantidas de forma simultânea.</li>
+        <li><strong>Publicada:</strong> Limite de <strong>1</strong> grade oficial ativa e publicada no sistema.</li>
+        <li><strong>Arquivada:</strong> Limite de até <strong>50</strong> grades antigas ou arquivadas.</li>
+      </ul>
 
-        <p>
-          O processo de montagem da grade começa quando você escolhe o período
-          letivo. O sistema lista automaticamente o que precisa ser planejado:
-          as turmas ativas, as disciplinas daquele semestre e os professores
-          designados. Você pode revisar tudo na tela antes de prosseguir.
-        </p>
+      <h2 id="fluxo-alocacao">Fluxo de Alocação Inicial</h2>
 
-        <p>
-          Após a aprovação dessa lista e a definição das datas de início e fim
-          do período de aulas, o sistema começa a montar os horários. Você pode
-          acompanhar o progresso e, quando terminar, a grade é salva
-          inicialmente como um rascunho. Isso permite que a coordenação faça
-          revisões manuais antes de liberar a grade oficial.
-        </p>
+      <p>
+        O processo de montagem da grade começa quando você escolhe o período
+        letivo. O sistema lista automaticamente o que precisa ser planejado:
+        as turmas ativas, as disciplinas daquele semestre e os professores
+        designados. Você pode revisar tudo na tela antes de prosseguir.
+      </p>
 
-        <h2 id="atualizacao-realocacao">
-          Atualização e Realocação do Calendário
-        </h2>
+      <p>
+        Após a aprovação dessa lista e a definição das datas de início e fim
+        do período de aulas, o sistema começa a montar os horários. Você pode
+        acompanhar o progresso e, quando terminar, a grade é salva
+        inicialmente como um rascunho. Isso permite que a coordenação faça
+        revisões manuais antes de liberar a grade oficial.
+      </p>
 
-        <p>
-          O EduAloca foi pensado para lidar com imprevistos e mudanças mesmo
-          após a grade estar pronta. Se um novo feriado ou dia sem aula for
-          incluído, as aulas daquele dia ficarão sem horário, e o sistema
-          avisará você, sugerindo um ajuste automático na grade.
-        </p>
+      <p>
+        <strong>Importante:</strong> O processamento da geração automática é exclusivo. Apenas uma alocação pode ser
+        executada por vez no sistema, impedindo que o administrador inicie um novo processo de geração
+        concorrentemente.
+      </p>
 
-        <p>
-          No caso de ausência temporária de um professor, basta informar o
-          período de afastamento e o sistema liberará esses horários para que
-          sejam remanejados. Se houver uma troca definitiva de professor, o
-          sistema atualiza as informações e reorganiza apenas as aulas futuras,
-          respeitando a agenda do novo docente. Alterações no passado ficam
-          apenas como histórico, sem bagunçar a grade futura.
-        </p>
-      </main>
+    </main>
 
 
-    </div>
+  </div>
 
-    <script src="../../src/app/sidebar.controller.js"></script>
-  </body>
+  <script src="../../src/app/sidebar.controller.js"></script>
+</body>
+
 </html>
